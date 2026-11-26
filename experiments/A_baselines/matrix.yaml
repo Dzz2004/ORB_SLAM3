@@ -1,0 +1,46 @@
+dataset: TartanAirV2
+environment: OldTownSummer
+frame_count: 100
+camera_rate_hz: 10
+imu_rate_hz: 100
+modes:
+  - rgb
+  - rgb_imu
+  - rgbd_imu
+seeds: [0, 1, 2]
+experiments:
+  easy_p000:
+    difficulty: easy
+    trajectory: P000
+    start_frame: 200
+    time_window_seconds: [20.0, 29.9]
+    role: primary
+  easy_p002:
+    difficulty: easy
+    trajectory: P002
+    start_frame: 200
+    time_window_seconds: [20.0, 29.9]
+    role: holdout
+  hard_p001:
+    difficulty: hard
+    trajectory: P001
+    start_frame: 100
+    time_window_seconds: [10.0, 19.9]
+    role: robustness
+    common_accuracy_window_seconds: [12.9, 14.9]
+alignments:
+  rgb: sim3
+  rgb_imu: se3
+  rgbd_imu: se3
+rpe_delta: 1.0
+rpe_delta_unit: meters
+trajectory_source: optimized_keyframe_body
+optimized_trajectory: primary
+map_policy: fixed_window_requires_single_map
+invalid_map_policy: ate_rpe_na
+hard_accuracy_policy: common_single_map_window_only
+hard_common_rpe_delta_frames: 5
+thread_environment:
+  OMP_NUM_THREADS: 1
+  OPENBLAS_NUM_THREADS: 1
+  MKL_NUM_THREADS: 1

@@ -1,0 +1,174 @@
+COMMAND=["/media/SSD0/XCX/ORB_SLAM3_A/build/A_baselines/run_tartanair", "/media/SSD0/XCX/ORB_SLAM3_A/repos/ORB_SLAM3/Vocabulary/ORBvoc.txt", "/media/SSD0/XCX/ORB_SLAM3_A/configs/A/tartanair.yaml", "rgb_imu", "/media/SSD0/XCX/ORB_SLAM3_A/results/A/inputs_final/OldTownSummer/easy/P000_2p0s_9p9s/manifest.csv", "/media/SSD0/XCX/ORB_SLAM3_A/results/A/inputs_final/OldTownSummer/easy/P000_2p0s_9p9s/imu.csv", "/media/SSD0/XCX/ORB_SLAM3_A/results/A/repeatability/easy_rgb_imu_seed0_rep1", "0"]
+
+ORB-SLAM3 Copyright (C) 2017-2020 Carlos Campos, Richard Elvira, Juan J. Gómez, José M.M. Montiel and Juan D. Tardós, University of Zaragoza.
+ORB-SLAM2 Copyright (C) 2014-2016 Raúl Mur-Artal, José M.M. Montiel and Juan D. Tardós, University of Zaragoza.
+This program comes with ABSOLUTELY NO WARRANTY;
+This is free software, and you are welcome to redistribute it
+under certain conditions. See LICENSE.txt.
+
+Input sensor was set to: Monocular-Inertial
+Loading settings from /media/SSD0/XCX/ORB_SLAM3_A/configs/A/tartanair.yaml
+	-Loaded camera 1
+	-Loaded image info
+	-Loaded IMU calibration
+	-Loaded ORB settings
+Viewer.imageViewScale optional parameter does not exist...
+	-Loaded viewer settings
+System.LoadAtlasFromFile optional parameter does not exist...
+System.SaveAtlasToFile optional parameter does not exist...
+	-Loaded Atlas settings
+System.thFarPoints optional parameter does not exist...
+	-Loaded misc parameters
+----------------------------------
+SLAM settings: 
+	-Camera 1 parameters (Pinhole): [ 320 320 320 320 ]
+	-Camera 1 distortion parameters: [  0 0 0 0 0 ]
+	-Original image size: [ 640 , 640 ]
+	-Current image size: [ 640 , 640 ]
+	-Camera 1 parameters after resize: [  320 320 320 320 ]
+	-Sequence FPS: 10
+	-Gyro noise: 0.00017
+	-Accelerometer noise: 0.002
+	-Gyro walk: 1.9e-05
+	-Accelerometer walk: 0.003
+	-IMU frequency: 100
+	-Features per image: 1250
+	-ORB scale factor: 1.2
+	-ORB number of scales: 8
+	-Initial FAST threshold: 20
+	-Min FAST threshold: 7
+
+
+Loading ORB Vocabulary. This could take a while...
+Vocabulary loaded!
+
+Initialization of Atlas from scratch 
+Creation of new map with id: 0
+Creation of new map with last KF id: 0
+Seq. Name: rgb_imu
+There are 1 cameras in the atlas
+Camera 0 is pinhole
+First KF:0; Map init KF:0
+New Map created with 173 points
+Fail to track local map!
+IMU is not or recently initialized. Reseting active map...
+SYSTEM-> Reseting active map in monocular case
+LM: Active map reset recieved
+LM: Active map reset, waiting...
+LM: Reseting current map in Local Mapping...
+LM: End reseting Local Mapping...
+LM: Reset free the mutex
+LM: Active map reset, Done!!!
+mnFirstFrameId = 2
+mnInitialFrameId = 0
+2 Frames set to lost
+First KF:2; Map init KF:0
+New Map created with 122 points
+Fail to track local map!
+IMU is not or recently initialized. Reseting active map...
+SYSTEM-> Reseting active map in monocular case
+LM: Active map reset recieved
+LM: Active map reset, waiting...
+LM: Reseting current map in Local Mapping...
+LM: End reseting Local Mapping...
+LM: Reset free the mutex
+LM: Active map reset, Done!!!
+mnFirstFrameId = 8
+mnInitialFrameId = 3
+4 Frames set to lost
+First KF:4; Map init KF:2
+New Map created with 170 points
+Fail to track local map!
+IMU is not or recently initialized. Reseting active map...
+SYSTEM-> Reseting active map in monocular case
+LM: Active map reset recieved
+LM: Active map reset, waiting...
+LM: Reseting current map in Local Mapping...
+LM: End reseting Local Mapping...
+LM: Reset free the mutex
+LM: Active map reset, Done!!!
+mnFirstFrameId = 11
+mnInitialFrameId = 9
+6 Frames set to lost
+First KF:6; Map init KF:4
+New Map created with 160 points
+Fail to track local map!
+IMU is not or recently initialized. Reseting active map...
+SYSTEM-> Reseting active map in monocular case
+LM: Active map reset recieved
+LM: Active map reset, waiting...
+LM: Reseting current map in Local Mapping...
+LM: End reseting Local Mapping...
+LM: Reset free the mutex
+LM: Active map reset, Done!!!
+mnFirstFrameId = 16
+mnInitialFrameId = 12
+8 Frames set to lost
+First KF:8; Map init KF:6
+New Map created with 166 points
+Fail to track local map!
+IMU is not or recently initialized. Reseting active map...
+SYSTEM-> Reseting active map in monocular case
+LM: Active map reset recieved
+LM: Active map reset, waiting...
+LM: Reseting current map in Local Mapping...
+LM: End reseting Local Mapping...
+LM: Reset free the mutex
+LM: Active map reset, Done!!!
+mnFirstFrameId = 19
+mnInitialFrameId = 17
+10 Frames set to lost
+First KF:10; Map init KF:8
+New Map created with 184 points
+Fail to track local map!
+IMU is not or recently initialized. Reseting active map...
+SYSTEM-> Reseting active map in monocular case
+LM: Active map reset recieved
+LM: Active map reset, waiting...
+LM: Reseting current map in Local Mapping...
+LM: End reseting Local Mapping...
+LM: Reset free the mutex
+LM: Active map reset, Done!!!
+mnFirstFrameId = 22
+mnInitialFrameId = 20
+12 Frames set to lost
+First KF:12; Map init KF:10
+New Map created with 146 points
+TRACK_REF_KF: Less than 15 matches!!
+Fail to track local map!
+SYSTEM-> Reseting active map in monocular case
+LM: Active map reset recieved
+LM: Active map reset, waiting...
+LM: Reseting current map in Local Mapping...
+LM: End reseting Local Mapping...
+LM: Reset free the mutex
+LM: Active map reset, Done!!!
+mnFirstFrameId = 26
+mnInitialFrameId = 23
+13 Frames set to lost
+First KF:14; Map init KF:12
+New Map created with 183 points
+Fail to track local map!
+IMU is not or recently initialized. Reseting active map...
+SYSTEM-> Reseting active map in monocular case
+LM: Active map reset recieved
+LM: Active map reset, waiting...
+LM: Reseting current map in Local Mapping...
+LM: End reseting Local Mapping...
+LM: Reset free the mutex
+LM: Active map reset, Done!!!
+mnFirstFrameId = 31
+mnInitialFrameId = 27
+39 Frames set to lost
+First KF:24; Map init KF:14
+New Map created with 202 points
+Shutdown
+
+Saving trajectory to /media/SSD0/XCX/ORB_SLAM3_A/results/A/repeatability/easy_rgb_imu_seed0_rep1/trajectory_orb_raw.tum ...
+There are 1 maps in the atlas
+  Map 0 has 20 KFs
+
+End of saving trajectory to /media/SSD0/XCX/ORB_SLAM3_A/results/A/repeatability/easy_rgb_imu_seed0_rep1/trajectory_orb_raw.tum ...
+
+Saving keyframe trajectory to /media/SSD0/XCX/ORB_SLAM3_A/results/A/repeatability/easy_rgb_imu_seed0_rep1/keyframe_trajectory.tum ...
+frames=100 valid_poses=73 mode=rgb_imu seed=0

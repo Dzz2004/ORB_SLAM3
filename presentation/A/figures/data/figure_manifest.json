@@ -1,0 +1,18 @@
+{
+  "aggregation": "Mean and sample SD over valid metric seeds; coverage and latency use all three seeds.",
+  "latency_scope": "Track() call only",
+  "missing_values": "Rendered as N/A; never converted to zero.",
+  "outputs": [
+    "easy_P000_bars",
+    "easy_P001_bars",
+    "easy_P002_bars",
+    "hard_P000_bars",
+    "hard_P001_bars",
+    "hard_P002_bars",
+    "easy_three_cases_bars",
+    "hard_three_cases_bars"
+  ],
+  "primary_trajectory": "optimized-keyframe body/NED trajectory",
+  "source": "results/A/all_sequences_aggregate.json",
+  "uncertainty": "sample standard deviation across valid seeds"
+}

@@ -683,6 +683,12 @@ void System::SaveTrajectoryEuRoC(const string &filename)
         }
     }
 
+    if(numMaxKFs == 0)
+    {
+        ofstream empty(filename.c_str());
+        return;
+    }
+
     vector<KeyFrame*> vpKFs = pBiggerMap->GetAllKeyFrames();
     sort(vpKFs.begin(),vpKFs.end(),KeyFrame::lId);
 
@@ -1322,6 +1328,13 @@ int System::GetTrackingState()
 {
     unique_lock<mutex> lock(mMutexState);
     return mTrackingState;
+}
+
+int System::GetCurrentMapId()
+{
+    unique_lock<mutex> lock(mMutexState);
+    Map* currentMap = mpAtlas->GetCurrentMap();
+    return currentMap ? static_cast<int>(currentMap->GetId()) : -1;
 }
 
 vector<MapPoint*> System::GetTrackedMapPoints()

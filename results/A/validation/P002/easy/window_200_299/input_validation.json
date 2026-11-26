@@ -1,0 +1,25 @@
+{
+  "depth": {
+    "max_plausible_depth_m": 54.6875,
+    "max_valid_ratio": 0.94759765625,
+    "min_plausible_depth_m": 0.61279296875,
+    "min_valid_ratio": 0.71384521484375,
+    "sampled_frames": 3.0
+  },
+  "depth_subdir": "depth_lcam_front",
+  "frame_count": 100,
+  "imu_count": 12200,
+  "pose_count": 100,
+  "requested_frame_count": 100,
+  "rgb_subdir": "image_lcam_front",
+  "sensor": {
+    "camera": "Pinhole 640x640 fx=fy=320 cx=cy=320 distortion=0",
+    "camera_hz": 10.0,
+    "imu_generator": "TartanAir synthetic IMU aligned with lcam_front",
+    "imu_hz": 100.0
+  },
+  "sequence_root": "/media/SSD0/XCX/ORB_SLAM3_A/data/TartanAirV2/OldTownSummer/Data_easy/P002",
+  "start_frame": 200,
+  "timestamp_end": 29.899999618530273,
+  "timestamp_start": 20.0
+}

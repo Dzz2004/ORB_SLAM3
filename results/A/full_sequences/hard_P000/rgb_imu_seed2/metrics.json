@@ -1,0 +1,31 @@
+{
+  "alignment": "se3",
+  "ate_mean": 0.09595662027690237,
+  "ate_median": 0.0904400412852975,
+  "ate_rmse": 0.10245362661115448,
+  "ate_status": "ok",
+  "ate_std": 0.03590365762442912,
+  "estimated_trajectory_rows": 3,
+  "evaluated_window_end": 19.899999618530273,
+  "evaluated_window_start": 10.0,
+  "input_frames": 100,
+  "lost_events": 19,
+  "map_ids_in_valid_tracking": [
+    0
+  ],
+  "matched_pose_frames": 3,
+  "mean_latency_ms": 50.25087583000001,
+  "orientation_ape_rmse_deg": 134.69526918717634,
+  "orientation_ape_status": "ok",
+  "p95_latency_ms": 89.71719124999998,
+  "plot_written": true,
+  "rpe_delta": 1.0,
+  "rpe_delta_unit": "meters",
+  "rpe_rotation_deg_error": "FilterException: delta = 1.0 (m) produced an empty index list - try lower values or a less strict tolerance",
+  "rpe_rotation_status": "unavailable",
+  "rpe_translation_error": "FilterException: delta = 1.0 (m) produced an empty index list - try lower values or a less strict tolerance",
+  "rpe_translation_status": "unavailable",
+  "status": "ok",
+  "valid_pose_frames": 25,
+  "valid_pose_ratio": 0.25
+}

@@ -1,0 +1,35 @@
+[
+  {
+    "ate_rmse_m_median": 0.44524836577926885,
+    "difficulty": "hard",
+    "evaluable_seed_count": 3,
+    "evaluable_segment_count": 4,
+    "mode": "rgb",
+    "rpe_rotation_deg_rmse_median": 2.4597525847696478,
+    "rpe_translation_rmse_m_median": 0.4958141330829605,
+    "segment_count": 17,
+    "trajectory": "P001"
+  },
+  {
+    "ate_rmse_m_median": null,
+    "difficulty": "hard",
+    "evaluable_seed_count": 0,
+    "evaluable_segment_count": 0,
+    "mode": "rgb_imu",
+    "rpe_rotation_deg_rmse_median": null,
+    "rpe_translation_rmse_m_median": null,
+    "segment_count": 66,
+    "trajectory": "P001"
+  },
+  {
+    "ate_rmse_m_median": 0.21062609534730736,
+    "difficulty": "hard",
+    "evaluable_seed_count": 3,
+    "evaluable_segment_count": 3,
+    "mode": "rgbd_imu",
+    "rpe_rotation_deg_rmse_median": 0.09415656517650868,
+    "rpe_translation_rmse_m_median": 0.011765563225770513,
+    "segment_count": 60,
+    "trajectory": "P001"
+  }
+]

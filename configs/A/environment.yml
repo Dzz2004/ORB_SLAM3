@@ -1,0 +1,37 @@
+name: a_orb
+channels:
+  - conda-forge
+dependencies:
+  - python=3.10
+  - pip
+  - cmake
+  - ninja
+  - make
+  - pkg-config
+  - gcc_linux-64=13
+  - gxx_linux-64=13
+  - eigen=3.4
+  - opencv=4.10
+  - boost-cpp
+  - libboost-devel
+  - glew
+  - libglu
+  - libglvnd-devel
+  - mesa-libgl-devel-conda-x86_64
+  - xorg-libx11
+  - xorg-libxext
+  - xorg-libxrender
+  - openssl
+  - numpy
+  - pandas
+  - scipy
+  - matplotlib
+  - pyyaml
+  - colorama
+  - tqdm
+  - boto3
+  - pip:
+      - evo==1.31.1
+      - pytest
+      - pyquaternion
+      - pytransform3d

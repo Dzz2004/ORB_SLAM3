@@ -1,0 +1,18 @@
+{
+  "dataset": "TartanAirV2",
+  "difficulty": "hard",
+  "environment": "OldTownSummer",
+  "error": "ValueError: common window is not single-map 0: []",
+  "evaluation_type": "common_window_dense_body_trajectory",
+  "lost_window_frames": 21,
+  "map_ids": [],
+  "mode": "rgb",
+  "seed": 2,
+  "status": "failed",
+  "trajectory": "P001",
+  "valid_pose_ratio": 0.0,
+  "valid_window_frames": 0,
+  "window_end_s": 14.9,
+  "window_frames": 21,
+  "window_start_s": 12.9
+}

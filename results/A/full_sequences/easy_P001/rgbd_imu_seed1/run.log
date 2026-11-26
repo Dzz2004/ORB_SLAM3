@@ -1,0 +1,68 @@
+COMMAND=["/media/SSD0/XCX/ORB_SLAM3_A/build/A_baselines/run_tartanair", "/media/SSD0/XCX/ORB_SLAM3_A/repos/ORB_SLAM3/Vocabulary/ORBvoc.txt", "/media/SSD0/XCX/ORB_SLAM3_A/repos/ORB_SLAM3/configs/A/tartanair.yaml", "rgbd_imu", "/media/SSD0/XCX/ORB_SLAM3_A/repos/ORB_SLAM3/results/A/full_sequences/inputs/easy_P001/manifest.csv", "/media/SSD0/XCX/ORB_SLAM3_A/repos/ORB_SLAM3/results/A/full_sequences/inputs/easy_P001/imu.csv", "/media/SSD0/XCX/ORB_SLAM3_A/repos/ORB_SLAM3/results/A/full_sequences/easy_P001/rgbd_imu_seed1", "1"]
+
+ORB-SLAM3 Copyright (C) 2017-2020 Carlos Campos, Richard Elvira, Juan J. Gómez, José M.M. Montiel and Juan D. Tardós, University of Zaragoza.
+ORB-SLAM2 Copyright (C) 2014-2016 Raúl Mur-Artal, José M.M. Montiel and Juan D. Tardós, University of Zaragoza.
+This program comes with ABSOLUTELY NO WARRANTY;
+This is free software, and you are welcome to redistribute it
+under certain conditions. See LICENSE.txt.
+
+Input sensor was set to: RGB-D-Inertial
+Loading settings from /media/SSD0/XCX/ORB_SLAM3_A/repos/ORB_SLAM3/configs/A/tartanair.yaml
+	-Loaded camera 1
+	-Loaded image info
+	-Loaded IMU calibration
+	-Loaded RGB-D calibration
+	-Loaded ORB settings
+Viewer.imageViewScale optional parameter does not exist...
+	-Loaded viewer settings
+System.LoadAtlasFromFile optional parameter does not exist...
+System.SaveAtlasToFile optional parameter does not exist...
+	-Loaded Atlas settings
+System.thFarPoints optional parameter does not exist...
+	-Loaded misc parameters
+----------------------------------
+SLAM settings:
+	-Camera 1 parameters (Pinhole): [ 320 320 320 320 ]
+	-Camera 1 distortion parameters: [  0 0 0 0 0 ]
+	-Original image size: [ 640 , 640 ]
+	-Current image size: [ 640 , 640 ]
+	-Camera 1 parameters after resize: [  320 320 320 320 ]
+	-Sequence FPS: 10
+	-Gyro noise: 0.00017
+	-Accelerometer noise: 0.002
+	-Gyro walk: 1.9e-05
+	-Accelerometer walk: 0.003
+	-IMU frequency: 100
+	-RGB-D depth map factor: 1
+	-Features per image: 1250
+	-ORB scale factor: 1.2
+	-ORB number of scales: 8
+	-Initial FAST threshold: 20
+	-Min FAST threshold: 7
+
+
+Loading ORB Vocabulary. This could take a while...
+Vocabulary loaded!
+
+Initialization of Atlas from scratch
+Creation of new map with id: 0
+Creation of new map with last KF id: 0
+Seq. Name: rgbd_imu
+There are 1 cameras in the atlas
+Camera 0 is pinhole
+not IMU meas
+not IMU meas
+First KF:0; Map init KF:0
+New Map created with 1255 points
+start VIBA 1
+end VIBA 1
+Shutdown
+
+Saving trajectory to /media/SSD0/XCX/ORB_SLAM3_A/repos/ORB_SLAM3/results/A/full_sequences/easy_P001/rgbd_imu_seed1/trajectory_orb_raw.tum ...
+There are 1 maps in the atlas
+  Map 0 has 67 KFs
+
+End of saving trajectory to /media/SSD0/XCX/ORB_SLAM3_A/repos/ORB_SLAM3/results/A/full_sequences/easy_P001/rgbd_imu_seed1/trajectory_orb_raw.tum ...
+
+Saving keyframe trajectory to /media/SSD0/XCX/ORB_SLAM3_A/repos/ORB_SLAM3/results/A/full_sequences/easy_P001/rgbd_imu_seed1/keyframe_trajectory.tum ...
+frames=100 valid_poses=98 mode=rgbd_imu seed=1

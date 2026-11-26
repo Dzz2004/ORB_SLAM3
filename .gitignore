@@ -84,6 +84,7 @@ Time*
 Table_Euroc
 Table_TUMVI_rooms/
 *.pyc
+results/**/metrics.pre_evaluator_fix.json
 *.osa
 .idea/
 my_settings.txt

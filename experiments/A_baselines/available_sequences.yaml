@@ -1,0 +1,36 @@
+dataset: TartanAirV2
+environment: OldTownSummer
+frame_count: 100
+seeds: [0, 1, 2]
+modes: [rgb, rgb_imu, rgbd_imu]
+sequences:
+  - id: easy_P000
+    difficulty: easy
+    trajectory: P000
+    start_frame: 200
+    result_root: results/A/baseline_final/easy/P000_window_200_299
+  - id: easy_P001
+    difficulty: easy
+    trajectory: P001
+    start_frame: 100
+    result_root: results/A/full_sequences/easy_P001
+  - id: easy_P002
+    difficulty: easy
+    trajectory: P002
+    start_frame: 200
+    result_root: results/A/validation/P002/easy
+  - id: hard_P000
+    difficulty: hard
+    trajectory: P000
+    start_frame: 100
+    result_root: results/A/full_sequences/hard_P000
+  - id: hard_P001
+    difficulty: hard
+    trajectory: P001
+    start_frame: 100
+    result_root: results/A/baseline_final/hard/P001_window_start100
+  - id: hard_P002
+    difficulty: hard
+    trajectory: P002
+    start_frame: 100
+    result_root: results/A/full_sequences/hard_P002

@@ -1,0 +1,4 @@
+difficulty,trajectory,mode,segment_count,evaluable_segment_count,evaluable_seed_count,ate_rmse_m_median,rpe_translation_rmse_m_median,rpe_rotation_deg_rmse_median
+hard,P001,rgb,17,4,3,0.44524836577926885,0.4958141330829605,2.4597525847696478
+hard,P001,rgb_imu,66,0,0,,,
+hard,P001,rgbd_imu,60,3,3,0.21062609534730736,0.011765563225770513,0.09415656517650868

@@ -1,0 +1,19 @@
+{
+  "alignment": "se3",
+  "ate_status": "unavailable",
+  "error": "estimated trajectory file is empty",
+  "estimated_trajectory_rows": 0,
+  "input_frames": 100,
+  "lost_events": 20,
+  "mean_latency_ms": 26.43727705,
+  "orientation_ape_status": "unavailable",
+  "p95_latency_ms": 34.09886845,
+  "plot_written": false,
+  "rpe_delta": 1.0,
+  "rpe_delta_unit": "meters",
+  "rpe_rotation_status": "unavailable",
+  "rpe_translation_status": "unavailable",
+  "status": "primary_trajectory_unavailable",
+  "valid_pose_frames": 58,
+  "valid_pose_ratio": 0.58
+}

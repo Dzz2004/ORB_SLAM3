@@ -1,0 +1,32 @@
+{
+  "command": [
+    "/media/SSD0/XCX/ORB_SLAM3_A/build/A_baselines/run_tartanair",
+    "/media/SSD0/XCX/ORB_SLAM3_A/repos/ORB_SLAM3/Vocabulary/ORBvoc.txt",
+    "/media/SSD0/XCX/ORB_SLAM3_A/repos/ORB_SLAM3/configs/A/tartanair.yaml",
+    "rgb_imu",
+    "/media/SSD0/XCX/ORB_SLAM3_A/repos/ORB_SLAM3/results/A/full_sequences/inputs/hard_P000/manifest.csv",
+    "/media/SSD0/XCX/ORB_SLAM3_A/repos/ORB_SLAM3/results/A/full_sequences/inputs/hard_P000/imu.csv",
+    "/media/SSD0/XCX/ORB_SLAM3_A/repos/ORB_SLAM3/results/A/full_sequences/hard_P000/rgb_imu_seed2",
+    "2"
+  ],
+  "cwd": "/media/SSD0/XCX/ORB_SLAM3_A/repos/ORB_SLAM3",
+  "environment": {
+    "CMAKE_PREFIX_PATH": "/media/SSD0/XCX/ORB_SLAM3_A/conda_envs/a_orb:/media/SSD0/XCX/ORB_SLAM3_A/install/pangolin",
+    "CONDA_PREFIX": "/media/SSD0/XCX/ORB_SLAM3_A/conda_envs/a_orb",
+    "CPATH": "/media/SSD0/XCX/ORB_SLAM3_A/conda_envs/a_orb/include",
+    "LD_LIBRARY_PATH": "/media/SSD0/XCX/ORB_SLAM3_A/conda_envs/a_orb/lib:/media/SSD0/XCX/ORB_SLAM3_A/conda_envs/a_orb/lib:/media/SSD0/XCX/ORB_SLAM3_A/install/pangolin/lib",
+    "TMPDIR": "/media/SSD0/XCX/ORB_SLAM3_A/tmp"
+  },
+  "finished_utc": "2026-11-26T11:41:38.867449+00:00",
+  "frame_pose_count": 25,
+  "git_commit": "2124ecfb7fdce1cbcabea9b40b219d9b6b512d05",
+  "keyframe_count": 3,
+  "mode": "rgb_imu",
+  "optimized_trajectory_source": "optimized_keyframe_body",
+  "primary_trajectory_row_count": 3,
+  "return_code": 0,
+  "seed": 2,
+  "started_utc": "2026-11-26T11:41:23.670816+00:00",
+  "status": "ok",
+  "trajectory_source": "optimized_keyframe_body"
+}

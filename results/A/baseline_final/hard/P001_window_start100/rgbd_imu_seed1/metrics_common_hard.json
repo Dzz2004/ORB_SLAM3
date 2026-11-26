@@ -1,0 +1,25 @@
+{
+  "ate_rmse_m": 1.2684659400810694,
+  "dataset": "TartanAirV2",
+  "difficulty": "hard",
+  "environment": "OldTownSummer",
+  "evaluation_type": "common_window_dense_body_trajectory",
+  "lost_window_frames": 9,
+  "map_ids": [
+    0
+  ],
+  "matched_pose_frames": 12,
+  "mode": "rgbd_imu",
+  "orientation_ape_rmse_deg": 165.75519265467324,
+  "rpe_delta_frames": 5,
+  "rpe_rotation_deg_rmse": 21.08200425858941,
+  "rpe_translation_rmse_m": 2.0454830601455356,
+  "seed": 1,
+  "status": "ok",
+  "trajectory": "P001",
+  "valid_pose_ratio": 0.5714285714285714,
+  "valid_window_frames": 12,
+  "window_end_s": 14.9,
+  "window_frames": 21,
+  "window_start_s": 12.9
+}

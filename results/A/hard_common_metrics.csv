@@ -1,0 +1,10 @@
+dataset,environment,trajectory,difficulty,mode,seed,evaluation_type,window_start_s,window_end_s,window_frames,valid_window_frames,valid_pose_ratio,lost_window_frames,map_ids,status,matched_pose_frames,ate_rmse_m,orientation_ape_rmse_deg,rpe_delta_frames,rpe_translation_rmse_m,rpe_rotation_deg_rmse,error
+TartanAirV2,OldTownSummer,P001,hard,rgb,0,common_window_dense_body_trajectory,12.9,14.9,21,10,0.47619047619047616,11,[0],ok,10,0.13680445183146495,34.056026509864274,5,0.07119595913100496,0.6472070532175906,
+TartanAirV2,OldTownSummer,P001,hard,rgb,1,common_window_dense_body_trajectory,12.9,14.9,21,21,1.0,0,[0],ok,21,0.4247714965166856,176.2642790408977,5,0.588249674440484,4.107315053905059,
+TartanAirV2,OldTownSummer,P001,hard,rgb,2,common_window_dense_body_trajectory,12.9,14.9,21,0,0.0,21,[],failed,,,,,,,ValueError: common window is not single-map 0: []
+TartanAirV2,OldTownSummer,P001,hard,rgb_imu,0,common_window_dense_body_trajectory,12.9,14.9,21,10,0.47619047619047616,11,[0],ok,10,1.4152626525105882,143.01191583704883,5,3.1730400744364085,14.451712407631,
+TartanAirV2,OldTownSummer,P001,hard,rgb_imu,1,common_window_dense_body_trajectory,12.9,14.9,21,10,0.47619047619047616,11,[0],ok,10,1.4155297089122132,143.0267703953691,5,3.173040074436405,14.451712407630996,
+TartanAirV2,OldTownSummer,P001,hard,rgb_imu,2,common_window_dense_body_trajectory,12.9,14.9,21,10,0.47619047619047616,11,[0],ok,10,1.415561169751563,143.75665878474445,5,3.1730400744364053,14.451712407631,
+TartanAirV2,OldTownSummer,P001,hard,rgbd_imu,0,common_window_dense_body_trajectory,12.9,14.9,21,12,0.5714285714285714,9,[0],ok,12,1.2585902941518812,166.16001817245606,5,2.045483060145533,21.08200425858941,
+TartanAirV2,OldTownSummer,P001,hard,rgbd_imu,1,common_window_dense_body_trajectory,12.9,14.9,21,12,0.5714285714285714,9,[0],ok,12,1.2684659400810694,165.75519265467324,5,2.0454830601455356,21.08200425858941,
+TartanAirV2,OldTownSummer,P001,hard,rgbd_imu,2,common_window_dense_body_trajectory,12.9,14.9,21,12,0.5714285714285714,9,[0],ok,12,1.2585902941518812,166.16001817245606,5,2.045483060145533,21.08200425858941,

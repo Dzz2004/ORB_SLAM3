@@ -1,0 +1,32 @@
+{
+  "command": [
+    "/media/SSD0/XCX/ORB_SLAM3_A/build/A_baselines/run_tartanair",
+    "/media/SSD0/XCX/ORB_SLAM3_A/repos/ORB_SLAM3/Vocabulary/ORBvoc.txt",
+    "/media/SSD0/XCX/ORB_SLAM3_A/repos/ORB_SLAM3/configs/A/tartanair.yaml",
+    "rgb",
+    "/media/SSD0/XCX/ORB_SLAM3_A/repos/ORB_SLAM3/results/A/inputs_final/OldTownSummer/hard/P001_start100/manifest.csv",
+    "/media/SSD0/XCX/ORB_SLAM3_A/repos/ORB_SLAM3/results/A/inputs_final/OldTownSummer/hard/P001_start100/imu.csv",
+    "/media/SSD0/XCX/ORB_SLAM3_A/repos/ORB_SLAM3/results/A/baseline_final/hard/P001_window_start100/rgb_seed1",
+    "1"
+  ],
+  "cwd": "/media/SSD0/XCX/ORB_SLAM3_A/repos/ORB_SLAM3",
+  "environment": {
+    "CMAKE_PREFIX_PATH": null,
+    "CONDA_PREFIX": null,
+    "CPATH": null,
+    "LD_LIBRARY_PATH": "/media/SSD0/XCX/ORB_SLAM3_A/conda_envs/a_orb/lib:",
+    "TMPDIR": null
+  },
+  "finished_utc": "2026-11-26T09:26:47.756011+00:00",
+  "frame_pose_count": 62,
+  "git_commit": "8698581cddc5b4907153c9cfcd267d7b09615521",
+  "keyframe_count": 8,
+  "mode": "rgb",
+  "optimized_trajectory_source": "optimized_keyframe_body",
+  "primary_trajectory_row_count": 8,
+  "return_code": 0,
+  "seed": 1,
+  "started_utc": "2026-11-26T09:26:31.610286+00:00",
+  "status": "ok",
+  "trajectory_source": "optimized_keyframe_body"
+}

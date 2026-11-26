@@ -1,0 +1,38 @@
+B sampled groups (per-run population: 200 runs)
+  OK  office_easy_p004 gaussian_blur L1 MONOCULAR: runs=3 
+  OK  office_easy_p004 gaussian_blur L3 IMU_MONOCULAR: runs=3 
+  OK  office_easy_p004 gaussian_blur L4 IMU_RGBD: runs=3 
+  OK  office_easy_p004 motion_blur L0 IMU_RGBD: runs=3 
+  OK  office_easy_p004 motion_blur L2 MONOCULAR: runs=3 
+  OK  office_easy_p004 motion_blur L4 IMU_MONOCULAR: runs=3 
+  OK  office_easy_p004 brightness_contrast L1 IMU_RGBD: runs=3 
+  OK  office_easy_p004 brightness_contrast L2 IMU_MONOCULAR: runs=3 
+  OK  office_easy_p004 brightness_contrast L4 MONOCULAR: runs=3 
+  OK  office_easy_p004 occlusion L1 MONOCULAR: runs=3 
+  OK  office_easy_p004 occlusion L3 IMU_RGBD: runs=3 
+  OK  office_easy_p004 occlusion L4 IMU_MONOCULAR: runs=3 
+  OK  office_easy_p004 texture_erase L0 MONOCULAR: runs=3 
+  OK  office_easy_p004 texture_erase L2 IMU_MONOCULAR: runs=3 
+  OK  office_easy_p004 texture_erase L4 MONOCULAR: runs=3 
+  OK  office_hard_p004 gaussian_blur L0 IMU_RGBD: runs=1 
+  OK  office_hard_p004 motion_blur L2 IMU_RGBD: runs=1 
+  OK  office_hard_p004 brightness_contrast L0 MONOCULAR: runs=3 
+  OK  office_hard_p004 occlusion L0 MONOCULAR: runs=3 
+  OK  office_hard_p004 texture_erase L0 IMU_MONOCULAR: runs=3 
+
+C sampled groups (per-run population: 162 runs)
+  OK  office_easy_p004 invalid_pixels P20 RGBD: runs=3 
+  OK  office_easy_p004 invalid_pixels P80 RGBD: runs=3 
+  OK  office_hard_p004 invalid_pixels P50 IMU_RGBD: runs=3 
+  OK  office_easy_p004 depth_noise N2 IMU_RGBD: runs=3 
+  OK  office_easy_p004 depth_noise N4 RGBD: runs=3 
+  OK  office_hard_p004 depth_noise N4 RGBD: runs=3 
+  OK  office_easy_p004 outage O05 RGBD: runs=3 
+  OK  office_easy_p004 outage O20 RGBD: runs=3 
+  OK  office_hard_p004 outage O10 IMU_RGBD: runs=3 
+  OK  office_easy_p004 depth_off ALL RGBD: runs=3 
+  OK  office_easy_p004 depth_off ALL IMU_RGBD: runs=3 
+  OK  office_hard_p004 depth_off ALL IMU_RGBD: runs=3 
+
+PROBLEMS: 0
+total sampled: B 20 + C 12 groups

@@ -1,0 +1,19 @@
+# C 干跑用小矩阵：hard × (clean, P50, N3, O10, depth_off) × 种子 0 × (RGBD, IMU_RGBD) + clean IMU_MONOCULAR = 11 次运行
+# 用于在正式开跑前确认 run_matrix → evaluate → aggregate 全链路，以及 frame_epoch 分段
+name: C_smoke
+task: C
+fault_config: configs/C_depth.yaml
+out_dir: results/C/runs_smoke
+sequences: [office_hard_p004]
+seeds: [0]
+modes: [RGBD, IMU_RGBD]
+include_clean: true
+clean_modes: [IMU_MONOCULAR]
+faults:
+  invalid_pixels: [P50]
+  depth_noise: [N3]
+  outage: [O10]
+  depth_off: [ALL]
+run_timeout_s: 1800
+runner_args: []
+evaluate_args: ["--recover-err", "0.5"]   # B/C 统一恢复判据（PROJECT_PLAN 3.2 第 5 条）

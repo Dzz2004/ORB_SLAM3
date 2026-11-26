@@ -1,0 +1,2 @@
+checked 481 numbers/claims, 1 mismatches
+MISMATCH 6.4 'hard baseline lost 146-151' as no-fault clean IMU_RGBD: got={'RGBD': [30, 29, 32], 'IMU_RGBD': [149, 148, 152]} expected=146..151

@@ -1,0 +1,54 @@
+# C 深度退化：depth_corrupt.py 的故障与强度参数
+# 无效深度按 ORB-SLAM3 约定置 0（Frame::ComputeStereoFromRGBD 只用 d > 0 的像素）。
+# depth PNG 为 16 位，米 = raw / depth_scale。depth_scale 优先级：
+#   命令行 --depth-scale > 本文件 depth_scale（非 null）> 序列 calib*.yaml 里的 RGBD.DepthMapFactor
+# 随机量只由 (seed, 故障名, 帧号) 决定。
+version: C_depth_v2
+seeds: [0, 1, 2]
+depth_scale: null
+png_compression: 3
+
+faults:
+  invalid_pixels:
+    type: invalid_pixels
+    # ratio = 在“原本有效”的像素中置 0 的比例；pattern: pixel（逐像素独立）| block（block_px 方块）
+    pattern: pixel
+    block_px: 8
+    levels:
+      P00: {ratio: 0.0}
+      P20: {ratio: 0.2}
+      P50: {ratio: 0.5}
+      P80: {ratio: 0.8}
+
+  depth_noise:
+    type: gaussian_noise
+    # 相对噪声：每个有效像素 z' = z + N(0, (rel_sigma * z)^2)，
+    # 逐像素、逐帧独立；作图横轴直接用 rel_sigma（r）。
+    # 也支持 model: quadratic（sigma = sigma0_m + k_quad * z^2，旧方案，已弃用）。
+    model: relative
+    # 加噪后 <= 0 的值置 0（视为无效）；max_depth_m 非 null 时超过它的也置 0。
+    # 默认 null：TartanAir office 序列约 1.4-1.8% 的有效像素在 40-65.5 m（远处背景），
+    # 若设上限会让“噪声”实验同时改变有效像素比例，混淆两个变量。超出 uint16 的值截断到 65535。
+    max_depth_m: null
+    levels:
+      N1: {rel_sigma: 0.01}
+      N2: {rel_sigma: 0.02}
+      N3: {rel_sigma: 0.05}
+      N4: {rel_sigma: 0.10}
+
+  outage:
+    type: outage
+    # 整帧深度全部置 0，持续 duration_s；start_s 为相对首帧的开始时间
+    # RGB 照常保留，用于“深度失效但图像仍在”的对照
+    start_s: 10.0
+    levels:
+      O05: {duration_s: 0.5}
+      O10: {duration_s: 1.0}
+      O20: {duration_s: 2.0}
+
+  depth_off:
+    type: outage
+    # 整条序列深度全部置 0（RGB 保留），用于检验官方 RGB-D(+IMU) 是否能初始化
+    start_s: 0.0
+    levels:
+      ALL: {duration_s: null}

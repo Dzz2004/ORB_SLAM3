@@ -1,0 +1,326 @@
+== 1. 评测口径 (each metrics.json must be final caliber)
+runs with metrics.json: 447   final caliber: 422   stale: 0   status-only: 0   <3 poses: 25   missing: 0
+  NO-SEGMENT results/B/runs/office_easy_p004__gaussian_blur_L4_s0__IMU_MONOCULAR status=init_failed n_paired=0
+  NO-SEGMENT results/B/runs/office_easy_p004__gaussian_blur_L4_s0__MONOCULAR status=init_failed n_paired=0
+  NO-SEGMENT results/B/runs/office_easy_p004__gaussian_blur_L4_s1__IMU_MONOCULAR status=init_failed n_paired=0
+  NO-SEGMENT results/B/runs/office_easy_p004__gaussian_blur_L4_s1__MONOCULAR status=init_failed n_paired=0
+  NO-SEGMENT results/B/runs/office_easy_p004__gaussian_blur_L4_s2__IMU_MONOCULAR status=init_failed n_paired=0
+  NO-SEGMENT results/B/runs/office_easy_p004__gaussian_blur_L4_s2__MONOCULAR status=init_failed n_paired=0
+  NO-SEGMENT results/B/runs/office_easy_p004__motion_blur_L4_s1__IMU_MONOCULAR status=ok n_paired=2
+  NO-SEGMENT results/B/runs/office_hard_p004__gaussian_blur_L4_s0__IMU_MONOCULAR status=init_failed n_paired=0
+  NO-SEGMENT results/B/runs/office_hard_p004__gaussian_blur_L4_s0__MONOCULAR status=init_failed n_paired=0
+  NO-SEGMENT results/B/runs/office_hard_p004__gaussian_blur_L4_s1__IMU_MONOCULAR status=init_failed n_paired=0
+  NO-SEGMENT results/B/runs/office_hard_p004__gaussian_blur_L4_s1__MONOCULAR status=init_failed n_paired=0
+  NO-SEGMENT results/B/runs/office_hard_p004__gaussian_blur_L4_s2__IMU_MONOCULAR status=init_failed n_paired=0
+  NO-SEGMENT results/B/runs/office_hard_p004__gaussian_blur_L4_s2__MONOCULAR status=init_failed n_paired=0
+  NO-SEGMENT results/C/runs/office_easy_p004__depth_off_ALL_s0__IMU_RGBD status=init_failed n_paired=0
+  NO-SEGMENT results/C/runs/office_easy_p004__depth_off_ALL_s0__RGBD status=init_failed n_paired=0
+  NO-SEGMENT results/C/runs/office_easy_p004__depth_off_ALL_s1__IMU_RGBD status=init_failed n_paired=0
+  NO-SEGMENT results/C/runs/office_easy_p004__depth_off_ALL_s1__RGBD status=init_failed n_paired=0
+  NO-SEGMENT results/C/runs/office_easy_p004__depth_off_ALL_s2__IMU_RGBD status=init_failed n_paired=0
+  NO-SEGMENT results/C/runs/office_easy_p004__depth_off_ALL_s2__RGBD status=init_failed n_paired=0
+  NO-SEGMENT results/C/runs/office_hard_p004__depth_off_ALL_s0__IMU_RGBD status=init_failed n_paired=0
+  NO-SEGMENT results/C/runs/office_hard_p004__depth_off_ALL_s0__RGBD status=init_failed n_paired=0
+  NO-SEGMENT results/C/runs/office_hard_p004__depth_off_ALL_s1__IMU_RGBD status=init_failed n_paired=0
+  NO-SEGMENT results/C/runs/office_hard_p004__depth_off_ALL_s1__RGBD status=init_failed n_paired=0
+  NO-SEGMENT results/C/runs/office_hard_p004__depth_off_ALL_s2__IMU_RGBD status=init_failed n_paired=0
+  NO-SEGMENT results/C/runs/office_hard_p004__depth_off_ALL_s2__RGBD status=init_failed n_paired=0
+
+== 2. per-run CSV vs metrics.json
+results/B/visual_stress_runs.csv: 285 rows, 285 runs
+  checked vs metrics: 285   mismatched: 0   run dirs not in CSV: 0   CSV rows without a run dir: 0
+results/C/depth_ablation_runs.csv: 162 rows, 162 runs
+  checked vs metrics: 162   mismatched: 0   run dirs not in CSV: 0   CSV rows without a run dir: 0
+
+== 3. anomalous runs
+status counts: {'init_failed': 24, 'ok': 421, 'run_failed': 2}
+  results/B/runs/office_easy_p004__brightness_contrast_L1_s0__IMU_RGBD: loop_final_ate=7.67
+  results/B/runs/office_easy_p004__brightness_contrast_L2_s2__MONOCULAR: n_unrecovered=1
+  results/B/runs/office_easy_p004__brightness_contrast_L3_s1__MONOCULAR: n_unrecovered=1
+  results/B/runs/office_easy_p004__brightness_contrast_L4_s0__IMU_MONOCULAR: n_unrecovered=1
+  results/B/runs/office_easy_p004__brightness_contrast_L4_s1__IMU_MONOCULAR: n_unrecovered=2
+  results/B/runs/office_easy_p004__brightness_contrast_L4_s2__IMU_MONOCULAR: n_unrecovered=3
+  results/B/runs/office_easy_p004__brightness_contrast_L4_s2__MONOCULAR: n_unrecovered=2
+  results/B/runs/office_easy_p004__gaussian_blur_L1_s2__IMU_MONOCULAR: n_unrecovered=1
+  results/B/runs/office_easy_p004__gaussian_blur_L1_s2__IMU_RGBD: loop_final_ate=4.11
+  results/B/runs/office_easy_p004__gaussian_blur_L3_s0__IMU_MONOCULAR: n_unrecovered=1
+  results/B/runs/office_easy_p004__gaussian_blur_L3_s0__MONOCULAR: n_unrecovered=1
+  results/B/runs/office_easy_p004__gaussian_blur_L3_s1__IMU_MONOCULAR: n_unrecovered=1
+  results/B/runs/office_easy_p004__gaussian_blur_L3_s1__MONOCULAR: n_unrecovered=1
+  results/B/runs/office_easy_p004__gaussian_blur_L3_s2__IMU_MONOCULAR: n_unrecovered=1
+  results/B/runs/office_easy_p004__gaussian_blur_L3_s2__MONOCULAR: n_unrecovered=1
+  results/B/runs/office_easy_p004__gaussian_blur_L4_s0__IMU_MONOCULAR: status=init_failed
+  results/B/runs/office_easy_p004__gaussian_blur_L4_s0__IMU_RGBD: n_unrecovered=2
+  results/B/runs/office_easy_p004__gaussian_blur_L4_s0__MONOCULAR: status=init_failed
+  results/B/runs/office_easy_p004__gaussian_blur_L4_s1__IMU_MONOCULAR: status=init_failed
+  results/B/runs/office_easy_p004__gaussian_blur_L4_s1__IMU_RGBD: n_unrecovered=2
+  results/B/runs/office_easy_p004__gaussian_blur_L4_s1__MONOCULAR: status=init_failed
+  results/B/runs/office_easy_p004__gaussian_blur_L4_s2__IMU_MONOCULAR: status=init_failed
+  results/B/runs/office_easy_p004__gaussian_blur_L4_s2__IMU_RGBD: n_unrecovered=2
+  results/B/runs/office_easy_p004__gaussian_blur_L4_s2__MONOCULAR: status=init_failed
+  results/B/runs/office_easy_p004__motion_blur_L1_s2__IMU_RGBD: loop_final_ate=7.89
+  results/B/runs/office_easy_p004__motion_blur_L1_s2__MONOCULAR: loop_final_ate=1.05
+  results/B/runs/office_easy_p004__motion_blur_L2_s0__MONOCULAR: n_unrecovered=1
+  results/B/runs/office_easy_p004__motion_blur_L3_s0__IMU_MONOCULAR: n_unrecovered=2
+  results/B/runs/office_easy_p004__motion_blur_L3_s0__MONOCULAR: n_unrecovered=1
+  results/B/runs/office_easy_p004__motion_blur_L3_s1__IMU_MONOCULAR: n_unrecovered=1
+  results/B/runs/office_easy_p004__motion_blur_L3_s2__IMU_MONOCULAR: n_unrecovered=1
+  results/B/runs/office_easy_p004__motion_blur_L3_s2__MONOCULAR: n_unrecovered=1
+  results/B/runs/office_easy_p004__motion_blur_L4_s0__IMU_MONOCULAR: n_unrecovered=5
+  results/B/runs/office_easy_p004__motion_blur_L4_s0__MONOCULAR: n_unrecovered=1
+  results/B/runs/office_easy_p004__motion_blur_L4_s1__IMU_MONOCULAR: n_unrecovered=1
+  results/B/runs/office_easy_p004__motion_blur_L4_s1__MONOCULAR: n_unrecovered=1
+  results/B/runs/office_easy_p004__motion_blur_L4_s2__IMU_MONOCULAR: n_unrecovered=2
+  results/B/runs/office_easy_p004__motion_blur_L4_s2__MONOCULAR: ate_online=1.487, n_unrecovered=1
+  results/B/runs/office_easy_p004__occlusion_L2_s2__IMU_MONOCULAR: n_unrecovered=2
+  results/B/runs/office_easy_p004__occlusion_L3_s0__IMU_MONOCULAR: n_unrecovered=2
+  results/B/runs/office_easy_p004__occlusion_L3_s0__MONOCULAR: n_unrecovered=1
+  results/B/runs/office_easy_p004__occlusion_L3_s1__IMU_MONOCULAR: n_unrecovered=1
+  results/B/runs/office_easy_p004__occlusion_L3_s1__MONOCULAR: n_unrecovered=1
+  results/B/runs/office_easy_p004__occlusion_L3_s2__IMU_MONOCULAR: n_unrecovered=3
+  results/B/runs/office_easy_p004__occlusion_L3_s2__MONOCULAR: n_unrecovered=1
+  results/B/runs/office_easy_p004__occlusion_L4_s0__IMU_MONOCULAR: n_unrecovered=1
+  results/B/runs/office_easy_p004__occlusion_L4_s0__IMU_RGBD: loop_final_ate=3.60
+  results/B/runs/office_easy_p004__occlusion_L4_s0__MONOCULAR: n_unrecovered=1
+  results/B/runs/office_easy_p004__occlusion_L4_s1__IMU_MONOCULAR: n_unrecovered=1
+  results/B/runs/office_easy_p004__occlusion_L4_s1__MONOCULAR: n_unrecovered=1
+  results/B/runs/office_easy_p004__occlusion_L4_s2__IMU_MONOCULAR: n_unrecovered=2
+  results/B/runs/office_easy_p004__occlusion_L4_s2__IMU_RGBD: loop_final_ate=4.50
+  results/B/runs/office_easy_p004__texture_erase_L1_s0__MONOCULAR: n_unrecovered=1
+  results/B/runs/office_easy_p004__texture_erase_L2_s2__MONOCULAR: n_unrecovered=1
+  results/B/runs/office_easy_p004__texture_erase_L3_s0__MONOCULAR: n_unrecovered=2
+  results/B/runs/office_easy_p004__texture_erase_L3_s1__IMU_MONOCULAR: n_unrecovered=1
+  results/B/runs/office_easy_p004__texture_erase_L3_s2__IMU_MONOCULAR: n_unrecovered=2
+  results/B/runs/office_easy_p004__texture_erase_L3_s2__MONOCULAR: n_unrecovered=1
+  results/B/runs/office_easy_p004__texture_erase_L4_s1__IMU_MONOCULAR: n_unrecovered=3
+  results/B/runs/office_easy_p004__texture_erase_L4_s2__IMU_MONOCULAR: n_unrecovered=8
+  results/B/runs/office_hard_p004__brightness_contrast_L1_s0__IMU_MONOCULAR: n_unrecovered=4
+  results/B/runs/office_hard_p004__brightness_contrast_L1_s0__IMU_RGBD: n_unrecovered=4
+  results/B/runs/office_hard_p004__brightness_contrast_L1_s0__MONOCULAR: n_unrecovered=1
+  results/B/runs/office_hard_p004__brightness_contrast_L1_s1__IMU_MONOCULAR: n_unrecovered=6
+  results/B/runs/office_hard_p004__brightness_contrast_L1_s1__IMU_RGBD: n_unrecovered=5
+  results/B/runs/office_hard_p004__brightness_contrast_L1_s1__MONOCULAR: n_unrecovered=1
+  results/B/runs/office_hard_p004__brightness_contrast_L1_s2__IMU_MONOCULAR: n_unrecovered=5
+  results/B/runs/office_hard_p004__brightness_contrast_L1_s2__IMU_RGBD: n_unrecovered=5
+  results/B/runs/office_hard_p004__brightness_contrast_L1_s2__MONOCULAR: n_unrecovered=1
+  results/B/runs/office_hard_p004__brightness_contrast_L2_s0__IMU_MONOCULAR: n_unrecovered=4
+  results/B/runs/office_hard_p004__brightness_contrast_L2_s0__IMU_RGBD: n_unrecovered=4
+  results/B/runs/office_hard_p004__brightness_contrast_L2_s0__MONOCULAR: n_unrecovered=1
+  results/B/runs/office_hard_p004__clean_s0__IMU_MONOCULAR: n_unrecovered=8
+  results/B/runs/office_hard_p004__clean_s0__IMU_RGBD: n_unrecovered=5
+  results/B/runs/office_hard_p004__clean_s0__MONOCULAR: n_unrecovered=1
+  results/B/runs/office_hard_p004__clean_s1__IMU_MONOCULAR: n_unrecovered=7
+  results/B/runs/office_hard_p004__clean_s1__IMU_RGBD: n_unrecovered=4
+  results/B/runs/office_hard_p004__clean_s1__MONOCULAR: n_unrecovered=1
+  results/B/runs/office_hard_p004__clean_s2__IMU_MONOCULAR: n_unrecovered=6
+  results/B/runs/office_hard_p004__clean_s2__IMU_RGBD: n_unrecovered=5
+  results/B/runs/office_hard_p004__clean_s2__MONOCULAR: n_unrecovered=1
+  results/B/runs/office_hard_p004__gaussian_blur_L1_s0__IMU_MONOCULAR: n_unrecovered=4
+  results/B/runs/office_hard_p004__gaussian_blur_L1_s0__IMU_RGBD: n_unrecovered=4
+  results/B/runs/office_hard_p004__gaussian_blur_L1_s0__MONOCULAR: n_unrecovered=1
+  results/B/runs/office_hard_p004__gaussian_blur_L1_s1__IMU_MONOCULAR: n_unrecovered=4
+  results/B/runs/office_hard_p004__gaussian_blur_L1_s1__IMU_RGBD: n_unrecovered=4
+  results/B/runs/office_hard_p004__gaussian_blur_L1_s1__MONOCULAR: n_unrecovered=1
+  results/B/runs/office_hard_p004__gaussian_blur_L1_s2__IMU_MONOCULAR: n_unrecovered=4
+  results/B/runs/office_hard_p004__gaussian_blur_L1_s2__IMU_RGBD: n_unrecovered=5
+  results/B/runs/office_hard_p004__gaussian_blur_L1_s2__MONOCULAR: n_unrecovered=1
+  results/B/runs/office_hard_p004__gaussian_blur_L2_s0__IMU_MONOCULAR: n_unrecovered=2
+  results/B/runs/office_hard_p004__gaussian_blur_L2_s0__IMU_RGBD: n_unrecovered=3
+  results/B/runs/office_hard_p004__gaussian_blur_L2_s0__MONOCULAR: n_unrecovered=1
+  results/B/runs/office_hard_p004__gaussian_blur_L2_s1__IMU_MONOCULAR: n_unrecovered=1
+  results/B/runs/office_hard_p004__gaussian_blur_L2_s1__IMU_RGBD: n_unrecovered=3
+  results/B/runs/office_hard_p004__gaussian_blur_L2_s1__MONOCULAR: n_unrecovered=1
+  results/B/runs/office_hard_p004__gaussian_blur_L2_s2__IMU_MONOCULAR: n_unrecovered=2
+  results/B/runs/office_hard_p004__gaussian_blur_L2_s2__IMU_RGBD: n_unrecovered=3
+  results/B/runs/office_hard_p004__gaussian_blur_L2_s2__MONOCULAR: n_unrecovered=1
+  results/B/runs/office_hard_p004__gaussian_blur_L3_s0__IMU_MONOCULAR: n_unrecovered=2
+  results/B/runs/office_hard_p004__gaussian_blur_L3_s0__IMU_RGBD: n_unrecovered=3
+  results/B/runs/office_hard_p004__gaussian_blur_L3_s0__MONOCULAR: n_unrecovered=1
+  results/B/runs/office_hard_p004__gaussian_blur_L3_s1__IMU_MONOCULAR: n_unrecovered=2
+  results/B/runs/office_hard_p004__gaussian_blur_L3_s1__IMU_RGBD: n_unrecovered=3
+  results/B/runs/office_hard_p004__gaussian_blur_L3_s1__MONOCULAR: n_unrecovered=1
+  results/B/runs/office_hard_p004__gaussian_blur_L3_s2__IMU_MONOCULAR: n_unrecovered=2
+  results/B/runs/office_hard_p004__gaussian_blur_L3_s2__IMU_RGBD: n_unrecovered=4
+  results/B/runs/office_hard_p004__gaussian_blur_L3_s2__MONOCULAR: n_unrecovered=1
+  results/B/runs/office_hard_p004__gaussian_blur_L4_s0__IMU_MONOCULAR: status=init_failed
+  results/B/runs/office_hard_p004__gaussian_blur_L4_s0__IMU_RGBD: n_unrecovered=1
+  results/B/runs/office_hard_p004__gaussian_blur_L4_s0__MONOCULAR: status=init_failed
+  results/B/runs/office_hard_p004__gaussian_blur_L4_s1__IMU_MONOCULAR: status=init_failed
+  results/B/runs/office_hard_p004__gaussian_blur_L4_s1__IMU_RGBD: n_unrecovered=1
+  results/B/runs/office_hard_p004__gaussian_blur_L4_s1__MONOCULAR: status=init_failed
+  results/B/runs/office_hard_p004__gaussian_blur_L4_s2__IMU_MONOCULAR: status=init_failed
+  results/B/runs/office_hard_p004__gaussian_blur_L4_s2__IMU_RGBD: n_unrecovered=1
+  results/B/runs/office_hard_p004__gaussian_blur_L4_s2__MONOCULAR: status=init_failed
+  results/B/runs/office_hard_p004__motion_blur_L1_s0__IMU_MONOCULAR: n_unrecovered=8
+  results/B/runs/office_hard_p004__motion_blur_L1_s0__IMU_RGBD: n_unrecovered=5
+  results/B/runs/office_hard_p004__motion_blur_L1_s0__MONOCULAR: n_unrecovered=1
+  results/B/runs/office_hard_p004__motion_blur_L1_s1__IMU_MONOCULAR: n_unrecovered=5
+  results/B/runs/office_hard_p004__motion_blur_L1_s1__IMU_RGBD: n_unrecovered=4
+  results/B/runs/office_hard_p004__motion_blur_L1_s1__MONOCULAR: ate_online=1.906, n_unrecovered=1
+  results/B/runs/office_hard_p004__motion_blur_L1_s2__IMU_MONOCULAR: n_unrecovered=4
+  results/B/runs/office_hard_p004__motion_blur_L1_s2__IMU_RGBD: n_unrecovered=4
+  results/B/runs/office_hard_p004__motion_blur_L1_s2__MONOCULAR: n_unrecovered=5
+  results/B/runs/office_hard_p004__motion_blur_L2_s0__IMU_MONOCULAR: n_unrecovered=6
+  results/B/runs/office_hard_p004__motion_blur_L2_s0__IMU_RGBD: n_unrecovered=3
+  results/B/runs/office_hard_p004__motion_blur_L2_s0__MONOCULAR: n_unrecovered=1
+  results/B/runs/office_hard_p004__motion_blur_L2_s1__IMU_MONOCULAR: n_unrecovered=5
+  results/B/runs/office_hard_p004__motion_blur_L2_s1__IMU_RGBD: n_unrecovered=3
+  results/B/runs/office_hard_p004__motion_blur_L2_s1__MONOCULAR: n_unrecovered=1
+  results/B/runs/office_hard_p004__motion_blur_L2_s2__IMU_MONOCULAR: n_unrecovered=3
+  results/B/runs/office_hard_p004__motion_blur_L2_s2__IMU_RGBD: n_unrecovered=5
+  results/B/runs/office_hard_p004__motion_blur_L2_s2__MONOCULAR: n_unrecovered=1
+  results/B/runs/office_hard_p004__motion_blur_L3_s0__IMU_MONOCULAR: n_unrecovered=11
+  results/B/runs/office_hard_p004__motion_blur_L3_s0__IMU_RGBD: n_unrecovered=1
+  results/B/runs/office_hard_p004__motion_blur_L3_s0__MONOCULAR: n_unrecovered=2
+  results/B/runs/office_hard_p004__motion_blur_L3_s1__IMU_MONOCULAR: n_unrecovered=2
+  results/B/runs/office_hard_p004__motion_blur_L3_s1__IMU_RGBD: n_unrecovered=1
+  results/B/runs/office_hard_p004__motion_blur_L3_s1__MONOCULAR: n_unrecovered=1
+  results/B/runs/office_hard_p004__motion_blur_L3_s2__IMU_MONOCULAR: n_unrecovered=7
+  results/B/runs/office_hard_p004__motion_blur_L3_s2__IMU_RGBD: n_unrecovered=3
+  results/B/runs/office_hard_p004__motion_blur_L3_s2__MONOCULAR: n_unrecovered=1
+  results/B/runs/office_hard_p004__motion_blur_L4_s0__IMU_MONOCULAR: n_unrecovered=2
+  results/B/runs/office_hard_p004__motion_blur_L4_s0__IMU_RGBD: n_unrecovered=6
+  results/B/runs/office_hard_p004__motion_blur_L4_s0__MONOCULAR: n_unrecovered=1
+  results/B/runs/office_hard_p004__motion_blur_L4_s1__IMU_MONOCULAR: n_unrecovered=3
+  results/B/runs/office_hard_p004__motion_blur_L4_s1__IMU_RGBD: n_unrecovered=2
+  results/B/runs/office_hard_p004__motion_blur_L4_s1__MONOCULAR: n_unrecovered=2
+  results/B/runs/office_hard_p004__motion_blur_L4_s2__IMU_MONOCULAR: n_unrecovered=1
+  results/B/runs/office_hard_p004__motion_blur_L4_s2__IMU_RGBD: n_unrecovered=10
+  results/B/runs/office_hard_p004__motion_blur_L4_s2__MONOCULAR: n_unrecovered=2
+  results/B/runs/office_hard_p004__occlusion_L2_s0__IMU_MONOCULAR: n_unrecovered=5
+  results/B/runs/office_hard_p004__occlusion_L2_s0__IMU_RGBD: n_unrecovered=5
+  results/B/runs/office_hard_p004__occlusion_L2_s0__MONOCULAR: n_unrecovered=1
+  results/C/runs/office_easy_p004__clean_s0__IMU_MONOCULAR: loop_final_ate=6.24
+  results/C/runs/office_easy_p004__depth_noise_N1_s0__IMU_RGBD: loop_final_ate=7.76
+  results/C/runs/office_easy_p004__depth_noise_N1_s2__IMU_RGBD: loop_final_ate=8.02
+  results/C/runs/office_easy_p004__depth_noise_N2_s0__IMU_RGBD: loop_final_ate=7.74
+  results/C/runs/office_easy_p004__depth_off_ALL_s0__IMU_RGBD: status=init_failed, n_ok_but_empty=403
+  results/C/runs/office_easy_p004__depth_off_ALL_s0__RGBD: status=init_failed, n_ok_but_empty=609
+  results/C/runs/office_easy_p004__depth_off_ALL_s1__IMU_RGBD: status=init_failed, n_ok_but_empty=403
+  results/C/runs/office_easy_p004__depth_off_ALL_s1__RGBD: status=init_failed, n_ok_but_empty=609
+  results/C/runs/office_easy_p004__depth_off_ALL_s2__IMU_RGBD: status=init_failed, n_ok_but_empty=403
+  results/C/runs/office_easy_p004__depth_off_ALL_s2__RGBD: status=init_failed, n_ok_but_empty=609
+  results/C/runs/office_easy_p004__invalid_pixels_P00_s0__IMU_RGBD: loop_final_ate=7.50
+  results/C/runs/office_easy_p004__invalid_pixels_P00_s1__IMU_RGBD: loop_final_ate=7.96
+  results/C/runs/office_easy_p004__invalid_pixels_P00_s2__IMU_RGBD: loop_final_ate=7.90
+  results/C/runs/office_easy_p004__invalid_pixels_P20_s2__RGBD: status=run_failed
+  results/C/runs/office_easy_p004__invalid_pixels_P80_s2__RGBD: status=run_failed
+  results/C/runs/office_easy_p004__outage_O05_s1__IMU_RGBD: loop_final_ate=8.04
+  results/C/runs/office_easy_p004__outage_O10_s2__IMU_RGBD: loop_final_ate=7.36
+  results/C/runs/office_hard_p004__clean_s0__IMU_MONOCULAR: n_unrecovered=1
+  results/C/runs/office_hard_p004__clean_s0__IMU_RGBD: n_unrecovered=5
+  results/C/runs/office_hard_p004__clean_s0__RGBD: n_unrecovered=1
+  results/C/runs/office_hard_p004__clean_s1__IMU_MONOCULAR: n_unrecovered=4
+  results/C/runs/office_hard_p004__clean_s1__IMU_RGBD: n_unrecovered=5
+  results/C/runs/office_hard_p004__clean_s1__RGBD: n_unrecovered=2
+  results/C/runs/office_hard_p004__clean_s2__IMU_MONOCULAR: n_unrecovered=9
+  results/C/runs/office_hard_p004__clean_s2__IMU_RGBD: n_unrecovered=4
+  results/C/runs/office_hard_p004__clean_s2__RGBD: n_unrecovered=1
+  results/C/runs/office_hard_p004__depth_noise_N1_s0__IMU_RGBD: n_unrecovered=5
+  results/C/runs/office_hard_p004__depth_noise_N1_s0__RGBD: n_unrecovered=1
+  results/C/runs/office_hard_p004__depth_noise_N1_s1__IMU_RGBD: n_unrecovered=5
+  results/C/runs/office_hard_p004__depth_noise_N1_s1__RGBD: n_unrecovered=1
+  results/C/runs/office_hard_p004__depth_noise_N1_s2__IMU_RGBD: n_unrecovered=5
+  results/C/runs/office_hard_p004__depth_noise_N1_s2__RGBD: n_unrecovered=1
+  results/C/runs/office_hard_p004__depth_noise_N2_s0__IMU_RGBD: n_unrecovered=5
+  results/C/runs/office_hard_p004__depth_noise_N2_s0__RGBD: n_unrecovered=1
+  results/C/runs/office_hard_p004__depth_noise_N2_s1__IMU_RGBD: n_unrecovered=5
+  results/C/runs/office_hard_p004__depth_noise_N2_s1__RGBD: n_unrecovered=4
+  results/C/runs/office_hard_p004__depth_noise_N2_s2__IMU_RGBD: n_unrecovered=4
+  results/C/runs/office_hard_p004__depth_noise_N2_s2__RGBD: n_unrecovered=1
+  results/C/runs/office_hard_p004__depth_noise_N3_s0__IMU_RGBD: n_unrecovered=5
+  results/C/runs/office_hard_p004__depth_noise_N3_s0__RGBD: n_unrecovered=1
+  results/C/runs/office_hard_p004__depth_noise_N3_s1__IMU_RGBD: n_unrecovered=5
+  results/C/runs/office_hard_p004__depth_noise_N3_s1__RGBD: n_unrecovered=4
+  results/C/runs/office_hard_p004__depth_noise_N3_s2__IMU_RGBD: n_unrecovered=4
+  results/C/runs/office_hard_p004__depth_noise_N3_s2__RGBD: n_unrecovered=1
+  results/C/runs/office_hard_p004__depth_noise_N4_s0__IMU_RGBD: n_unrecovered=4
+  results/C/runs/office_hard_p004__depth_noise_N4_s0__RGBD: n_unrecovered=1
+  results/C/runs/office_hard_p004__depth_noise_N4_s1__IMU_RGBD: n_unrecovered=5
+  results/C/runs/office_hard_p004__depth_noise_N4_s1__RGBD: n_unrecovered=1
+  results/C/runs/office_hard_p004__depth_noise_N4_s2__IMU_RGBD: n_unrecovered=5
+  results/C/runs/office_hard_p004__depth_noise_N4_s2__RGBD: n_unrecovered=1
+  results/C/runs/office_hard_p004__depth_off_ALL_s0__IMU_RGBD: status=init_failed, n_ok_but_empty=271
+  results/C/runs/office_hard_p004__depth_off_ALL_s0__RGBD: status=init_failed, n_ok_but_empty=408
+  results/C/runs/office_hard_p004__depth_off_ALL_s1__IMU_RGBD: status=init_failed, n_ok_but_empty=271
+  results/C/runs/office_hard_p004__depth_off_ALL_s1__RGBD: status=init_failed, n_ok_but_empty=408
+  results/C/runs/office_hard_p004__depth_off_ALL_s2__IMU_RGBD: status=init_failed, n_ok_but_empty=271
+  results/C/runs/office_hard_p004__depth_off_ALL_s2__RGBD: status=init_failed, n_ok_but_empty=408
+  results/C/runs/office_hard_p004__invalid_pixels_P00_s0__IMU_RGBD: n_unrecovered=5
+  results/C/runs/office_hard_p004__invalid_pixels_P00_s0__RGBD: n_unrecovered=2
+  results/C/runs/office_hard_p004__invalid_pixels_P00_s1__IMU_RGBD: n_unrecovered=5
+  results/C/runs/office_hard_p004__invalid_pixels_P00_s1__RGBD: n_unrecovered=1
+  results/C/runs/office_hard_p004__invalid_pixels_P00_s2__IMU_RGBD: n_unrecovered=5
+  results/C/runs/office_hard_p004__invalid_pixels_P00_s2__RGBD: n_unrecovered=1
+  results/C/runs/office_hard_p004__invalid_pixels_P20_s0__IMU_RGBD: n_unrecovered=5
+  results/C/runs/office_hard_p004__invalid_pixels_P20_s0__RGBD: n_unrecovered=1
+  results/C/runs/office_hard_p004__invalid_pixels_P20_s1__IMU_RGBD: n_unrecovered=5
+  results/C/runs/office_hard_p004__invalid_pixels_P20_s1__RGBD: n_unrecovered=4
+  results/C/runs/office_hard_p004__invalid_pixels_P20_s2__IMU_RGBD: n_unrecovered=5
+  results/C/runs/office_hard_p004__invalid_pixels_P20_s2__RGBD: n_unrecovered=1
+  results/C/runs/office_hard_p004__invalid_pixels_P50_s0__IMU_RGBD: n_unrecovered=4
+  results/C/runs/office_hard_p004__invalid_pixels_P50_s0__RGBD: n_unrecovered=1
+  results/C/runs/office_hard_p004__invalid_pixels_P50_s1__IMU_RGBD: n_unrecovered=5
+  results/C/runs/office_hard_p004__invalid_pixels_P50_s1__RGBD: n_unrecovered=1
+  results/C/runs/office_hard_p004__invalid_pixels_P50_s2__IMU_RGBD: n_unrecovered=5
+  results/C/runs/office_hard_p004__invalid_pixels_P50_s2__RGBD: n_unrecovered=1
+  results/C/runs/office_hard_p004__invalid_pixels_P80_s0__IMU_RGBD: n_unrecovered=4
+  results/C/runs/office_hard_p004__invalid_pixels_P80_s0__RGBD: n_unrecovered=1
+  results/C/runs/office_hard_p004__invalid_pixels_P80_s1__IMU_RGBD: n_unrecovered=16
+  results/C/runs/office_hard_p004__invalid_pixels_P80_s1__RGBD: n_unrecovered=2
+  results/C/runs/office_hard_p004__invalid_pixels_P80_s2__IMU_RGBD: n_unrecovered=5
+  results/C/runs/office_hard_p004__invalid_pixels_P80_s2__RGBD: n_unrecovered=1
+  results/C/runs/office_hard_p004__outage_O05_s0__IMU_RGBD: n_ok_but_empty=1, n_unrecovered=5
+  results/C/runs/office_hard_p004__outage_O05_s0__RGBD: n_unrecovered=1
+  results/C/runs/office_hard_p004__outage_O05_s1__IMU_RGBD: n_unrecovered=5
+  results/C/runs/office_hard_p004__outage_O05_s1__RGBD: n_unrecovered=4
+  results/C/runs/office_hard_p004__outage_O05_s2__IMU_RGBD: n_unrecovered=4
+  results/C/runs/office_hard_p004__outage_O05_s2__RGBD: n_unrecovered=1
+  results/C/runs/office_hard_p004__outage_O10_s0__IMU_RGBD: n_ok_but_empty=1, n_unrecovered=4
+  results/C/runs/office_hard_p004__outage_O10_s0__RGBD: n_unrecovered=4
+  results/C/runs/office_hard_p004__outage_O10_s1__IMU_RGBD: n_ok_but_empty=1, n_unrecovered=4
+  results/C/runs/office_hard_p004__outage_O10_s1__RGBD: n_unrecovered=2
+  results/C/runs/office_hard_p004__outage_O10_s2__IMU_RGBD: n_ok_but_empty=1, n_unrecovered=5
+  results/C/runs/office_hard_p004__outage_O10_s2__RGBD: n_unrecovered=4
+  results/C/runs/office_hard_p004__outage_O20_s0__IMU_RGBD: n_ok_but_empty=4, n_unrecovered=5
+  results/C/runs/office_hard_p004__outage_O20_s0__RGBD: n_ok_but_empty=5, n_unrecovered=4
+  results/C/runs/office_hard_p004__outage_O20_s1__IMU_RGBD: n_ok_but_empty=6, n_unrecovered=5
+  results/C/runs/office_hard_p004__outage_O20_s1__RGBD: n_unrecovered=1
+  results/C/runs/office_hard_p004__outage_O20_s2__IMU_RGBD: n_ok_but_empty=6, n_unrecovered=5
+  results/C/runs/office_hard_p004__outage_O20_s2__RGBD: n_unrecovered=1
+
+== 4. seed spread (groups with >=2 ok seeds, ate ratio>3 or coverage range>0.2)
+  results/B/runs office_easy_p004 brightness_contrast L1 MONOCULAR: seeds=0 1 2 cov 0.823-0.874 ate 0.0440-0.3561 segs 53-63
+  results/B/runs office_easy_p004 brightness_contrast L2 IMU_MONOCULAR: seeds=0 1 2 cov 0.733-0.894 ate 0.0328-0.1208 segs 46-58
+  results/B/runs office_easy_p004 brightness_contrast L3 MONOCULAR: seeds=0 1 2 cov 0.687-0.711 ate 0.0355-0.1246 segs 60-78
+  results/B/runs office_easy_p004 brightness_contrast L4 IMU_MONOCULAR: seeds=0 1 2 cov 0.230-0.751 ate 0.0432-0.1313 segs 46-58
+  results/B/runs office_easy_p004 motion_blur L1 MONOCULAR: seeds=0 1 2 cov 0.783-0.901 ate 0.0523-0.4979 segs 48-63
+  results/B/runs office_easy_p004 motion_blur L3 IMU_MONOCULAR: seeds=0 1 2 cov 0.098-0.692 ate 0.0997-0.4943 segs 29-58
+  results/B/runs office_easy_p004 motion_blur L3 MONOCULAR: seeds=0 1 2 cov 0.395-0.466 ate 0.0842-0.8445 segs 69-99
+  results/B/runs office_easy_p004 motion_blur L4 IMU_RGBD: seeds=0 1 2 cov 0.842-0.897 ate 0.0429-0.2850 segs 52-100
+  results/B/runs office_easy_p004 motion_blur L4 MONOCULAR: seeds=0 1 2 cov 0.053-0.337 ate 0.0609-1.4871 segs 25-61
+  results/B/runs office_easy_p004 occlusion L1 IMU_MONOCULAR: seeds=0 1 2 cov 0.555-0.948 ate 0.0363-0.1135 segs 37-108
+  results/B/runs office_easy_p004 occlusion L1 MONOCULAR: seeds=0 1 2 cov 0.794-0.920 ate 0.0337-0.1561 segs 64-87
+  results/B/runs office_easy_p004 occlusion L2 IMU_MONOCULAR: seeds=0 1 2 cov 0.346-0.906 ate 0.0281-0.2058 segs 37-128
+  results/B/runs office_easy_p004 occlusion L2 MONOCULAR: seeds=0 1 2 cov 0.558-0.779 ate 0.0591-0.4305 segs 96-96
+  results/B/runs office_easy_p004 occlusion L3 IMU_RGBD: seeds=0 1 2 cov 0.977-0.998 ate 0.0249-0.1426 segs 41-43
+  results/B/runs office_easy_p004 occlusion L4 IMU_MONOCULAR: seeds=0 1 2 cov 0.177-0.241 ate 0.0813-0.3213 segs 72-79
+  results/B/runs office_easy_p004 occlusion L4 MONOCULAR: seeds=0 1 2 cov 0.251-0.365 ate 0.0466-0.8701 segs 103-140
+  results/B/runs office_easy_p004 texture_erase L1 IMU_MONOCULAR: seeds=0 1 2 cov 0.580-0.925 ate 0.0465-0.1295 segs 40-139
+  results/B/runs office_easy_p004 texture_erase L2 IMU_MONOCULAR: seeds=0 1 2 cov 0.606-0.929 ate 0.0376-0.0941 segs 29-99
+  results/B/runs office_easy_p004 texture_erase L2 MONOCULAR: seeds=0 1 2 cov 0.661-0.792 ate 0.0519-0.2752 segs 71-106
+  results/B/runs office_hard_p004 gaussian_blur L2 IMU_MONOCULAR: seeds=0 1 2 cov 0.071-0.085 ate 0.0770-0.2689 segs 21-24
+  results/B/runs office_hard_p004 gaussian_blur L2 IMU_RGBD: seeds=0 1 2 cov 0.590-0.613 ate 0.0765-0.3164 segs 138-142
+  results/B/runs office_hard_p004 gaussian_blur L3 MONOCULAR: seeds=0 1 2 cov 0.023-0.038 ate 0.0135-0.0618 segs 8-11
+  results/B/runs office_hard_p004 motion_blur L1 MONOCULAR: seeds=0 1 2 cov 0.357-0.436 ate 0.2295-1.9061 segs 77-79
+  results/B/runs office_hard_p004 motion_blur L2 IMU_RGBD: seeds=0 1 2 cov 0.596-0.606 ate 0.0601-0.3373 segs 143-153
+  results/B/runs office_hard_p004 motion_blur L2 MONOCULAR: seeds=0 1 2 cov 0.254-0.303 ate 0.1315-0.4573 segs 66-79
+  results/B/runs office_hard_p004 motion_blur L3 IMU_MONOCULAR: seeds=0 1 2 cov 0.026-0.058 ate 0.0487-0.1478 segs 9-17
+  results/B/runs office_hard_p004 motion_blur L3 MONOCULAR: seeds=0 1 2 cov 0.080-0.275 ate 0.0992-0.3270 segs 31-74
+  results/C/runs office_easy_p004 outage O05 RGBD: seeds=0 1 2 cov 0.966-1.000 ate 0.0771-0.3576 segs 15-24
+  results/C/runs office_hard_p004 depth_noise N1 RGBD: seeds=0 1 2 cov 0.360-0.485 ate 0.0465-0.2668 segs 91-103
+  results/C/runs office_hard_p004 invalid_pixels P00 RGBD: seeds=0 1 2 cov 0.310-0.518 ate 0.0389-0.2496 segs 87-106
+  results/C/runs office_hard_p004 invalid_pixels P20 IMU_RGBD: seeds=0 1 2 cov 0.620-0.633 ate 0.0343-0.1057 segs 153-156
+  results/C/runs office_hard_p004 invalid_pixels P50 RGBD: seeds=0 1 2 cov 0.407-0.497 ate 0.0596-0.3728 segs 99-100
+  results/C/runs office_hard_p004 outage O20 RGBD: seeds=0 1 2 cov 0.416-0.465 ate 0.0297-0.1295 segs 92-100
+groups flagged: 33

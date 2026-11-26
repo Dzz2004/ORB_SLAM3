@@ -1,0 +1,39 @@
+--- a/include/System.h
++++ b/include/System.h
+@@ -174,6 +174,9 @@
+     // Information from most recent processed frame
+     // You can call this right after TrackMonocular (or stereo or RGBD)
+     int GetTrackingState();
++    // D实验：在当前帧处理结束后只读取得同一时刻的惯性状态。
++    bool GetDImuState(Eigen::Vector3f& position, Eigen::Matrix3f& rotation,
++                      Eigen::Vector3f& velocity, IMU::Bias& bias);
+     std::vector<MapPoint*> GetTrackedMapPoints();
+     std::vector<cv::KeyPoint> GetTrackedKeyPointsUn();
+ 
+--- a/src/System.cc
++++ b/src/System.cc
+@@ -1318,6 +1318,24 @@
+ }
+ 
+ 
++bool System::GetDImuState(Eigen::Vector3f& position, Eigen::Matrix3f& rotation,
++                          Eigen::Vector3f& velocity, IMU::Bias& bias)
++{
++    // 只改D的隔离源码副本。未初始化或失跟时不把预测状态当作可信SLAM状态。
++    unique_lock<mutex> lock(mMutexState);
++    if (mSensor != IMU_MONOCULAR && mSensor != IMU_STEREO && mSensor != IMU_RGBD)
++        return false;
++    Frame& frame = mpTracker->mCurrentFrame;
++    if (mTrackingState != Tracking::OK || !mpAtlas->isImuInitialized() ||
++        !frame.HasPose() || !frame.HasVelocity())
++        return false;
++    position = frame.GetImuPosition();
++    rotation = frame.GetImuRotation();
++    velocity = frame.GetVelocity();
++    bias = frame.mImuBias;
++    return true;
++}
++
+ int System::GetTrackingState()
+ {
+     unique_lock<mutex> lock(mMutexState);

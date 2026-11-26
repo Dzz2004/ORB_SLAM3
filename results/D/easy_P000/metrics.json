@@ -1,0 +1,931 @@
+{
+  "dataset": "TartanAir V2",
+  "environment": "ArchVizTinyHouseDay",
+  "difficulty": "easy",
+  "sequence": "P000",
+  "init_mode": "ideal_gt",
+  "seeds": [
+    0,
+    1,
+    2
+  ],
+  "start_count": 10,
+  "start_times": [
+    7.5,
+    7.6,
+    7.7,
+    7.8,
+    7.9,
+    8.0,
+    8.1,
+    8.2,
+    8.3,
+    8.4
+  ],
+  "imu_hz": 100.00000000000213,
+  "gravity": [
+    0,
+    0,
+    9.8
+  ],
+  "orientation": "内禀XYZ欧拉角，弧度，机体到世界",
+  "noise_columns": [
+    "角速度逐点标准差rad/s",
+    "加速度逐点标准差m/s²",
+    "固定陀螺偏置标准差rad/s",
+    "固定加速度偏置标准差m/s²"
+  ],
+  "noise": {
+    "无额外噪声": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "低噪声": [
+      0.002,
+      0.02,
+      0.0005,
+      0.01
+    ],
+    "高噪声": [
+      0.01,
+      0.1,
+      0.003,
+      0.05
+    ]
+  },
+  "sha256": "cf34be5926c7fa24006322654586d925913682aac879783d789e270b4771058c",
+  "summary": [
+    {
+      "noise": "无额外噪声",
+      "duration_s": 0.5,
+      "position_median_m": 0.00028301125279827526,
+      "position_p90_m": 0.0005100164287750594,
+      "rotation_median_deg": 0.001861248139437211,
+      "rotation_p90_deg": 0.0027299408077592828,
+      "threshold_pass_fraction": 1.0,
+      "continuous_pass_fraction": 1.0,
+      "strict_continuous_pass_fraction": 1.0
+    },
+    {
+      "noise": "无额外噪声",
+      "duration_s": 1.0,
+      "position_median_m": 0.000649079958274315,
+      "position_p90_m": 0.0011396255832940988,
+      "rotation_median_deg": 0.0026646258901543386,
+      "rotation_p90_deg": 0.0050181085179397565,
+      "threshold_pass_fraction": 1.0,
+      "continuous_pass_fraction": 1.0,
+      "strict_continuous_pass_fraction": 1.0
+    },
+    {
+      "noise": "无额外噪声",
+      "duration_s": 2.0,
+      "position_median_m": 0.0014232956622467546,
+      "position_p90_m": 0.002007023625844086,
+      "rotation_median_deg": 0.0023708690577415154,
+      "rotation_p90_deg": 0.004562840287580194,
+      "threshold_pass_fraction": 1.0,
+      "continuous_pass_fraction": 1.0,
+      "strict_continuous_pass_fraction": 1.0
+    },
+    {
+      "noise": "无额外噪声",
+      "duration_s": 3.0,
+      "position_median_m": 0.00222059314431702,
+      "position_p90_m": 0.0032534821994797784,
+      "rotation_median_deg": 0.0014613499818325198,
+      "rotation_p90_deg": 0.0018117183165226249,
+      "threshold_pass_fraction": 1.0,
+      "continuous_pass_fraction": 1.0,
+      "strict_continuous_pass_fraction": 1.0
+    },
+    {
+      "noise": "低噪声",
+      "duration_s": 0.5,
+      "position_median_m": 0.0021047464678720287,
+      "position_p90_m": 0.0027665285354377,
+      "rotation_median_deg": 0.02215810187179866,
+      "rotation_p90_deg": 0.04003352258472968,
+      "threshold_pass_fraction": 1.0,
+      "continuous_pass_fraction": 1.0,
+      "strict_continuous_pass_fraction": 1.0
+    },
+    {
+      "noise": "低噪声",
+      "duration_s": 1.0,
+      "position_median_m": 0.007979524828955187,
+      "position_p90_m": 0.010852586795578989,
+      "rotation_median_deg": 0.04074492211784466,
+      "rotation_p90_deg": 0.0750142195340509,
+      "threshold_pass_fraction": 1.0,
+      "continuous_pass_fraction": 1.0,
+      "strict_continuous_pass_fraction": 1.0
+    },
+    {
+      "noise": "低噪声",
+      "duration_s": 2.0,
+      "position_median_m": 0.032513679814863757,
+      "position_p90_m": 0.04409804251848844,
+      "rotation_median_deg": 0.07234800549735057,
+      "rotation_p90_deg": 0.14609885917984355,
+      "threshold_pass_fraction": 1.0,
+      "continuous_pass_fraction": 1.0,
+      "strict_continuous_pass_fraction": 1.0
+    },
+    {
+      "noise": "低噪声",
+      "duration_s": 3.0,
+      "position_median_m": 0.07515853936337427,
+      "position_p90_m": 0.10287482873421103,
+      "rotation_median_deg": 0.10088824368972002,
+      "rotation_p90_deg": 0.2212207112623413,
+      "threshold_pass_fraction": 1.0,
+      "continuous_pass_fraction": 1.0,
+      "strict_continuous_pass_fraction": 1.0
+    },
+    {
+      "noise": "高噪声",
+      "duration_s": 0.5,
+      "position_median_m": 0.00987504889114913,
+      "position_p90_m": 0.013122957602773428,
+      "rotation_median_deg": 0.1256631303452861,
+      "rotation_p90_deg": 0.2296530934586427,
+      "threshold_pass_fraction": 1.0,
+      "continuous_pass_fraction": 1.0,
+      "strict_continuous_pass_fraction": 1.0
+    },
+    {
+      "noise": "高噪声",
+      "duration_s": 1.0,
+      "position_median_m": 0.038789678402342,
+      "position_p90_m": 0.052847069159447,
+      "rotation_median_deg": 0.23603180270411875,
+      "rotation_p90_deg": 0.41618528399931115,
+      "threshold_pass_fraction": 1.0,
+      "continuous_pass_fraction": 1.0,
+      "strict_continuous_pass_fraction": 1.0
+    },
+    {
+      "noise": "高噪声",
+      "duration_s": 2.0,
+      "position_median_m": 0.16886203481306222,
+      "position_p90_m": 0.21784512950732726,
+      "rotation_median_deg": 0.42988687956581606,
+      "rotation_p90_deg": 0.879640471595313,
+      "threshold_pass_fraction": 1.0,
+      "continuous_pass_fraction": 1.0,
+      "strict_continuous_pass_fraction": 1.0
+    },
+    {
+      "noise": "高噪声",
+      "duration_s": 3.0,
+      "position_median_m": 0.3841251938574615,
+      "position_p90_m": 0.5437127567712655,
+      "rotation_median_deg": 0.6085945183233913,
+      "rotation_p90_deg": 1.3132218146985035,
+      "threshold_pass_fraction": 1.0,
+      "continuous_pass_fraction": 1.0,
+      "strict_continuous_pass_fraction": 0.8666666666666667
+    }
+  ],
+  "runtime": {
+    "segment_count": 90,
+    "measurements": [
+      {
+        "noise": "无额外噪声",
+        "seed": 0,
+        "start_time": 7.5,
+        "sample_count": 301,
+        "prediction_ms": 6.974100000661565,
+        "mean_step_ms": 0.023247000002205215
+      },
+      {
+        "noise": "无额外噪声",
+        "seed": 0,
+        "start_time": 7.6,
+        "sample_count": 301,
+        "prediction_ms": 10.35500000216416,
+        "mean_step_ms": 0.034516666673880536
+      },
+      {
+        "noise": "无额外噪声",
+        "seed": 0,
+        "start_time": 7.7,
+        "sample_count": 301,
+        "prediction_ms": 6.858800003101351,
+        "mean_step_ms": 0.0228626666770045
+      },
+      {
+        "noise": "无额外噪声",
+        "seed": 0,
+        "start_time": 7.8,
+        "sample_count": 301,
+        "prediction_ms": 9.2906000027142,
+        "mean_step_ms": 0.030968666675714
+      },
+      {
+        "noise": "无额外噪声",
+        "seed": 0,
+        "start_time": 7.9,
+        "sample_count": 301,
+        "prediction_ms": 7.196700000349665,
+        "mean_step_ms": 0.02398900000116555
+      },
+      {
+        "noise": "无额外噪声",
+        "seed": 0,
+        "start_time": 8.0,
+        "sample_count": 301,
+        "prediction_ms": 7.847900000342634,
+        "mean_step_ms": 0.02615966666780878
+      },
+      {
+        "noise": "无额外噪声",
+        "seed": 0,
+        "start_time": 8.1,
+        "sample_count": 301,
+        "prediction_ms": 7.240099999762606,
+        "mean_step_ms": 0.024133666665875353
+      },
+      {
+        "noise": "无额外噪声",
+        "seed": 0,
+        "start_time": 8.2,
+        "sample_count": 301,
+        "prediction_ms": 9.96330000270973,
+        "mean_step_ms": 0.03321100000903243
+      },
+      {
+        "noise": "无额外噪声",
+        "seed": 0,
+        "start_time": 8.3,
+        "sample_count": 301,
+        "prediction_ms": 10.600300000078278,
+        "mean_step_ms": 0.03533433333359426
+      },
+      {
+        "noise": "无额外噪声",
+        "seed": 0,
+        "start_time": 8.4,
+        "sample_count": 301,
+        "prediction_ms": 7.271099999343278,
+        "mean_step_ms": 0.024236999997810926
+      },
+      {
+        "noise": "无额外噪声",
+        "seed": 1,
+        "start_time": 7.5,
+        "sample_count": 301,
+        "prediction_ms": 9.73379999777535,
+        "mean_step_ms": 0.0324459999925845
+      },
+      {
+        "noise": "无额外噪声",
+        "seed": 1,
+        "start_time": 7.6,
+        "sample_count": 301,
+        "prediction_ms": 7.438299999193987,
+        "mean_step_ms": 0.024794333330646623
+      },
+      {
+        "noise": "无额外噪声",
+        "seed": 1,
+        "start_time": 7.7,
+        "sample_count": 301,
+        "prediction_ms": 9.431599999516038,
+        "mean_step_ms": 0.03143866666505346
+      },
+      {
+        "noise": "无额外噪声",
+        "seed": 1,
+        "start_time": 7.8,
+        "sample_count": 301,
+        "prediction_ms": 7.50260000131675,
+        "mean_step_ms": 0.025008666671055835
+      },
+      {
+        "noise": "无额外噪声",
+        "seed": 1,
+        "start_time": 7.9,
+        "sample_count": 301,
+        "prediction_ms": 8.817599999019876,
+        "mean_step_ms": 0.02939199999673292
+      },
+      {
+        "noise": "无额外噪声",
+        "seed": 1,
+        "start_time": 8.0,
+        "sample_count": 301,
+        "prediction_ms": 7.492900000215741,
+        "mean_step_ms": 0.02497633333405247
+      },
+      {
+        "noise": "无额外噪声",
+        "seed": 1,
+        "start_time": 8.1,
+        "sample_count": 301,
+        "prediction_ms": 9.394099997734884,
+        "mean_step_ms": 0.03131366665911628
+      },
+      {
+        "noise": "无额外噪声",
+        "seed": 1,
+        "start_time": 8.2,
+        "sample_count": 301,
+        "prediction_ms": 7.497499998862622,
+        "mean_step_ms": 0.024991666662875407
+      },
+      {
+        "noise": "无额外噪声",
+        "seed": 1,
+        "start_time": 8.3,
+        "sample_count": 301,
+        "prediction_ms": 7.543299998360453,
+        "mean_step_ms": 0.02514433332786818
+      },
+      {
+        "noise": "无额外噪声",
+        "seed": 1,
+        "start_time": 8.4,
+        "sample_count": 301,
+        "prediction_ms": 9.478300002228934,
+        "mean_step_ms": 0.031594333340763114
+      },
+      {
+        "noise": "无额外噪声",
+        "seed": 2,
+        "start_time": 7.5,
+        "sample_count": 301,
+        "prediction_ms": 7.52229999852716,
+        "mean_step_ms": 0.025074333328423865
+      },
+      {
+        "noise": "无额外噪声",
+        "seed": 2,
+        "start_time": 7.6,
+        "sample_count": 301,
+        "prediction_ms": 10.253299999021692,
+        "mean_step_ms": 0.03417766666340564
+      },
+      {
+        "noise": "无额外噪声",
+        "seed": 2,
+        "start_time": 7.7,
+        "sample_count": 301,
+        "prediction_ms": 7.37190000290866,
+        "mean_step_ms": 0.024573000009695534
+      },
+      {
+        "noise": "无额外噪声",
+        "seed": 2,
+        "start_time": 7.8,
+        "sample_count": 301,
+        "prediction_ms": 14.593299998523435,
+        "mean_step_ms": 0.04864433332841145
+      },
+      {
+        "noise": "无额外噪声",
+        "seed": 2,
+        "start_time": 7.9,
+        "sample_count": 301,
+        "prediction_ms": 8.273399998870445,
+        "mean_step_ms": 0.02757799999623482
+      },
+      {
+        "noise": "无额外噪声",
+        "seed": 2,
+        "start_time": 8.0,
+        "sample_count": 301,
+        "prediction_ms": 7.528199999796925,
+        "mean_step_ms": 0.025093999999323085
+      },
+      {
+        "noise": "无额外噪声",
+        "seed": 2,
+        "start_time": 8.1,
+        "sample_count": 301,
+        "prediction_ms": 10.384600001998479,
+        "mean_step_ms": 0.034615333339994926
+      },
+      {
+        "noise": "无额外噪声",
+        "seed": 2,
+        "start_time": 8.2,
+        "sample_count": 301,
+        "prediction_ms": 7.707199998549186,
+        "mean_step_ms": 0.02569066666183062
+      },
+      {
+        "noise": "无额外噪声",
+        "seed": 2,
+        "start_time": 8.3,
+        "sample_count": 301,
+        "prediction_ms": 20.73749999908614,
+        "mean_step_ms": 0.0691249999969538
+      },
+      {
+        "noise": "无额外噪声",
+        "seed": 2,
+        "start_time": 8.4,
+        "sample_count": 301,
+        "prediction_ms": 8.262299998023082,
+        "mean_step_ms": 0.02754099999341027
+      },
+      {
+        "noise": "低噪声",
+        "seed": 0,
+        "start_time": 7.5,
+        "sample_count": 301,
+        "prediction_ms": 9.404099997482263,
+        "mean_step_ms": 0.03134699999160754
+      },
+      {
+        "noise": "低噪声",
+        "seed": 0,
+        "start_time": 7.6,
+        "sample_count": 301,
+        "prediction_ms": 7.5010000000474975,
+        "mean_step_ms": 0.025003333333491657
+      },
+      {
+        "noise": "低噪声",
+        "seed": 0,
+        "start_time": 7.7,
+        "sample_count": 301,
+        "prediction_ms": 10.367099999712082,
+        "mean_step_ms": 0.03455699999904027
+      },
+      {
+        "noise": "低噪声",
+        "seed": 0,
+        "start_time": 7.8,
+        "sample_count": 301,
+        "prediction_ms": 7.653799999388866,
+        "mean_step_ms": 0.025512666664629553
+      },
+      {
+        "noise": "低噪声",
+        "seed": 0,
+        "start_time": 7.9,
+        "sample_count": 301,
+        "prediction_ms": 8.759099997405428,
+        "mean_step_ms": 0.02919699999135143
+      },
+      {
+        "noise": "低噪声",
+        "seed": 0,
+        "start_time": 8.0,
+        "sample_count": 301,
+        "prediction_ms": 7.721400001173606,
+        "mean_step_ms": 0.02573800000391202
+      },
+      {
+        "noise": "低噪声",
+        "seed": 0,
+        "start_time": 8.1,
+        "sample_count": 301,
+        "prediction_ms": 10.186600000452017,
+        "mean_step_ms": 0.033955333334840056
+      },
+      {
+        "noise": "低噪声",
+        "seed": 0,
+        "start_time": 8.2,
+        "sample_count": 301,
+        "prediction_ms": 10.786999999254476,
+        "mean_step_ms": 0.03595666666418159
+      },
+      {
+        "noise": "低噪声",
+        "seed": 0,
+        "start_time": 8.3,
+        "sample_count": 301,
+        "prediction_ms": 7.7705000003334135,
+        "mean_step_ms": 0.025901666667778045
+      },
+      {
+        "noise": "低噪声",
+        "seed": 0,
+        "start_time": 8.4,
+        "sample_count": 301,
+        "prediction_ms": 8.767999999690801,
+        "mean_step_ms": 0.029226666665636003
+      },
+      {
+        "noise": "低噪声",
+        "seed": 1,
+        "start_time": 7.5,
+        "sample_count": 301,
+        "prediction_ms": 7.637900002009701,
+        "mean_step_ms": 0.02545966667336567
+      },
+      {
+        "noise": "低噪声",
+        "seed": 1,
+        "start_time": 7.6,
+        "sample_count": 301,
+        "prediction_ms": 12.587900000653462,
+        "mean_step_ms": 0.041959666668844875
+      },
+      {
+        "noise": "低噪声",
+        "seed": 1,
+        "start_time": 7.7,
+        "sample_count": 301,
+        "prediction_ms": 9.253899999748683,
+        "mean_step_ms": 0.030846333332495608
+      },
+      {
+        "noise": "低噪声",
+        "seed": 1,
+        "start_time": 7.8,
+        "sample_count": 301,
+        "prediction_ms": 7.361600000876933,
+        "mean_step_ms": 0.024538666669589777
+      },
+      {
+        "noise": "低噪声",
+        "seed": 1,
+        "start_time": 7.9,
+        "sample_count": 301,
+        "prediction_ms": 9.154399998806184,
+        "mean_step_ms": 0.03051466666268728
+      },
+      {
+        "noise": "低噪声",
+        "seed": 1,
+        "start_time": 8.0,
+        "sample_count": 301,
+        "prediction_ms": 7.511600000725593,
+        "mean_step_ms": 0.025038666669085313
+      },
+      {
+        "noise": "低噪声",
+        "seed": 1,
+        "start_time": 8.1,
+        "sample_count": 301,
+        "prediction_ms": 8.832100000290666,
+        "mean_step_ms": 0.02944033333430222
+      },
+      {
+        "noise": "低噪声",
+        "seed": 1,
+        "start_time": 8.2,
+        "sample_count": 301,
+        "prediction_ms": 7.741500001429813,
+        "mean_step_ms": 0.025805000004766043
+      },
+      {
+        "noise": "低噪声",
+        "seed": 1,
+        "start_time": 8.3,
+        "sample_count": 301,
+        "prediction_ms": 10.34079999953974,
+        "mean_step_ms": 0.034469333331799135
+      },
+      {
+        "noise": "低噪声",
+        "seed": 1,
+        "start_time": 8.4,
+        "sample_count": 301,
+        "prediction_ms": 7.3671999998623505,
+        "mean_step_ms": 0.024557333332874503
+      },
+      {
+        "noise": "低噪声",
+        "seed": 2,
+        "start_time": 7.5,
+        "sample_count": 301,
+        "prediction_ms": 8.236899997427827,
+        "mean_step_ms": 0.027456333324759424
+      },
+      {
+        "noise": "低噪声",
+        "seed": 2,
+        "start_time": 7.6,
+        "sample_count": 301,
+        "prediction_ms": 7.661800002097152,
+        "mean_step_ms": 0.02553933334032384
+      },
+      {
+        "noise": "低噪声",
+        "seed": 2,
+        "start_time": 7.7,
+        "sample_count": 301,
+        "prediction_ms": 8.634800000436371,
+        "mean_step_ms": 0.028782666668121237
+      },
+      {
+        "noise": "低噪声",
+        "seed": 2,
+        "start_time": 7.8,
+        "sample_count": 301,
+        "prediction_ms": 7.804799999576062,
+        "mean_step_ms": 0.026015999998586874
+      },
+      {
+        "noise": "低噪声",
+        "seed": 2,
+        "start_time": 7.9,
+        "sample_count": 301,
+        "prediction_ms": 8.082799999101553,
+        "mean_step_ms": 0.026942666663671844
+      },
+      {
+        "noise": "低噪声",
+        "seed": 2,
+        "start_time": 8.0,
+        "sample_count": 301,
+        "prediction_ms": 8.880999997927574,
+        "mean_step_ms": 0.029603333326425247
+      },
+      {
+        "noise": "低噪声",
+        "seed": 2,
+        "start_time": 8.1,
+        "sample_count": 301,
+        "prediction_ms": 15.433599997777492,
+        "mean_step_ms": 0.05144533332592497
+      },
+      {
+        "noise": "低噪声",
+        "seed": 2,
+        "start_time": 8.2,
+        "sample_count": 301,
+        "prediction_ms": 6.9100000000617,
+        "mean_step_ms": 0.023033333333539
+      },
+      {
+        "noise": "低噪声",
+        "seed": 2,
+        "start_time": 8.3,
+        "sample_count": 301,
+        "prediction_ms": 8.30860000132816,
+        "mean_step_ms": 0.02769533333776053
+      },
+      {
+        "noise": "低噪声",
+        "seed": 2,
+        "start_time": 8.4,
+        "sample_count": 301,
+        "prediction_ms": 7.314399997994769,
+        "mean_step_ms": 0.02438133332664923
+      },
+      {
+        "noise": "高噪声",
+        "seed": 0,
+        "start_time": 7.5,
+        "sample_count": 301,
+        "prediction_ms": 11.471000001620268,
+        "mean_step_ms": 0.038236666672067564
+      },
+      {
+        "noise": "高噪声",
+        "seed": 0,
+        "start_time": 7.6,
+        "sample_count": 301,
+        "prediction_ms": 7.310400000278605,
+        "mean_step_ms": 0.024368000000928685
+      },
+      {
+        "noise": "高噪声",
+        "seed": 0,
+        "start_time": 7.7,
+        "sample_count": 301,
+        "prediction_ms": 9.562600000208477,
+        "mean_step_ms": 0.031875333334028255
+      },
+      {
+        "noise": "高噪声",
+        "seed": 0,
+        "start_time": 7.8,
+        "sample_count": 301,
+        "prediction_ms": 7.630899999639951,
+        "mean_step_ms": 0.02543633333213317
+      },
+      {
+        "noise": "高噪声",
+        "seed": 0,
+        "start_time": 7.9,
+        "sample_count": 301,
+        "prediction_ms": 9.717699998873286,
+        "mean_step_ms": 0.03239233332957762
+      },
+      {
+        "noise": "高噪声",
+        "seed": 0,
+        "start_time": 8.0,
+        "sample_count": 301,
+        "prediction_ms": 7.817900001100497,
+        "mean_step_ms": 0.02605966667033499
+      },
+      {
+        "noise": "高噪声",
+        "seed": 0,
+        "start_time": 8.1,
+        "sample_count": 301,
+        "prediction_ms": 8.256700002675643,
+        "mean_step_ms": 0.027522333342252143
+      },
+      {
+        "noise": "高噪声",
+        "seed": 0,
+        "start_time": 8.2,
+        "sample_count": 301,
+        "prediction_ms": 10.706900000513997,
+        "mean_step_ms": 0.03568966666837999
+      },
+      {
+        "noise": "高噪声",
+        "seed": 0,
+        "start_time": 8.3,
+        "sample_count": 301,
+        "prediction_ms": 8.036399998673005,
+        "mean_step_ms": 0.026787999995576683
+      },
+      {
+        "noise": "高噪声",
+        "seed": 0,
+        "start_time": 8.4,
+        "sample_count": 301,
+        "prediction_ms": 10.697000001528068,
+        "mean_step_ms": 0.03565666667176023
+      },
+      {
+        "noise": "高噪声",
+        "seed": 1,
+        "start_time": 7.5,
+        "sample_count": 301,
+        "prediction_ms": 10.608600001432933,
+        "mean_step_ms": 0.03536200000477644
+      },
+      {
+        "noise": "高噪声",
+        "seed": 1,
+        "start_time": 7.6,
+        "sample_count": 301,
+        "prediction_ms": 8.130999998684274,
+        "mean_step_ms": 0.02710333332894758
+      },
+      {
+        "noise": "高噪声",
+        "seed": 1,
+        "start_time": 7.7,
+        "sample_count": 301,
+        "prediction_ms": 9.576600001309998,
+        "mean_step_ms": 0.03192200000436666
+      },
+      {
+        "noise": "高噪声",
+        "seed": 1,
+        "start_time": 7.8,
+        "sample_count": 301,
+        "prediction_ms": 7.712000002356945,
+        "mean_step_ms": 0.02570666667452315
+      },
+      {
+        "noise": "高噪声",
+        "seed": 1,
+        "start_time": 7.9,
+        "sample_count": 301,
+        "prediction_ms": 10.053100002551218,
+        "mean_step_ms": 0.033510333341837395
+      },
+      {
+        "noise": "高噪声",
+        "seed": 1,
+        "start_time": 8.0,
+        "sample_count": 301,
+        "prediction_ms": 7.716499996604398,
+        "mean_step_ms": 0.025721666655347992
+      },
+      {
+        "noise": "高噪声",
+        "seed": 1,
+        "start_time": 8.1,
+        "sample_count": 301,
+        "prediction_ms": 9.937100003298838,
+        "mean_step_ms": 0.03312366667766279
+      },
+      {
+        "noise": "高噪声",
+        "seed": 1,
+        "start_time": 8.2,
+        "sample_count": 301,
+        "prediction_ms": 10.101600000780309,
+        "mean_step_ms": 0.03367200000260103
+      },
+      {
+        "noise": "高噪声",
+        "seed": 1,
+        "start_time": 8.3,
+        "sample_count": 301,
+        "prediction_ms": 7.86579999839887,
+        "mean_step_ms": 0.026219333327996235
+      },
+      {
+        "noise": "高噪声",
+        "seed": 1,
+        "start_time": 8.4,
+        "sample_count": 301,
+        "prediction_ms": 9.669899998698384,
+        "mean_step_ms": 0.03223299999566128
+      },
+      {
+        "noise": "高噪声",
+        "seed": 2,
+        "start_time": 7.5,
+        "sample_count": 301,
+        "prediction_ms": 8.131200000207173,
+        "mean_step_ms": 0.027104000000690576
+      },
+      {
+        "noise": "高噪声",
+        "seed": 2,
+        "start_time": 7.6,
+        "sample_count": 301,
+        "prediction_ms": 10.189200002059806,
+        "mean_step_ms": 0.03396400000686602
+      },
+      {
+        "noise": "高噪声",
+        "seed": 2,
+        "start_time": 7.7,
+        "sample_count": 301,
+        "prediction_ms": 10.667899998225039,
+        "mean_step_ms": 0.03555966666075013
+      },
+      {
+        "noise": "高噪声",
+        "seed": 2,
+        "start_time": 7.8,
+        "sample_count": 301,
+        "prediction_ms": 7.870100002037361,
+        "mean_step_ms": 0.026233666673457872
+      },
+      {
+        "noise": "高噪声",
+        "seed": 2,
+        "start_time": 7.9,
+        "sample_count": 301,
+        "prediction_ms": 9.755700000823708,
+        "mean_step_ms": 0.03251900000274569
+      },
+      {
+        "noise": "高噪声",
+        "seed": 2,
+        "start_time": 8.0,
+        "sample_count": 301,
+        "prediction_ms": 7.784299999912037,
+        "mean_step_ms": 0.025947666666373454
+      },
+      {
+        "noise": "高噪声",
+        "seed": 2,
+        "start_time": 8.1,
+        "sample_count": 301,
+        "prediction_ms": 9.529599999950733,
+        "mean_step_ms": 0.03176533333316911
+      },
+      {
+        "noise": "高噪声",
+        "seed": 2,
+        "start_time": 8.2,
+        "sample_count": 301,
+        "prediction_ms": 8.106699999189004,
+        "mean_step_ms": 0.027022333330630015
+      },
+      {
+        "noise": "高噪声",
+        "seed": 2,
+        "start_time": 8.3,
+        "sample_count": 301,
+        "prediction_ms": 11.476200001197867,
+        "mean_step_ms": 0.03825400000399289
+      },
+      {
+        "noise": "高噪声",
+        "seed": 2,
+        "start_time": 8.4,
+        "sample_count": 301,
+        "prediction_ms": 7.112700001016492,
+        "mean_step_ms": 0.023709000003388308
+      }
+    ],
+    "mean_three_second_prediction_ms": 8.97490444452463,
+    "p90_three_second_prediction_ms": 10.670809998555342,
+    "mean_step_ms": 0.029916348148415435,
+    "scope": "仅积分函数耗时，不含下载、读取、评估、绘图；不代表端到端实时性能"
+  },
+  "source": "https://huggingface.co/datasets/theairlabcmu/tartanair2",
+  "note": "与实际SLAM实验使用完全相同的10个起点、噪声参数和种子；本分支仍为真值理想初始化上界",
+  "versions": {
+    "numpy": "2.2.6",
+    "pandas": "3.1.1",
+    "matplotlib": "3.11.2"
+  },
+  "paired_with": "actual_slam",
+  "reference_state_file_sha256": "25ae300c9c4c2990dfebae472fb6b8cd7ea4d95c1cae9eade9485d7484ffab96"
+}

@@ -1,0 +1,3127 @@
+{
+  "status": "已完成P000实际SLAM初始化与理想上界对照",
+  "record_count": 1080,
+  "runs": [
+    {
+      "dataset": "TartanAir V2",
+      "environment": "ArchVizTinyHouseDay",
+      "difficulty": "easy",
+      "sequence": "P000",
+      "init_mode": "ideal_gt",
+      "seeds": [
+        0,
+        1,
+        2
+      ],
+      "start_count": 10,
+      "start_times": [
+        7.5,
+        7.6,
+        7.7,
+        7.8,
+        7.9,
+        8.0,
+        8.1,
+        8.2,
+        8.3,
+        8.4
+      ],
+      "imu_hz": 100.00000000000213,
+      "gravity": [
+        0,
+        0,
+        9.8
+      ],
+      "orientation": "内禀XYZ欧拉角，弧度，机体到世界",
+      "noise_columns": [
+        "角速度逐点标准差rad/s",
+        "加速度逐点标准差m/s²",
+        "固定陀螺偏置标准差rad/s",
+        "固定加速度偏置标准差m/s²"
+      ],
+      "noise": {
+        "无额外噪声": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "低噪声": [
+          0.002,
+          0.02,
+          0.0005,
+          0.01
+        ],
+        "高噪声": [
+          0.01,
+          0.1,
+          0.003,
+          0.05
+        ]
+      },
+      "sha256": "cf34be5926c7fa24006322654586d925913682aac879783d789e270b4771058c",
+      "summary": [
+        {
+          "noise": "无额外噪声",
+          "duration_s": 0.5,
+          "position_median_m": 0.00028301125279827526,
+          "position_p90_m": 0.0005100164287750594,
+          "rotation_median_deg": 0.001861248139437211,
+          "rotation_p90_deg": 0.0027299408077592828,
+          "threshold_pass_fraction": 1.0,
+          "continuous_pass_fraction": 1.0,
+          "strict_continuous_pass_fraction": 1.0
+        },
+        {
+          "noise": "无额外噪声",
+          "duration_s": 1.0,
+          "position_median_m": 0.000649079958274315,
+          "position_p90_m": 0.0011396255832940988,
+          "rotation_median_deg": 0.0026646258901543386,
+          "rotation_p90_deg": 0.0050181085179397565,
+          "threshold_pass_fraction": 1.0,
+          "continuous_pass_fraction": 1.0,
+          "strict_continuous_pass_fraction": 1.0
+        },
+        {
+          "noise": "无额外噪声",
+          "duration_s": 2.0,
+          "position_median_m": 0.0014232956622467546,
+          "position_p90_m": 0.002007023625844086,
+          "rotation_median_deg": 0.0023708690577415154,
+          "rotation_p90_deg": 0.004562840287580194,
+          "threshold_pass_fraction": 1.0,
+          "continuous_pass_fraction": 1.0,
+          "strict_continuous_pass_fraction": 1.0
+        },
+        {
+          "noise": "无额外噪声",
+          "duration_s": 3.0,
+          "position_median_m": 0.00222059314431702,
+          "position_p90_m": 0.0032534821994797784,
+          "rotation_median_deg": 0.0014613499818325198,
+          "rotation_p90_deg": 0.0018117183165226249,
+          "threshold_pass_fraction": 1.0,
+          "continuous_pass_fraction": 1.0,
+          "strict_continuous_pass_fraction": 1.0
+        },
+        {
+          "noise": "低噪声",
+          "duration_s": 0.5,
+          "position_median_m": 0.0021047464678720287,
+          "position_p90_m": 0.0027665285354377,
+          "rotation_median_deg": 0.02215810187179866,
+          "rotation_p90_deg": 0.04003352258472968,
+          "threshold_pass_fraction": 1.0,
+          "continuous_pass_fraction": 1.0,
+          "strict_continuous_pass_fraction": 1.0
+        },
+        {
+          "noise": "低噪声",
+          "duration_s": 1.0,
+          "position_median_m": 0.007979524828955187,
+          "position_p90_m": 0.010852586795578989,
+          "rotation_median_deg": 0.04074492211784466,
+          "rotation_p90_deg": 0.0750142195340509,
+          "threshold_pass_fraction": 1.0,
+          "continuous_pass_fraction": 1.0,
+          "strict_continuous_pass_fraction": 1.0
+        },
+        {
+          "noise": "低噪声",
+          "duration_s": 2.0,
+          "position_median_m": 0.032513679814863757,
+          "position_p90_m": 0.04409804251848844,
+          "rotation_median_deg": 0.07234800549735057,
+          "rotation_p90_deg": 0.14609885917984355,
+          "threshold_pass_fraction": 1.0,
+          "continuous_pass_fraction": 1.0,
+          "strict_continuous_pass_fraction": 1.0
+        },
+        {
+          "noise": "低噪声",
+          "duration_s": 3.0,
+          "position_median_m": 0.07515853936337427,
+          "position_p90_m": 0.10287482873421103,
+          "rotation_median_deg": 0.10088824368972002,
+          "rotation_p90_deg": 0.2212207112623413,
+          "threshold_pass_fraction": 1.0,
+          "continuous_pass_fraction": 1.0,
+          "strict_continuous_pass_fraction": 1.0
+        },
+        {
+          "noise": "高噪声",
+          "duration_s": 0.5,
+          "position_median_m": 0.00987504889114913,
+          "position_p90_m": 0.013122957602773428,
+          "rotation_median_deg": 0.1256631303452861,
+          "rotation_p90_deg": 0.2296530934586427,
+          "threshold_pass_fraction": 1.0,
+          "continuous_pass_fraction": 1.0,
+          "strict_continuous_pass_fraction": 1.0
+        },
+        {
+          "noise": "高噪声",
+          "duration_s": 1.0,
+          "position_median_m": 0.038789678402342,
+          "position_p90_m": 0.052847069159447,
+          "rotation_median_deg": 0.23603180270411875,
+          "rotation_p90_deg": 0.41618528399931115,
+          "threshold_pass_fraction": 1.0,
+          "continuous_pass_fraction": 1.0,
+          "strict_continuous_pass_fraction": 1.0
+        },
+        {
+          "noise": "高噪声",
+          "duration_s": 2.0,
+          "position_median_m": 0.16886203481306222,
+          "position_p90_m": 0.21784512950732726,
+          "rotation_median_deg": 0.42988687956581606,
+          "rotation_p90_deg": 0.879640471595313,
+          "threshold_pass_fraction": 1.0,
+          "continuous_pass_fraction": 1.0,
+          "strict_continuous_pass_fraction": 1.0
+        },
+        {
+          "noise": "高噪声",
+          "duration_s": 3.0,
+          "position_median_m": 0.3841251938574615,
+          "position_p90_m": 0.5437127567712655,
+          "rotation_median_deg": 0.6085945183233913,
+          "rotation_p90_deg": 1.3132218146985035,
+          "threshold_pass_fraction": 1.0,
+          "continuous_pass_fraction": 1.0,
+          "strict_continuous_pass_fraction": 0.8666666666666667
+        }
+      ],
+      "runtime": {
+        "segment_count": 90,
+        "measurements": [
+          {
+            "noise": "无额外噪声",
+            "seed": 0,
+            "start_time": 7.5,
+            "sample_count": 301,
+            "prediction_ms": 6.974100000661565,
+            "mean_step_ms": 0.023247000002205215
+          },
+          {
+            "noise": "无额外噪声",
+            "seed": 0,
+            "start_time": 7.6,
+            "sample_count": 301,
+            "prediction_ms": 10.35500000216416,
+            "mean_step_ms": 0.034516666673880536
+          },
+          {
+            "noise": "无额外噪声",
+            "seed": 0,
+            "start_time": 7.7,
+            "sample_count": 301,
+            "prediction_ms": 6.858800003101351,
+            "mean_step_ms": 0.0228626666770045
+          },
+          {
+            "noise": "无额外噪声",
+            "seed": 0,
+            "start_time": 7.8,
+            "sample_count": 301,
+            "prediction_ms": 9.2906000027142,
+            "mean_step_ms": 0.030968666675714
+          },
+          {
+            "noise": "无额外噪声",
+            "seed": 0,
+            "start_time": 7.9,
+            "sample_count": 301,
+            "prediction_ms": 7.196700000349665,
+            "mean_step_ms": 0.02398900000116555
+          },
+          {
+            "noise": "无额外噪声",
+            "seed": 0,
+            "start_time": 8.0,
+            "sample_count": 301,
+            "prediction_ms": 7.847900000342634,
+            "mean_step_ms": 0.02615966666780878
+          },
+          {
+            "noise": "无额外噪声",
+            "seed": 0,
+            "start_time": 8.1,
+            "sample_count": 301,
+            "prediction_ms": 7.240099999762606,
+            "mean_step_ms": 0.024133666665875353
+          },
+          {
+            "noise": "无额外噪声",
+            "seed": 0,
+            "start_time": 8.2,
+            "sample_count": 301,
+            "prediction_ms": 9.96330000270973,
+            "mean_step_ms": 0.03321100000903243
+          },
+          {
+            "noise": "无额外噪声",
+            "seed": 0,
+            "start_time": 8.3,
+            "sample_count": 301,
+            "prediction_ms": 10.600300000078278,
+            "mean_step_ms": 0.03533433333359426
+          },
+          {
+            "noise": "无额外噪声",
+            "seed": 0,
+            "start_time": 8.4,
+            "sample_count": 301,
+            "prediction_ms": 7.271099999343278,
+            "mean_step_ms": 0.024236999997810926
+          },
+          {
+            "noise": "无额外噪声",
+            "seed": 1,
+            "start_time": 7.5,
+            "sample_count": 301,
+            "prediction_ms": 9.73379999777535,
+            "mean_step_ms": 0.0324459999925845
+          },
+          {
+            "noise": "无额外噪声",
+            "seed": 1,
+            "start_time": 7.6,
+            "sample_count": 301,
+            "prediction_ms": 7.438299999193987,
+            "mean_step_ms": 0.024794333330646623
+          },
+          {
+            "noise": "无额外噪声",
+            "seed": 1,
+            "start_time": 7.7,
+            "sample_count": 301,
+            "prediction_ms": 9.431599999516038,
+            "mean_step_ms": 0.03143866666505346
+          },
+          {
+            "noise": "无额外噪声",
+            "seed": 1,
+            "start_time": 7.8,
+            "sample_count": 301,
+            "prediction_ms": 7.50260000131675,
+            "mean_step_ms": 0.025008666671055835
+          },
+          {
+            "noise": "无额外噪声",
+            "seed": 1,
+            "start_time": 7.9,
+            "sample_count": 301,
+            "prediction_ms": 8.817599999019876,
+            "mean_step_ms": 0.02939199999673292
+          },
+          {
+            "noise": "无额外噪声",
+            "seed": 1,
+            "start_time": 8.0,
+            "sample_count": 301,
+            "prediction_ms": 7.492900000215741,
+            "mean_step_ms": 0.02497633333405247
+          },
+          {
+            "noise": "无额外噪声",
+            "seed": 1,
+            "start_time": 8.1,
+            "sample_count": 301,
+            "prediction_ms": 9.394099997734884,
+            "mean_step_ms": 0.03131366665911628
+          },
+          {
+            "noise": "无额外噪声",
+            "seed": 1,
+            "start_time": 8.2,
+            "sample_count": 301,
+            "prediction_ms": 7.497499998862622,
+            "mean_step_ms": 0.024991666662875407
+          },
+          {
+            "noise": "无额外噪声",
+            "seed": 1,
+            "start_time": 8.3,
+            "sample_count": 301,
+            "prediction_ms": 7.543299998360453,
+            "mean_step_ms": 0.02514433332786818
+          },
+          {
+            "noise": "无额外噪声",
+            "seed": 1,
+            "start_time": 8.4,
+            "sample_count": 301,
+            "prediction_ms": 9.478300002228934,
+            "mean_step_ms": 0.031594333340763114
+          },
+          {
+            "noise": "无额外噪声",
+            "seed": 2,
+            "start_time": 7.5,
+            "sample_count": 301,
+            "prediction_ms": 7.52229999852716,
+            "mean_step_ms": 0.025074333328423865
+          },
+          {
+            "noise": "无额外噪声",
+            "seed": 2,
+            "start_time": 7.6,
+            "sample_count": 301,
+            "prediction_ms": 10.253299999021692,
+            "mean_step_ms": 0.03417766666340564
+          },
+          {
+            "noise": "无额外噪声",
+            "seed": 2,
+            "start_time": 7.7,
+            "sample_count": 301,
+            "prediction_ms": 7.37190000290866,
+            "mean_step_ms": 0.024573000009695534
+          },
+          {
+            "noise": "无额外噪声",
+            "seed": 2,
+            "start_time": 7.8,
+            "sample_count": 301,
+            "prediction_ms": 14.593299998523435,
+            "mean_step_ms": 0.04864433332841145
+          },
+          {
+            "noise": "无额外噪声",
+            "seed": 2,
+            "start_time": 7.9,
+            "sample_count": 301,
+            "prediction_ms": 8.273399998870445,
+            "mean_step_ms": 0.02757799999623482
+          },
+          {
+            "noise": "无额外噪声",
+            "seed": 2,
+            "start_time": 8.0,
+            "sample_count": 301,
+            "prediction_ms": 7.528199999796925,
+            "mean_step_ms": 0.025093999999323085
+          },
+          {
+            "noise": "无额外噪声",
+            "seed": 2,
+            "start_time": 8.1,
+            "sample_count": 301,
+            "prediction_ms": 10.384600001998479,
+            "mean_step_ms": 0.034615333339994926
+          },
+          {
+            "noise": "无额外噪声",
+            "seed": 2,
+            "start_time": 8.2,
+            "sample_count": 301,
+            "prediction_ms": 7.707199998549186,
+            "mean_step_ms": 0.02569066666183062
+          },
+          {
+            "noise": "无额外噪声",
+            "seed": 2,
+            "start_time": 8.3,
+            "sample_count": 301,
+            "prediction_ms": 20.73749999908614,
+            "mean_step_ms": 0.0691249999969538
+          },
+          {
+            "noise": "无额外噪声",
+            "seed": 2,
+            "start_time": 8.4,
+            "sample_count": 301,
+            "prediction_ms": 8.262299998023082,
+            "mean_step_ms": 0.02754099999341027
+          },
+          {
+            "noise": "低噪声",
+            "seed": 0,
+            "start_time": 7.5,
+            "sample_count": 301,
+            "prediction_ms": 9.404099997482263,
+            "mean_step_ms": 0.03134699999160754
+          },
+          {
+            "noise": "低噪声",
+            "seed": 0,
+            "start_time": 7.6,
+            "sample_count": 301,
+            "prediction_ms": 7.5010000000474975,
+            "mean_step_ms": 0.025003333333491657
+          },
+          {
+            "noise": "低噪声",
+            "seed": 0,
+            "start_time": 7.7,
+            "sample_count": 301,
+            "prediction_ms": 10.367099999712082,
+            "mean_step_ms": 0.03455699999904027
+          },
+          {
+            "noise": "低噪声",
+            "seed": 0,
+            "start_time": 7.8,
+            "sample_count": 301,
+            "prediction_ms": 7.653799999388866,
+            "mean_step_ms": 0.025512666664629553
+          },
+          {
+            "noise": "低噪声",
+            "seed": 0,
+            "start_time": 7.9,
+            "sample_count": 301,
+            "prediction_ms": 8.759099997405428,
+            "mean_step_ms": 0.02919699999135143
+          },
+          {
+            "noise": "低噪声",
+            "seed": 0,
+            "start_time": 8.0,
+            "sample_count": 301,
+            "prediction_ms": 7.721400001173606,
+            "mean_step_ms": 0.02573800000391202
+          },
+          {
+            "noise": "低噪声",
+            "seed": 0,
+            "start_time": 8.1,
+            "sample_count": 301,
+            "prediction_ms": 10.186600000452017,
+            "mean_step_ms": 0.033955333334840056
+          },
+          {
+            "noise": "低噪声",
+            "seed": 0,
+            "start_time": 8.2,
+            "sample_count": 301,
+            "prediction_ms": 10.786999999254476,
+            "mean_step_ms": 0.03595666666418159
+          },
+          {
+            "noise": "低噪声",
+            "seed": 0,
+            "start_time": 8.3,
+            "sample_count": 301,
+            "prediction_ms": 7.7705000003334135,
+            "mean_step_ms": 0.025901666667778045
+          },
+          {
+            "noise": "低噪声",
+            "seed": 0,
+            "start_time": 8.4,
+            "sample_count": 301,
+            "prediction_ms": 8.767999999690801,
+            "mean_step_ms": 0.029226666665636003
+          },
+          {
+            "noise": "低噪声",
+            "seed": 1,
+            "start_time": 7.5,
+            "sample_count": 301,
+            "prediction_ms": 7.637900002009701,
+            "mean_step_ms": 0.02545966667336567
+          },
+          {
+            "noise": "低噪声",
+            "seed": 1,
+            "start_time": 7.6,
+            "sample_count": 301,
+            "prediction_ms": 12.587900000653462,
+            "mean_step_ms": 0.041959666668844875
+          },
+          {
+            "noise": "低噪声",
+            "seed": 1,
+            "start_time": 7.7,
+            "sample_count": 301,
+            "prediction_ms": 9.253899999748683,
+            "mean_step_ms": 0.030846333332495608
+          },
+          {
+            "noise": "低噪声",
+            "seed": 1,
+            "start_time": 7.8,
+            "sample_count": 301,
+            "prediction_ms": 7.361600000876933,
+            "mean_step_ms": 0.024538666669589777
+          },
+          {
+            "noise": "低噪声",
+            "seed": 1,
+            "start_time": 7.9,
+            "sample_count": 301,
+            "prediction_ms": 9.154399998806184,
+            "mean_step_ms": 0.03051466666268728
+          },
+          {
+            "noise": "低噪声",
+            "seed": 1,
+            "start_time": 8.0,
+            "sample_count": 301,
+            "prediction_ms": 7.511600000725593,
+            "mean_step_ms": 0.025038666669085313
+          },
+          {
+            "noise": "低噪声",
+            "seed": 1,
+            "start_time": 8.1,
+            "sample_count": 301,
+            "prediction_ms": 8.832100000290666,
+            "mean_step_ms": 0.02944033333430222
+          },
+          {
+            "noise": "低噪声",
+            "seed": 1,
+            "start_time": 8.2,
+            "sample_count": 301,
+            "prediction_ms": 7.741500001429813,
+            "mean_step_ms": 0.025805000004766043
+          },
+          {
+            "noise": "低噪声",
+            "seed": 1,
+            "start_time": 8.3,
+            "sample_count": 301,
+            "prediction_ms": 10.34079999953974,
+            "mean_step_ms": 0.034469333331799135
+          },
+          {
+            "noise": "低噪声",
+            "seed": 1,
+            "start_time": 8.4,
+            "sample_count": 301,
+            "prediction_ms": 7.3671999998623505,
+            "mean_step_ms": 0.024557333332874503
+          },
+          {
+            "noise": "低噪声",
+            "seed": 2,
+            "start_time": 7.5,
+            "sample_count": 301,
+            "prediction_ms": 8.236899997427827,
+            "mean_step_ms": 0.027456333324759424
+          },
+          {
+            "noise": "低噪声",
+            "seed": 2,
+            "start_time": 7.6,
+            "sample_count": 301,
+            "prediction_ms": 7.661800002097152,
+            "mean_step_ms": 0.02553933334032384
+          },
+          {
+            "noise": "低噪声",
+            "seed": 2,
+            "start_time": 7.7,
+            "sample_count": 301,
+            "prediction_ms": 8.634800000436371,
+            "mean_step_ms": 0.028782666668121237
+          },
+          {
+            "noise": "低噪声",
+            "seed": 2,
+            "start_time": 7.8,
+            "sample_count": 301,
+            "prediction_ms": 7.804799999576062,
+            "mean_step_ms": 0.026015999998586874
+          },
+          {
+            "noise": "低噪声",
+            "seed": 2,
+            "start_time": 7.9,
+            "sample_count": 301,
+            "prediction_ms": 8.082799999101553,
+            "mean_step_ms": 0.026942666663671844
+          },
+          {
+            "noise": "低噪声",
+            "seed": 2,
+            "start_time": 8.0,
+            "sample_count": 301,
+            "prediction_ms": 8.880999997927574,
+            "mean_step_ms": 0.029603333326425247
+          },
+          {
+            "noise": "低噪声",
+            "seed": 2,
+            "start_time": 8.1,
+            "sample_count": 301,
+            "prediction_ms": 15.433599997777492,
+            "mean_step_ms": 0.05144533332592497
+          },
+          {
+            "noise": "低噪声",
+            "seed": 2,
+            "start_time": 8.2,
+            "sample_count": 301,
+            "prediction_ms": 6.9100000000617,
+            "mean_step_ms": 0.023033333333539
+          },
+          {
+            "noise": "低噪声",
+            "seed": 2,
+            "start_time": 8.3,
+            "sample_count": 301,
+            "prediction_ms": 8.30860000132816,
+            "mean_step_ms": 0.02769533333776053
+          },
+          {
+            "noise": "低噪声",
+            "seed": 2,
+            "start_time": 8.4,
+            "sample_count": 301,
+            "prediction_ms": 7.314399997994769,
+            "mean_step_ms": 0.02438133332664923
+          },
+          {
+            "noise": "高噪声",
+            "seed": 0,
+            "start_time": 7.5,
+            "sample_count": 301,
+            "prediction_ms": 11.471000001620268,
+            "mean_step_ms": 0.038236666672067564
+          },
+          {
+            "noise": "高噪声",
+            "seed": 0,
+            "start_time": 7.6,
+            "sample_count": 301,
+            "prediction_ms": 7.310400000278605,
+            "mean_step_ms": 0.024368000000928685
+          },
+          {
+            "noise": "高噪声",
+            "seed": 0,
+            "start_time": 7.7,
+            "sample_count": 301,
+            "prediction_ms": 9.562600000208477,
+            "mean_step_ms": 0.031875333334028255
+          },
+          {
+            "noise": "高噪声",
+            "seed": 0,
+            "start_time": 7.8,
+            "sample_count": 301,
+            "prediction_ms": 7.630899999639951,
+            "mean_step_ms": 0.02543633333213317
+          },
+          {
+            "noise": "高噪声",
+            "seed": 0,
+            "start_time": 7.9,
+            "sample_count": 301,
+            "prediction_ms": 9.717699998873286,
+            "mean_step_ms": 0.03239233332957762
+          },
+          {
+            "noise": "高噪声",
+            "seed": 0,
+            "start_time": 8.0,
+            "sample_count": 301,
+            "prediction_ms": 7.817900001100497,
+            "mean_step_ms": 0.02605966667033499
+          },
+          {
+            "noise": "高噪声",
+            "seed": 0,
+            "start_time": 8.1,
+            "sample_count": 301,
+            "prediction_ms": 8.256700002675643,
+            "mean_step_ms": 0.027522333342252143
+          },
+          {
+            "noise": "高噪声",
+            "seed": 0,
+            "start_time": 8.2,
+            "sample_count": 301,
+            "prediction_ms": 10.706900000513997,
+            "mean_step_ms": 0.03568966666837999
+          },
+          {
+            "noise": "高噪声",
+            "seed": 0,
+            "start_time": 8.3,
+            "sample_count": 301,
+            "prediction_ms": 8.036399998673005,
+            "mean_step_ms": 0.026787999995576683
+          },
+          {
+            "noise": "高噪声",
+            "seed": 0,
+            "start_time": 8.4,
+            "sample_count": 301,
+            "prediction_ms": 10.697000001528068,
+            "mean_step_ms": 0.03565666667176023
+          },
+          {
+            "noise": "高噪声",
+            "seed": 1,
+            "start_time": 7.5,
+            "sample_count": 301,
+            "prediction_ms": 10.608600001432933,
+            "mean_step_ms": 0.03536200000477644
+          },
+          {
+            "noise": "高噪声",
+            "seed": 1,
+            "start_time": 7.6,
+            "sample_count": 301,
+            "prediction_ms": 8.130999998684274,
+            "mean_step_ms": 0.02710333332894758
+          },
+          {
+            "noise": "高噪声",
+            "seed": 1,
+            "start_time": 7.7,
+            "sample_count": 301,
+            "prediction_ms": 9.576600001309998,
+            "mean_step_ms": 0.03192200000436666
+          },
+          {
+            "noise": "高噪声",
+            "seed": 1,
+            "start_time": 7.8,
+            "sample_count": 301,
+            "prediction_ms": 7.712000002356945,
+            "mean_step_ms": 0.02570666667452315
+          },
+          {
+            "noise": "高噪声",
+            "seed": 1,
+            "start_time": 7.9,
+            "sample_count": 301,
+            "prediction_ms": 10.053100002551218,
+            "mean_step_ms": 0.033510333341837395
+          },
+          {
+            "noise": "高噪声",
+            "seed": 1,
+            "start_time": 8.0,
+            "sample_count": 301,
+            "prediction_ms": 7.716499996604398,
+            "mean_step_ms": 0.025721666655347992
+          },
+          {
+            "noise": "高噪声",
+            "seed": 1,
+            "start_time": 8.1,
+            "sample_count": 301,
+            "prediction_ms": 9.937100003298838,
+            "mean_step_ms": 0.03312366667766279
+          },
+          {
+            "noise": "高噪声",
+            "seed": 1,
+            "start_time": 8.2,
+            "sample_count": 301,
+            "prediction_ms": 10.101600000780309,
+            "mean_step_ms": 0.03367200000260103
+          },
+          {
+            "noise": "高噪声",
+            "seed": 1,
+            "start_time": 8.3,
+            "sample_count": 301,
+            "prediction_ms": 7.86579999839887,
+            "mean_step_ms": 0.026219333327996235
+          },
+          {
+            "noise": "高噪声",
+            "seed": 1,
+            "start_time": 8.4,
+            "sample_count": 301,
+            "prediction_ms": 9.669899998698384,
+            "mean_step_ms": 0.03223299999566128
+          },
+          {
+            "noise": "高噪声",
+            "seed": 2,
+            "start_time": 7.5,
+            "sample_count": 301,
+            "prediction_ms": 8.131200000207173,
+            "mean_step_ms": 0.027104000000690576
+          },
+          {
+            "noise": "高噪声",
+            "seed": 2,
+            "start_time": 7.6,
+            "sample_count": 301,
+            "prediction_ms": 10.189200002059806,
+            "mean_step_ms": 0.03396400000686602
+          },
+          {
+            "noise": "高噪声",
+            "seed": 2,
+            "start_time": 7.7,
+            "sample_count": 301,
+            "prediction_ms": 10.667899998225039,
+            "mean_step_ms": 0.03555966666075013
+          },
+          {
+            "noise": "高噪声",
+            "seed": 2,
+            "start_time": 7.8,
+            "sample_count": 301,
+            "prediction_ms": 7.870100002037361,
+            "mean_step_ms": 0.026233666673457872
+          },
+          {
+            "noise": "高噪声",
+            "seed": 2,
+            "start_time": 7.9,
+            "sample_count": 301,
+            "prediction_ms": 9.755700000823708,
+            "mean_step_ms": 0.03251900000274569
+          },
+          {
+            "noise": "高噪声",
+            "seed": 2,
+            "start_time": 8.0,
+            "sample_count": 301,
+            "prediction_ms": 7.784299999912037,
+            "mean_step_ms": 0.025947666666373454
+          },
+          {
+            "noise": "高噪声",
+            "seed": 2,
+            "start_time": 8.1,
+            "sample_count": 301,
+            "prediction_ms": 9.529599999950733,
+            "mean_step_ms": 0.03176533333316911
+          },
+          {
+            "noise": "高噪声",
+            "seed": 2,
+            "start_time": 8.2,
+            "sample_count": 301,
+            "prediction_ms": 8.106699999189004,
+            "mean_step_ms": 0.027022333330630015
+          },
+          {
+            "noise": "高噪声",
+            "seed": 2,
+            "start_time": 8.3,
+            "sample_count": 301,
+            "prediction_ms": 11.476200001197867,
+            "mean_step_ms": 0.03825400000399289
+          },
+          {
+            "noise": "高噪声",
+            "seed": 2,
+            "start_time": 8.4,
+            "sample_count": 301,
+            "prediction_ms": 7.112700001016492,
+            "mean_step_ms": 0.023709000003388308
+          }
+        ],
+        "mean_three_second_prediction_ms": 8.97490444452463,
+        "p90_three_second_prediction_ms": 10.670809998555342,
+        "mean_step_ms": 0.029916348148415435,
+        "scope": "仅积分函数耗时，不含下载、读取、评估、绘图；不代表端到端实时性能"
+      },
+      "source": "https://huggingface.co/datasets/theairlabcmu/tartanair2",
+      "note": "与实际SLAM实验使用完全相同的10个起点、噪声参数和种子；本分支仍为真值理想初始化上界",
+      "versions": {
+        "numpy": "2.2.6",
+        "pandas": "3.1.1",
+        "matplotlib": "3.11.2"
+      },
+      "paired_with": "actual_slam",
+      "reference_state_file_sha256": "25ae300c9c4c2990dfebae472fb6b8cd7ea4d95c1cae9eade9485d7484ffab96"
+    },
+    {
+      "dataset": "TartanAir V2",
+      "environment": "ArchVizTinyHouseDay",
+      "difficulty": "hard",
+      "sequence": "P000",
+      "init_mode": "ideal_gt",
+      "seeds": [
+        0,
+        1,
+        2
+      ],
+      "start_count": 10,
+      "start_times": [
+        0.5,
+        0.83,
+        1.16,
+        1.49,
+        1.82,
+        2.15,
+        2.48,
+        2.81,
+        3.14,
+        3.48
+      ],
+      "imu_hz": 99.99999999999991,
+      "gravity": [
+        0,
+        0,
+        9.8
+      ],
+      "orientation": "内禀XYZ欧拉角，弧度，机体到世界",
+      "noise_columns": [
+        "角速度逐点标准差rad/s",
+        "加速度逐点标准差m/s²",
+        "固定陀螺偏置标准差rad/s",
+        "固定加速度偏置标准差m/s²"
+      ],
+      "noise": {
+        "无额外噪声": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "低噪声": [
+          0.002,
+          0.02,
+          0.0005,
+          0.01
+        ],
+        "高噪声": [
+          0.01,
+          0.1,
+          0.003,
+          0.05
+        ]
+      },
+      "sha256": "d6b8bc740ea1a97204f85f890562dbb2717de3c0ed0b49faaf16e8af6dcee801",
+      "summary": [
+        {
+          "noise": "无额外噪声",
+          "duration_s": 0.5,
+          "position_median_m": 0.001271966284964001,
+          "position_p90_m": 0.002429711498731011,
+          "rotation_median_deg": 0.01628656159473251,
+          "rotation_p90_deg": 0.025276253086116442,
+          "threshold_pass_fraction": 1.0,
+          "continuous_pass_fraction": 1.0,
+          "strict_continuous_pass_fraction": 1.0
+        },
+        {
+          "noise": "无额外噪声",
+          "duration_s": 1.0,
+          "position_median_m": 0.002576168200079711,
+          "position_p90_m": 0.0043474118719844775,
+          "rotation_median_deg": 0.016118397563592346,
+          "rotation_p90_deg": 0.0421304444519002,
+          "threshold_pass_fraction": 1.0,
+          "continuous_pass_fraction": 1.0,
+          "strict_continuous_pass_fraction": 1.0
+        },
+        {
+          "noise": "无额外噪声",
+          "duration_s": 2.0,
+          "position_median_m": 0.006160471045501282,
+          "position_p90_m": 0.010728049934549238,
+          "rotation_median_deg": 0.01569470888504844,
+          "rotation_p90_deg": 0.029285480133889492,
+          "threshold_pass_fraction": 1.0,
+          "continuous_pass_fraction": 1.0,
+          "strict_continuous_pass_fraction": 1.0
+        },
+        {
+          "noise": "无额外噪声",
+          "duration_s": 3.0,
+          "position_median_m": 0.009937776748176709,
+          "position_p90_m": 0.019284153238299663,
+          "rotation_median_deg": 0.018188644808087972,
+          "rotation_p90_deg": 0.01993651453053469,
+          "threshold_pass_fraction": 1.0,
+          "continuous_pass_fraction": 1.0,
+          "strict_continuous_pass_fraction": 1.0
+        },
+        {
+          "noise": "低噪声",
+          "duration_s": 0.5,
+          "position_median_m": 0.0023434080196308633,
+          "position_p90_m": 0.0037103432326472474,
+          "rotation_median_deg": 0.02882796219905178,
+          "rotation_p90_deg": 0.05018416364111627,
+          "threshold_pass_fraction": 1.0,
+          "continuous_pass_fraction": 1.0,
+          "strict_continuous_pass_fraction": 1.0
+        },
+        {
+          "noise": "低噪声",
+          "duration_s": 1.0,
+          "position_median_m": 0.008232366637879206,
+          "position_p90_m": 0.01088778843214939,
+          "rotation_median_deg": 0.0515020610402237,
+          "rotation_p90_deg": 0.08247979402607555,
+          "threshold_pass_fraction": 1.0,
+          "continuous_pass_fraction": 1.0,
+          "strict_continuous_pass_fraction": 1.0
+        },
+        {
+          "noise": "低噪声",
+          "duration_s": 2.0,
+          "position_median_m": 0.03212118773163257,
+          "position_p90_m": 0.04262748868794103,
+          "rotation_median_deg": 0.07575497387811202,
+          "rotation_p90_deg": 0.14319813451350993,
+          "threshold_pass_fraction": 1.0,
+          "continuous_pass_fraction": 1.0,
+          "strict_continuous_pass_fraction": 1.0
+        },
+        {
+          "noise": "低噪声",
+          "duration_s": 3.0,
+          "position_median_m": 0.07232384415811796,
+          "position_p90_m": 0.09793671118596846,
+          "rotation_median_deg": 0.09964025711518473,
+          "rotation_p90_deg": 0.18598281886512025,
+          "threshold_pass_fraction": 1.0,
+          "continuous_pass_fraction": 1.0,
+          "strict_continuous_pass_fraction": 1.0
+        },
+        {
+          "noise": "高噪声",
+          "duration_s": 0.5,
+          "position_median_m": 0.01075299956727184,
+          "position_p90_m": 0.013319327050729211,
+          "rotation_median_deg": 0.12469424791478279,
+          "rotation_p90_deg": 0.22607011372506186,
+          "threshold_pass_fraction": 1.0,
+          "continuous_pass_fraction": 1.0,
+          "strict_continuous_pass_fraction": 1.0
+        },
+        {
+          "noise": "高噪声",
+          "duration_s": 1.0,
+          "position_median_m": 0.04106612017033185,
+          "position_p90_m": 0.05304264528581777,
+          "rotation_median_deg": 0.248154423926484,
+          "rotation_p90_deg": 0.4040385300285383,
+          "threshold_pass_fraction": 1.0,
+          "continuous_pass_fraction": 1.0,
+          "strict_continuous_pass_fraction": 1.0
+        },
+        {
+          "noise": "高噪声",
+          "duration_s": 2.0,
+          "position_median_m": 0.15685660821609984,
+          "position_p90_m": 0.21107767671291472,
+          "rotation_median_deg": 0.411583841128759,
+          "rotation_p90_deg": 0.8222191835918445,
+          "threshold_pass_fraction": 1.0,
+          "continuous_pass_fraction": 1.0,
+          "strict_continuous_pass_fraction": 1.0
+        },
+        {
+          "noise": "高噪声",
+          "duration_s": 3.0,
+          "position_median_m": 0.36846308955804996,
+          "position_p90_m": 0.5062390677336616,
+          "rotation_median_deg": 0.5724898471756157,
+          "rotation_p90_deg": 1.1063845305934301,
+          "threshold_pass_fraction": 1.0,
+          "continuous_pass_fraction": 1.0,
+          "strict_continuous_pass_fraction": 0.8666666666666667
+        }
+      ],
+      "runtime": {
+        "segment_count": 90,
+        "measurements": [
+          {
+            "noise": "无额外噪声",
+            "seed": 0,
+            "start_time": 0.5,
+            "sample_count": 301,
+            "prediction_ms": 8.736800002225209,
+            "mean_step_ms": 0.02912266667408403
+          },
+          {
+            "noise": "无额外噪声",
+            "seed": 0,
+            "start_time": 0.83,
+            "sample_count": 301,
+            "prediction_ms": 7.5372999999672174,
+            "mean_step_ms": 0.025124333333224058
+          },
+          {
+            "noise": "无额外噪声",
+            "seed": 0,
+            "start_time": 1.16,
+            "sample_count": 301,
+            "prediction_ms": 9.601099998690188,
+            "mean_step_ms": 0.032003666662300624
+          },
+          {
+            "noise": "无额外噪声",
+            "seed": 0,
+            "start_time": 1.49,
+            "sample_count": 301,
+            "prediction_ms": 9.183599999232683,
+            "mean_step_ms": 0.03061199999744228
+          },
+          {
+            "noise": "无额外噪声",
+            "seed": 0,
+            "start_time": 1.82,
+            "sample_count": 301,
+            "prediction_ms": 8.017100000870414,
+            "mean_step_ms": 0.026723666669568047
+          },
+          {
+            "noise": "无额外噪声",
+            "seed": 0,
+            "start_time": 2.15,
+            "sample_count": 301,
+            "prediction_ms": 6.871400000818539,
+            "mean_step_ms": 0.02290466666939513
+          },
+          {
+            "noise": "无额外噪声",
+            "seed": 0,
+            "start_time": 2.48,
+            "sample_count": 301,
+            "prediction_ms": 8.991200000309618,
+            "mean_step_ms": 0.029970666667698726
+          },
+          {
+            "noise": "无额外噪声",
+            "seed": 0,
+            "start_time": 2.81,
+            "sample_count": 301,
+            "prediction_ms": 7.17350000195438,
+            "mean_step_ms": 0.02391166667318127
+          },
+          {
+            "noise": "无额外噪声",
+            "seed": 0,
+            "start_time": 3.14,
+            "sample_count": 301,
+            "prediction_ms": 9.069100000488106,
+            "mean_step_ms": 0.030230333334960353
+          },
+          {
+            "noise": "无额外噪声",
+            "seed": 0,
+            "start_time": 3.48,
+            "sample_count": 301,
+            "prediction_ms": 7.36970000070869,
+            "mean_step_ms": 0.024565666669028968
+          },
+          {
+            "noise": "无额外噪声",
+            "seed": 1,
+            "start_time": 0.5,
+            "sample_count": 301,
+            "prediction_ms": 9.193599998980062,
+            "mean_step_ms": 0.03064533332993354
+          },
+          {
+            "noise": "无额外噪声",
+            "seed": 1,
+            "start_time": 0.83,
+            "sample_count": 301,
+            "prediction_ms": 7.400599999527913,
+            "mean_step_ms": 0.024668666665093042
+          },
+          {
+            "noise": "无额外噪声",
+            "seed": 1,
+            "start_time": 1.16,
+            "sample_count": 301,
+            "prediction_ms": 9.334799997304799,
+            "mean_step_ms": 0.031115999991015997
+          },
+          {
+            "noise": "无额外噪声",
+            "seed": 1,
+            "start_time": 1.49,
+            "sample_count": 301,
+            "prediction_ms": 11.744899999030167,
+            "mean_step_ms": 0.03914966666343389
+          },
+          {
+            "noise": "无额外噪声",
+            "seed": 1,
+            "start_time": 1.82,
+            "sample_count": 301,
+            "prediction_ms": 7.203999997727806,
+            "mean_step_ms": 0.02401333332575935
+          },
+          {
+            "noise": "无额外噪声",
+            "seed": 1,
+            "start_time": 2.15,
+            "sample_count": 301,
+            "prediction_ms": 10.7787000015378,
+            "mean_step_ms": 0.035929000005126
+          },
+          {
+            "noise": "无额外噪声",
+            "seed": 1,
+            "start_time": 2.48,
+            "sample_count": 301,
+            "prediction_ms": 7.475900001736591,
+            "mean_step_ms": 0.024919666672455303
+          },
+          {
+            "noise": "无额外噪声",
+            "seed": 1,
+            "start_time": 2.81,
+            "sample_count": 301,
+            "prediction_ms": 10.548199999902863,
+            "mean_step_ms": 0.03516066666634288
+          },
+          {
+            "noise": "无额外噪声",
+            "seed": 1,
+            "start_time": 3.14,
+            "sample_count": 301,
+            "prediction_ms": 9.891900001093745,
+            "mean_step_ms": 0.032973000003645815
+          },
+          {
+            "noise": "无额外噪声",
+            "seed": 1,
+            "start_time": 3.48,
+            "sample_count": 301,
+            "prediction_ms": 7.356900001468603,
+            "mean_step_ms": 0.02452300000489534
+          },
+          {
+            "noise": "无额外噪声",
+            "seed": 2,
+            "start_time": 0.5,
+            "sample_count": 301,
+            "prediction_ms": 14.183600000251317,
+            "mean_step_ms": 0.04727866666750439
+          },
+          {
+            "noise": "无额外噪声",
+            "seed": 2,
+            "start_time": 0.83,
+            "sample_count": 301,
+            "prediction_ms": 7.613800000399351,
+            "mean_step_ms": 0.025379333334664505
+          },
+          {
+            "noise": "无额外噪声",
+            "seed": 2,
+            "start_time": 1.16,
+            "sample_count": 301,
+            "prediction_ms": 7.419599998684134,
+            "mean_step_ms": 0.02473199999561378
+          },
+          {
+            "noise": "无额外噪声",
+            "seed": 2,
+            "start_time": 1.49,
+            "sample_count": 301,
+            "prediction_ms": 9.48459999926854,
+            "mean_step_ms": 0.03161533333089513
+          },
+          {
+            "noise": "无额外噪声",
+            "seed": 2,
+            "start_time": 1.82,
+            "sample_count": 301,
+            "prediction_ms": 7.602100002259249,
+            "mean_step_ms": 0.025340333340864163
+          },
+          {
+            "noise": "无额外噪声",
+            "seed": 2,
+            "start_time": 2.15,
+            "sample_count": 301,
+            "prediction_ms": 9.353299999929732,
+            "mean_step_ms": 0.03117766666643244
+          },
+          {
+            "noise": "无额外噪声",
+            "seed": 2,
+            "start_time": 2.48,
+            "sample_count": 301,
+            "prediction_ms": 7.584599999972852,
+            "mean_step_ms": 0.025281999999909505
+          },
+          {
+            "noise": "无额外噪声",
+            "seed": 2,
+            "start_time": 2.81,
+            "sample_count": 301,
+            "prediction_ms": 9.604200000467245,
+            "mean_step_ms": 0.032014000001557484
+          },
+          {
+            "noise": "无额外噪声",
+            "seed": 2,
+            "start_time": 3.14,
+            "sample_count": 301,
+            "prediction_ms": 7.479700001567835,
+            "mean_step_ms": 0.02493233333855945
+          },
+          {
+            "noise": "无额外噪声",
+            "seed": 2,
+            "start_time": 3.48,
+            "sample_count": 301,
+            "prediction_ms": 8.186700000806013,
+            "mean_step_ms": 0.02728900000268671
+          },
+          {
+            "noise": "低噪声",
+            "seed": 0,
+            "start_time": 0.5,
+            "sample_count": 301,
+            "prediction_ms": 7.6962999992247205,
+            "mean_step_ms": 0.02565433333074907
+          },
+          {
+            "noise": "低噪声",
+            "seed": 0,
+            "start_time": 0.83,
+            "sample_count": 301,
+            "prediction_ms": 8.149999997840496,
+            "mean_step_ms": 0.02716666665946832
+          },
+          {
+            "noise": "低噪声",
+            "seed": 0,
+            "start_time": 1.16,
+            "sample_count": 301,
+            "prediction_ms": 13.007700003072387,
+            "mean_step_ms": 0.04335900001024129
+          },
+          {
+            "noise": "低噪声",
+            "seed": 0,
+            "start_time": 1.49,
+            "sample_count": 301,
+            "prediction_ms": 8.309000000735978,
+            "mean_step_ms": 0.027696666669119924
+          },
+          {
+            "noise": "低噪声",
+            "seed": 0,
+            "start_time": 1.82,
+            "sample_count": 301,
+            "prediction_ms": 9.426500000699889,
+            "mean_step_ms": 0.03142166666899963
+          },
+          {
+            "noise": "低噪声",
+            "seed": 0,
+            "start_time": 2.15,
+            "sample_count": 301,
+            "prediction_ms": 7.376599998679012,
+            "mean_step_ms": 0.024588666662263375
+          },
+          {
+            "noise": "低噪声",
+            "seed": 0,
+            "start_time": 2.48,
+            "sample_count": 301,
+            "prediction_ms": 8.047999999689637,
+            "mean_step_ms": 0.02682666666563212
+          },
+          {
+            "noise": "低噪声",
+            "seed": 0,
+            "start_time": 2.81,
+            "sample_count": 301,
+            "prediction_ms": 7.49819999691681,
+            "mean_step_ms": 0.0249939999897227
+          },
+          {
+            "noise": "低噪声",
+            "seed": 0,
+            "start_time": 3.14,
+            "sample_count": 301,
+            "prediction_ms": 7.621099997777492,
+            "mean_step_ms": 0.025403666659258306
+          },
+          {
+            "noise": "低噪声",
+            "seed": 0,
+            "start_time": 3.48,
+            "sample_count": 301,
+            "prediction_ms": 7.67200000336743,
+            "mean_step_ms": 0.025573333344558098
+          },
+          {
+            "noise": "低噪声",
+            "seed": 1,
+            "start_time": 0.5,
+            "sample_count": 301,
+            "prediction_ms": 8.259399997768924,
+            "mean_step_ms": 0.027531333325896412
+          },
+          {
+            "noise": "低噪声",
+            "seed": 1,
+            "start_time": 0.83,
+            "sample_count": 301,
+            "prediction_ms": 7.525100001657847,
+            "mean_step_ms": 0.025083666672192823
+          },
+          {
+            "noise": "低噪声",
+            "seed": 1,
+            "start_time": 1.16,
+            "sample_count": 301,
+            "prediction_ms": 9.885600000416161,
+            "mean_step_ms": 0.032952000001387205
+          },
+          {
+            "noise": "低噪声",
+            "seed": 1,
+            "start_time": 1.49,
+            "sample_count": 301,
+            "prediction_ms": 7.3154999990947545,
+            "mean_step_ms": 0.024384999996982515
+          },
+          {
+            "noise": "低噪声",
+            "seed": 1,
+            "start_time": 1.82,
+            "sample_count": 301,
+            "prediction_ms": 7.890299999417039,
+            "mean_step_ms": 0.026300999998056795
+          },
+          {
+            "noise": "低噪声",
+            "seed": 1,
+            "start_time": 2.15,
+            "sample_count": 301,
+            "prediction_ms": 7.510400002502138,
+            "mean_step_ms": 0.025034666675007127
+          },
+          {
+            "noise": "低噪声",
+            "seed": 1,
+            "start_time": 2.48,
+            "sample_count": 301,
+            "prediction_ms": 8.405900000070687,
+            "mean_step_ms": 0.028019666666902292
+          },
+          {
+            "noise": "低噪声",
+            "seed": 1,
+            "start_time": 2.81,
+            "sample_count": 301,
+            "prediction_ms": 7.416100001137238,
+            "mean_step_ms": 0.024720333337124128
+          },
+          {
+            "noise": "低噪声",
+            "seed": 1,
+            "start_time": 3.14,
+            "sample_count": 301,
+            "prediction_ms": 8.199599997169571,
+            "mean_step_ms": 0.027331999990565237
+          },
+          {
+            "noise": "低噪声",
+            "seed": 1,
+            "start_time": 3.48,
+            "sample_count": 301,
+            "prediction_ms": 7.542899998952635,
+            "mean_step_ms": 0.02514299999650878
+          },
+          {
+            "noise": "低噪声",
+            "seed": 2,
+            "start_time": 0.5,
+            "sample_count": 301,
+            "prediction_ms": 7.972999999765307,
+            "mean_step_ms": 0.026576666665884357
+          },
+          {
+            "noise": "低噪声",
+            "seed": 2,
+            "start_time": 0.83,
+            "sample_count": 301,
+            "prediction_ms": 7.578200002171798,
+            "mean_step_ms": 0.02526066667390599
+          },
+          {
+            "noise": "低噪声",
+            "seed": 2,
+            "start_time": 1.16,
+            "sample_count": 301,
+            "prediction_ms": 8.788799998001195,
+            "mean_step_ms": 0.02929599999333732
+          },
+          {
+            "noise": "低噪声",
+            "seed": 2,
+            "start_time": 1.49,
+            "sample_count": 301,
+            "prediction_ms": 7.458899999619462,
+            "mean_step_ms": 0.02486299999873154
+          },
+          {
+            "noise": "低噪声",
+            "seed": 2,
+            "start_time": 1.82,
+            "sample_count": 301,
+            "prediction_ms": 9.351699998660479,
+            "mean_step_ms": 0.031172333328868262
+          },
+          {
+            "noise": "低噪声",
+            "seed": 2,
+            "start_time": 2.15,
+            "sample_count": 301,
+            "prediction_ms": 7.55120000030729,
+            "mean_step_ms": 0.025170666667690966
+          },
+          {
+            "noise": "低噪声",
+            "seed": 2,
+            "start_time": 2.48,
+            "sample_count": 301,
+            "prediction_ms": 8.229400002164766,
+            "mean_step_ms": 0.02743133334054922
+          },
+          {
+            "noise": "低噪声",
+            "seed": 2,
+            "start_time": 2.81,
+            "sample_count": 301,
+            "prediction_ms": 7.530599999881815,
+            "mean_step_ms": 0.02510199999960605
+          },
+          {
+            "noise": "低噪声",
+            "seed": 2,
+            "start_time": 3.14,
+            "sample_count": 301,
+            "prediction_ms": 8.097699999780161,
+            "mean_step_ms": 0.026992333332600538
+          },
+          {
+            "noise": "低噪声",
+            "seed": 2,
+            "start_time": 3.48,
+            "sample_count": 301,
+            "prediction_ms": 7.457899999280926,
+            "mean_step_ms": 0.024859666664269753
+          },
+          {
+            "noise": "高噪声",
+            "seed": 0,
+            "start_time": 0.5,
+            "sample_count": 301,
+            "prediction_ms": 11.368399998900713,
+            "mean_step_ms": 0.037894666663002376
+          },
+          {
+            "noise": "高噪声",
+            "seed": 0,
+            "start_time": 0.83,
+            "sample_count": 301,
+            "prediction_ms": 8.079300001554657,
+            "mean_step_ms": 0.026931000005182188
+          },
+          {
+            "noise": "高噪声",
+            "seed": 0,
+            "start_time": 1.16,
+            "sample_count": 301,
+            "prediction_ms": 7.476300001144409,
+            "mean_step_ms": 0.024921000003814697
+          },
+          {
+            "noise": "高噪声",
+            "seed": 0,
+            "start_time": 1.49,
+            "sample_count": 301,
+            "prediction_ms": 8.304499999212567,
+            "mean_step_ms": 0.027681666664041888
+          },
+          {
+            "noise": "高噪声",
+            "seed": 0,
+            "start_time": 1.82,
+            "sample_count": 301,
+            "prediction_ms": 7.413499999529449,
+            "mean_step_ms": 0.024711666665098164
+          },
+          {
+            "noise": "高噪声",
+            "seed": 0,
+            "start_time": 2.15,
+            "sample_count": 301,
+            "prediction_ms": 8.086800000455696,
+            "mean_step_ms": 0.026956000001518987
+          },
+          {
+            "noise": "高噪声",
+            "seed": 0,
+            "start_time": 2.48,
+            "sample_count": 301,
+            "prediction_ms": 7.584700000734301,
+            "mean_step_ms": 0.025282333335781004
+          },
+          {
+            "noise": "高噪声",
+            "seed": 0,
+            "start_time": 2.81,
+            "sample_count": 301,
+            "prediction_ms": 8.927099999709753,
+            "mean_step_ms": 0.029756999999032512
+          },
+          {
+            "noise": "高噪声",
+            "seed": 0,
+            "start_time": 3.14,
+            "sample_count": 301,
+            "prediction_ms": 7.63580000057118,
+            "mean_step_ms": 0.0254526666685706
+          },
+          {
+            "noise": "高噪声",
+            "seed": 0,
+            "start_time": 3.48,
+            "sample_count": 301,
+            "prediction_ms": 8.146899999701418,
+            "mean_step_ms": 0.02715633333233806
+          },
+          {
+            "noise": "高噪声",
+            "seed": 1,
+            "start_time": 0.5,
+            "sample_count": 301,
+            "prediction_ms": 7.5759999999718275,
+            "mean_step_ms": 0.025253333333239425
+          },
+          {
+            "noise": "高噪声",
+            "seed": 1,
+            "start_time": 0.83,
+            "sample_count": 301,
+            "prediction_ms": 9.479100001044571,
+            "mean_step_ms": 0.0315970000034819
+          },
+          {
+            "noise": "高噪声",
+            "seed": 1,
+            "start_time": 1.16,
+            "sample_count": 301,
+            "prediction_ms": 7.707599997957004,
+            "mean_step_ms": 0.025691999993190013
+          },
+          {
+            "noise": "高噪声",
+            "seed": 1,
+            "start_time": 1.49,
+            "sample_count": 301,
+            "prediction_ms": 8.25039999836008,
+            "mean_step_ms": 0.027501333327866934
+          },
+          {
+            "noise": "高噪声",
+            "seed": 1,
+            "start_time": 1.82,
+            "sample_count": 301,
+            "prediction_ms": 7.6183999990462326,
+            "mean_step_ms": 0.025394666663487442
+          },
+          {
+            "noise": "高噪声",
+            "seed": 1,
+            "start_time": 2.15,
+            "sample_count": 301,
+            "prediction_ms": 13.591200000519166,
+            "mean_step_ms": 0.04530400000173055
+          },
+          {
+            "noise": "高噪声",
+            "seed": 1,
+            "start_time": 2.48,
+            "sample_count": 301,
+            "prediction_ms": 8.459199998469558,
+            "mean_step_ms": 0.02819733332823186
+          },
+          {
+            "noise": "高噪声",
+            "seed": 1,
+            "start_time": 2.81,
+            "sample_count": 301,
+            "prediction_ms": 7.7592999987246,
+            "mean_step_ms": 0.025864333329082
+          },
+          {
+            "noise": "高噪声",
+            "seed": 1,
+            "start_time": 3.14,
+            "sample_count": 301,
+            "prediction_ms": 8.347999999386957,
+            "mean_step_ms": 0.02782666666462319
+          },
+          {
+            "noise": "高噪声",
+            "seed": 1,
+            "start_time": 3.48,
+            "sample_count": 301,
+            "prediction_ms": 7.597399999212939,
+            "mean_step_ms": 0.025324666664043132
+          },
+          {
+            "noise": "高噪声",
+            "seed": 2,
+            "start_time": 0.5,
+            "sample_count": 301,
+            "prediction_ms": 9.1913000032946,
+            "mean_step_ms": 0.030637666677648667
+          },
+          {
+            "noise": "高噪声",
+            "seed": 2,
+            "start_time": 0.83,
+            "sample_count": 301,
+            "prediction_ms": 7.624900001246715,
+            "mean_step_ms": 0.02541633333748905
+          },
+          {
+            "noise": "高噪声",
+            "seed": 2,
+            "start_time": 1.16,
+            "sample_count": 301,
+            "prediction_ms": 8.756800001719967,
+            "mean_step_ms": 0.029189333339066554
+          },
+          {
+            "noise": "高噪声",
+            "seed": 2,
+            "start_time": 1.49,
+            "sample_count": 301,
+            "prediction_ms": 7.7289000000746455,
+            "mean_step_ms": 0.02576300000024882
+          },
+          {
+            "noise": "高噪声",
+            "seed": 2,
+            "start_time": 1.82,
+            "sample_count": 301,
+            "prediction_ms": 8.999500001664273,
+            "mean_step_ms": 0.02999833333888091
+          },
+          {
+            "noise": "高噪声",
+            "seed": 2,
+            "start_time": 2.15,
+            "sample_count": 301,
+            "prediction_ms": 8.04969999808236,
+            "mean_step_ms": 0.0268323333269412
+          },
+          {
+            "noise": "高噪声",
+            "seed": 2,
+            "start_time": 2.48,
+            "sample_count": 301,
+            "prediction_ms": 8.886800002073869,
+            "mean_step_ms": 0.029622666673579563
+          },
+          {
+            "noise": "高噪声",
+            "seed": 2,
+            "start_time": 2.81,
+            "sample_count": 301,
+            "prediction_ms": 7.810200000676559,
+            "mean_step_ms": 0.026034000002255198
+          },
+          {
+            "noise": "高噪声",
+            "seed": 2,
+            "start_time": 3.14,
+            "sample_count": 301,
+            "prediction_ms": 10.53450000108569,
+            "mean_step_ms": 0.03511500000361897
+          },
+          {
+            "noise": "高噪声",
+            "seed": 2,
+            "start_time": 3.48,
+            "sample_count": 301,
+            "prediction_ms": 10.219299998425413,
+            "mean_step_ms": 0.03406433332808471
+          }
+        ],
+        "mean_three_second_prediction_ms": 8.488643333395077,
+        "p90_three_second_prediction_ms": 9.924640000826916,
+        "mean_step_ms": 0.02829547777798359,
+        "scope": "仅积分函数耗时，不含下载、读取、评估、绘图；不代表端到端实时性能"
+      },
+      "source": "https://huggingface.co/datasets/theairlabcmu/tartanair2",
+      "note": "真值理想初始化上界；官方仿真IMU；噪声档位为人工设置；失效后无真值纠偏；窗口可能重叠",
+      "versions": {
+        "numpy": "2.2.6",
+        "pandas": "3.1.1",
+        "matplotlib": "3.11.2"
+      }
+    },
+    {
+      "dataset": "TartanAir V2",
+      "environment": "ArchVizTinyHouseDay",
+      "difficulty": "easy",
+      "sequence": "P000",
+      "init_mode": "actual_slam",
+      "seeds": [
+        0,
+        1,
+        2
+      ],
+      "start_count": 10,
+      "start_times": [
+        7.5,
+        7.6,
+        7.7,
+        7.8,
+        7.9,
+        8.0,
+        8.1,
+        8.2,
+        8.3,
+        8.4
+      ],
+      "imu_hz": 100.00000000000213,
+      "gravity": [
+        0.0,
+        0.0,
+        -9.81
+      ],
+      "orientation": "内禀XYZ欧拉角，弧度，机体到世界",
+      "noise_columns": [
+        "角速度逐点标准差rad/s",
+        "加速度逐点标准差m/s²",
+        "固定陀螺偏置标准差rad/s",
+        "固定加速度偏置标准差m/s²"
+      ],
+      "noise": {
+        "无额外噪声": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "低噪声": [
+          0.002,
+          0.02,
+          0.0005,
+          0.01
+        ],
+        "高噪声": [
+          0.01,
+          0.1,
+          0.003,
+          0.05
+        ]
+      },
+      "sha256": "cf34be5926c7fa24006322654586d925913682aac879783d789e270b4771058c",
+      "summary": [
+        {
+          "noise": "无额外噪声",
+          "duration_s": 0.5,
+          "position_median_m": 0.007680476859175677,
+          "position_p90_m": 0.01923680876509763,
+          "rotation_median_deg": 0.0693887946855558,
+          "rotation_p90_deg": 0.07713655938226484,
+          "threshold_pass_fraction": 1.0,
+          "continuous_pass_fraction": 1.0,
+          "strict_continuous_pass_fraction": 1.0
+        },
+        {
+          "noise": "无额外噪声",
+          "duration_s": 1.0,
+          "position_median_m": 0.01894969790157706,
+          "position_p90_m": 0.03371062645834289,
+          "rotation_median_deg": 0.1102076990304458,
+          "rotation_p90_deg": 0.1179070535701581,
+          "threshold_pass_fraction": 1.0,
+          "continuous_pass_fraction": 1.0,
+          "strict_continuous_pass_fraction": 1.0
+        },
+        {
+          "noise": "无额外噪声",
+          "duration_s": 2.0,
+          "position_median_m": 0.05411301060718349,
+          "position_p90_m": 0.07700190402584185,
+          "rotation_median_deg": 0.19520339968817357,
+          "rotation_p90_deg": 0.20057785525840224,
+          "threshold_pass_fraction": 1.0,
+          "continuous_pass_fraction": 1.0,
+          "strict_continuous_pass_fraction": 1.0
+        },
+        {
+          "noise": "无额外噪声",
+          "duration_s": 3.0,
+          "position_median_m": 0.11085233693093649,
+          "position_p90_m": 0.15160799759440668,
+          "rotation_median_deg": 0.27466557719604545,
+          "rotation_p90_deg": 0.27898433631380815,
+          "threshold_pass_fraction": 1.0,
+          "continuous_pass_fraction": 1.0,
+          "strict_continuous_pass_fraction": 1.0
+        },
+        {
+          "noise": "低噪声",
+          "duration_s": 0.5,
+          "position_median_m": 0.008443286153486506,
+          "position_p90_m": 0.019122085943812876,
+          "rotation_median_deg": 0.07165029612918736,
+          "rotation_p90_deg": 0.09170895624665588,
+          "threshold_pass_fraction": 1.0,
+          "continuous_pass_fraction": 1.0,
+          "strict_continuous_pass_fraction": 1.0
+        },
+        {
+          "noise": "低噪声",
+          "duration_s": 1.0,
+          "position_median_m": 0.021962621422426686,
+          "position_p90_m": 0.03493958081429036,
+          "rotation_median_deg": 0.12365630988560469,
+          "rotation_p90_deg": 0.15455964041568326,
+          "threshold_pass_fraction": 1.0,
+          "continuous_pass_fraction": 1.0,
+          "strict_continuous_pass_fraction": 1.0
+        },
+        {
+          "noise": "低噪声",
+          "duration_s": 2.0,
+          "position_median_m": 0.06323868656995157,
+          "position_p90_m": 0.09249742599877045,
+          "rotation_median_deg": 0.2174696644753148,
+          "rotation_p90_deg": 0.2697550959189785,
+          "threshold_pass_fraction": 1.0,
+          "continuous_pass_fraction": 1.0,
+          "strict_continuous_pass_fraction": 1.0
+        },
+        {
+          "noise": "低噪声",
+          "duration_s": 3.0,
+          "position_median_m": 0.12707396085318148,
+          "position_p90_m": 0.19058765844655634,
+          "rotation_median_deg": 0.29620897332140783,
+          "rotation_p90_deg": 0.39139081036516127,
+          "threshold_pass_fraction": 1.0,
+          "continuous_pass_fraction": 1.0,
+          "strict_continuous_pass_fraction": 1.0
+        },
+        {
+          "noise": "高噪声",
+          "duration_s": 0.5,
+          "position_median_m": 0.014371968363854466,
+          "position_p90_m": 0.021788162571801634,
+          "rotation_median_deg": 0.13487014509519915,
+          "rotation_p90_deg": 0.2770429066508754,
+          "threshold_pass_fraction": 1.0,
+          "continuous_pass_fraction": 1.0,
+          "strict_continuous_pass_fraction": 1.0
+        },
+        {
+          "noise": "高噪声",
+          "duration_s": 1.0,
+          "position_median_m": 0.04574568157026192,
+          "position_p90_m": 0.05793135679102538,
+          "rotation_median_deg": 0.22421073700699182,
+          "rotation_p90_deg": 0.501091937059344,
+          "threshold_pass_fraction": 1.0,
+          "continuous_pass_fraction": 1.0,
+          "strict_continuous_pass_fraction": 1.0
+        },
+        {
+          "noise": "高噪声",
+          "duration_s": 2.0,
+          "position_median_m": 0.16285896980082437,
+          "position_p90_m": 0.2538811483632327,
+          "rotation_median_deg": 0.42178098876712644,
+          "rotation_p90_deg": 0.9443872349871648,
+          "threshold_pass_fraction": 1.0,
+          "continuous_pass_fraction": 1.0,
+          "strict_continuous_pass_fraction": 1.0
+        },
+        {
+          "noise": "高噪声",
+          "duration_s": 3.0,
+          "position_median_m": 0.3791516279648274,
+          "position_p90_m": 0.5721437226379239,
+          "rotation_median_deg": 0.6089192359869522,
+          "rotation_p90_deg": 1.3788874861138478,
+          "threshold_pass_fraction": 1.0,
+          "continuous_pass_fraction": 1.0,
+          "strict_continuous_pass_fraction": 0.8333333333333334
+        }
+      ],
+      "runtime": {
+        "segment_count": 90,
+        "measurements": [
+          {
+            "noise": "无额外噪声",
+            "seed": 0,
+            "start_time": 7.5,
+            "sample_count": 301,
+            "prediction_ms": 8.065999998507323,
+            "mean_step_ms": 0.026886666661691077
+          },
+          {
+            "noise": "无额外噪声",
+            "seed": 0,
+            "start_time": 7.6,
+            "sample_count": 301,
+            "prediction_ms": 9.901500001433305,
+            "mean_step_ms": 0.033005000004777685
+          },
+          {
+            "noise": "无额外噪声",
+            "seed": 0,
+            "start_time": 7.7,
+            "sample_count": 301,
+            "prediction_ms": 9.606600000552135,
+            "mean_step_ms": 0.032022000001840446
+          },
+          {
+            "noise": "无额外噪声",
+            "seed": 0,
+            "start_time": 7.8,
+            "sample_count": 301,
+            "prediction_ms": 10.120900002220878,
+            "mean_step_ms": 0.03373633334073626
+          },
+          {
+            "noise": "无额外噪声",
+            "seed": 0,
+            "start_time": 7.9,
+            "sample_count": 301,
+            "prediction_ms": 8.012300000700634,
+            "mean_step_ms": 0.026707666669002112
+          },
+          {
+            "noise": "无额外噪声",
+            "seed": 0,
+            "start_time": 8.0,
+            "sample_count": 301,
+            "prediction_ms": 8.519800001522526,
+            "mean_step_ms": 0.02839933333840842
+          },
+          {
+            "noise": "无额外噪声",
+            "seed": 0,
+            "start_time": 8.1,
+            "sample_count": 301,
+            "prediction_ms": 9.062099998118356,
+            "mean_step_ms": 0.030206999993727852
+          },
+          {
+            "noise": "无额外噪声",
+            "seed": 0,
+            "start_time": 8.2,
+            "sample_count": 301,
+            "prediction_ms": 8.37130000218167,
+            "mean_step_ms": 0.027904333340605565
+          },
+          {
+            "noise": "无额外噪声",
+            "seed": 0,
+            "start_time": 8.3,
+            "sample_count": 301,
+            "prediction_ms": 9.132200000749435,
+            "mean_step_ms": 0.030440666669164784
+          },
+          {
+            "noise": "无额外噪声",
+            "seed": 0,
+            "start_time": 8.4,
+            "sample_count": 301,
+            "prediction_ms": 13.037099997745827,
+            "mean_step_ms": 0.04345699999248609
+          },
+          {
+            "noise": "无额外噪声",
+            "seed": 1,
+            "start_time": 7.5,
+            "sample_count": 301,
+            "prediction_ms": 8.293700000649551,
+            "mean_step_ms": 0.027645666668831836
+          },
+          {
+            "noise": "无额外噪声",
+            "seed": 1,
+            "start_time": 7.6,
+            "sample_count": 301,
+            "prediction_ms": 8.120300000882708,
+            "mean_step_ms": 0.027067666669609025
+          },
+          {
+            "noise": "无额外噪声",
+            "seed": 1,
+            "start_time": 7.7,
+            "sample_count": 301,
+            "prediction_ms": 12.395300000207499,
+            "mean_step_ms": 0.04131766666735833
+          },
+          {
+            "noise": "无额外噪声",
+            "seed": 1,
+            "start_time": 7.8,
+            "sample_count": 301,
+            "prediction_ms": 11.208100000658305,
+            "mean_step_ms": 0.037360333335527685
+          },
+          {
+            "noise": "无额外噪声",
+            "seed": 1,
+            "start_time": 7.9,
+            "sample_count": 301,
+            "prediction_ms": 9.355800000776071,
+            "mean_step_ms": 0.031186000002586905
+          },
+          {
+            "noise": "无额外噪声",
+            "seed": 1,
+            "start_time": 8.0,
+            "sample_count": 301,
+            "prediction_ms": 8.081700001639547,
+            "mean_step_ms": 0.026939000005465157
+          },
+          {
+            "noise": "无额外噪声",
+            "seed": 1,
+            "start_time": 8.1,
+            "sample_count": 301,
+            "prediction_ms": 10.933099998510443,
+            "mean_step_ms": 0.03644366666170148
+          },
+          {
+            "noise": "无额外噪声",
+            "seed": 1,
+            "start_time": 8.2,
+            "sample_count": 301,
+            "prediction_ms": 11.12239999929443,
+            "mean_step_ms": 0.03707466666431477
+          },
+          {
+            "noise": "无额外噪声",
+            "seed": 1,
+            "start_time": 8.3,
+            "sample_count": 301,
+            "prediction_ms": 8.345100002770778,
+            "mean_step_ms": 0.027817000009235926
+          },
+          {
+            "noise": "无额外噪声",
+            "seed": 1,
+            "start_time": 8.4,
+            "sample_count": 301,
+            "prediction_ms": 8.527999998477753,
+            "mean_step_ms": 0.02842666666159251
+          },
+          {
+            "noise": "无额外噪声",
+            "seed": 2,
+            "start_time": 7.5,
+            "sample_count": 301,
+            "prediction_ms": 10.731300000770716,
+            "mean_step_ms": 0.03577100000256905
+          },
+          {
+            "noise": "无额外噪声",
+            "seed": 2,
+            "start_time": 7.6,
+            "sample_count": 301,
+            "prediction_ms": 10.214199999609264,
+            "mean_step_ms": 0.03404733333203088
+          },
+          {
+            "noise": "无额外噪声",
+            "seed": 2,
+            "start_time": 7.7,
+            "sample_count": 301,
+            "prediction_ms": 9.00550000005751,
+            "mean_step_ms": 0.03001833333352503
+          },
+          {
+            "noise": "无额外噪声",
+            "seed": 2,
+            "start_time": 7.8,
+            "sample_count": 301,
+            "prediction_ms": 8.505199999490287,
+            "mean_step_ms": 0.028350666664967623
+          },
+          {
+            "noise": "无额外噪声",
+            "seed": 2,
+            "start_time": 7.9,
+            "sample_count": 301,
+            "prediction_ms": 9.102399999392219,
+            "mean_step_ms": 0.030341333331307396
+          },
+          {
+            "noise": "无额外噪声",
+            "seed": 2,
+            "start_time": 8.0,
+            "sample_count": 301,
+            "prediction_ms": 8.791900003416231,
+            "mean_step_ms": 0.02930633334472077
+          },
+          {
+            "noise": "无额外噪声",
+            "seed": 2,
+            "start_time": 8.1,
+            "sample_count": 301,
+            "prediction_ms": 8.476800001517404,
+            "mean_step_ms": 0.028256000005058013
+          },
+          {
+            "noise": "无额外噪声",
+            "seed": 2,
+            "start_time": 8.2,
+            "sample_count": 301,
+            "prediction_ms": 10.320699999283534,
+            "mean_step_ms": 0.03440233333094511
+          },
+          {
+            "noise": "无额外噪声",
+            "seed": 2,
+            "start_time": 8.3,
+            "sample_count": 301,
+            "prediction_ms": 10.201200002484256,
+            "mean_step_ms": 0.034004000008280855
+          },
+          {
+            "noise": "无额外噪声",
+            "seed": 2,
+            "start_time": 8.4,
+            "sample_count": 301,
+            "prediction_ms": 9.015300001919968,
+            "mean_step_ms": 0.030051000006399892
+          },
+          {
+            "noise": "低噪声",
+            "seed": 0,
+            "start_time": 7.5,
+            "sample_count": 301,
+            "prediction_ms": 9.11939999787137,
+            "mean_step_ms": 0.030397999992904563
+          },
+          {
+            "noise": "低噪声",
+            "seed": 0,
+            "start_time": 7.6,
+            "sample_count": 301,
+            "prediction_ms": 10.718800000176998,
+            "mean_step_ms": 0.03572933333392333
+          },
+          {
+            "noise": "低噪声",
+            "seed": 0,
+            "start_time": 7.7,
+            "sample_count": 301,
+            "prediction_ms": 9.228200000507059,
+            "mean_step_ms": 0.030760666668356862
+          },
+          {
+            "noise": "低噪声",
+            "seed": 0,
+            "start_time": 7.8,
+            "sample_count": 301,
+            "prediction_ms": 8.775900001637638,
+            "mean_step_ms": 0.02925300000545879
+          },
+          {
+            "noise": "低噪声",
+            "seed": 0,
+            "start_time": 7.9,
+            "sample_count": 301,
+            "prediction_ms": 9.244200002285652,
+            "mean_step_ms": 0.03081400000761884
+          },
+          {
+            "noise": "低噪声",
+            "seed": 0,
+            "start_time": 8.0,
+            "sample_count": 301,
+            "prediction_ms": 10.554700002103345,
+            "mean_step_ms": 0.035182333340344485
+          },
+          {
+            "noise": "低噪声",
+            "seed": 0,
+            "start_time": 8.1,
+            "sample_count": 301,
+            "prediction_ms": 8.526899997377768,
+            "mean_step_ms": 0.02842299999125923
+          },
+          {
+            "noise": "低噪声",
+            "seed": 0,
+            "start_time": 8.2,
+            "sample_count": 301,
+            "prediction_ms": 8.590299999923445,
+            "mean_step_ms": 0.02863433333307815
+          },
+          {
+            "noise": "低噪声",
+            "seed": 0,
+            "start_time": 8.3,
+            "sample_count": 301,
+            "prediction_ms": 15.100100001291139,
+            "mean_step_ms": 0.050333666670970466
+          },
+          {
+            "noise": "低噪声",
+            "seed": 0,
+            "start_time": 8.4,
+            "sample_count": 301,
+            "prediction_ms": 8.711300000868505,
+            "mean_step_ms": 0.029037666669561684
+          },
+          {
+            "noise": "低噪声",
+            "seed": 1,
+            "start_time": 7.5,
+            "sample_count": 301,
+            "prediction_ms": 11.001800001395168,
+            "mean_step_ms": 0.036672666671317224
+          },
+          {
+            "noise": "低噪声",
+            "seed": 1,
+            "start_time": 7.6,
+            "sample_count": 301,
+            "prediction_ms": 11.292399998637848,
+            "mean_step_ms": 0.037641333328792825
+          },
+          {
+            "noise": "低噪声",
+            "seed": 1,
+            "start_time": 7.7,
+            "sample_count": 301,
+            "prediction_ms": 8.813000000372995,
+            "mean_step_ms": 0.029376666667909983
+          },
+          {
+            "noise": "低噪声",
+            "seed": 1,
+            "start_time": 7.8,
+            "sample_count": 301,
+            "prediction_ms": 8.702600000106031,
+            "mean_step_ms": 0.029008666667020105
+          },
+          {
+            "noise": "低噪声",
+            "seed": 1,
+            "start_time": 7.9,
+            "sample_count": 301,
+            "prediction_ms": 10.7908000027237,
+            "mean_step_ms": 0.035969333342412334
+          },
+          {
+            "noise": "低噪声",
+            "seed": 1,
+            "start_time": 8.0,
+            "sample_count": 301,
+            "prediction_ms": 10.14740000027814,
+            "mean_step_ms": 0.033824666667593796
+          },
+          {
+            "noise": "低噪声",
+            "seed": 1,
+            "start_time": 8.1,
+            "sample_count": 301,
+            "prediction_ms": 8.697299999766983,
+            "mean_step_ms": 0.028990999999223277
+          },
+          {
+            "noise": "低噪声",
+            "seed": 1,
+            "start_time": 8.2,
+            "sample_count": 301,
+            "prediction_ms": 9.029700002429308,
+            "mean_step_ms": 0.030099000008097693
+          },
+          {
+            "noise": "低噪声",
+            "seed": 1,
+            "start_time": 8.3,
+            "sample_count": 301,
+            "prediction_ms": 10.264900000038324,
+            "mean_step_ms": 0.03421633333346108
+          },
+          {
+            "noise": "低噪声",
+            "seed": 1,
+            "start_time": 8.4,
+            "sample_count": 301,
+            "prediction_ms": 9.749500000907574,
+            "mean_step_ms": 0.03249833333635858
+          },
+          {
+            "noise": "低噪声",
+            "seed": 2,
+            "start_time": 7.5,
+            "sample_count": 301,
+            "prediction_ms": 8.514300003298558,
+            "mean_step_ms": 0.028381000010995194
+          },
+          {
+            "noise": "低噪声",
+            "seed": 2,
+            "start_time": 7.6,
+            "sample_count": 301,
+            "prediction_ms": 14.89690000016708,
+            "mean_step_ms": 0.04965633333389027
+          },
+          {
+            "noise": "低噪声",
+            "seed": 2,
+            "start_time": 7.7,
+            "sample_count": 301,
+            "prediction_ms": 8.637999999336898,
+            "mean_step_ms": 0.028793333331122994
+          },
+          {
+            "noise": "低噪声",
+            "seed": 2,
+            "start_time": 7.8,
+            "sample_count": 301,
+            "prediction_ms": 11.479099997814046,
+            "mean_step_ms": 0.038263666659380156
+          },
+          {
+            "noise": "低噪声",
+            "seed": 2,
+            "start_time": 7.9,
+            "sample_count": 301,
+            "prediction_ms": 9.937200000422308,
+            "mean_step_ms": 0.033124000001407694
+          },
+          {
+            "noise": "低噪声",
+            "seed": 2,
+            "start_time": 8.0,
+            "sample_count": 301,
+            "prediction_ms": 10.851999999431428,
+            "mean_step_ms": 0.036173333331438094
+          },
+          {
+            "noise": "低噪声",
+            "seed": 2,
+            "start_time": 8.1,
+            "sample_count": 301,
+            "prediction_ms": 8.55539999975008,
+            "mean_step_ms": 0.028517999999166932
+          },
+          {
+            "noise": "低噪声",
+            "seed": 2,
+            "start_time": 8.2,
+            "sample_count": 301,
+            "prediction_ms": 9.210599997459212,
+            "mean_step_ms": 0.03070199999153071
+          },
+          {
+            "noise": "低噪声",
+            "seed": 2,
+            "start_time": 8.3,
+            "sample_count": 301,
+            "prediction_ms": 15.241699999023695,
+            "mean_step_ms": 0.05080566666341232
+          },
+          {
+            "noise": "低噪声",
+            "seed": 2,
+            "start_time": 8.4,
+            "sample_count": 301,
+            "prediction_ms": 11.246400001255097,
+            "mean_step_ms": 0.037488000004183654
+          },
+          {
+            "noise": "高噪声",
+            "seed": 0,
+            "start_time": 7.5,
+            "sample_count": 301,
+            "prediction_ms": 12.84730000043055,
+            "mean_step_ms": 0.042824333334768504
+          },
+          {
+            "noise": "高噪声",
+            "seed": 0,
+            "start_time": 7.6,
+            "sample_count": 301,
+            "prediction_ms": 10.380100000475068,
+            "mean_step_ms": 0.03460033333491689
+          },
+          {
+            "noise": "高噪声",
+            "seed": 0,
+            "start_time": 7.7,
+            "sample_count": 301,
+            "prediction_ms": 11.381700001948047,
+            "mean_step_ms": 0.037939000006493494
+          },
+          {
+            "noise": "高噪声",
+            "seed": 0,
+            "start_time": 7.8,
+            "sample_count": 301,
+            "prediction_ms": 8.447799998975825,
+            "mean_step_ms": 0.028159333329919416
+          },
+          {
+            "noise": "高噪声",
+            "seed": 0,
+            "start_time": 7.9,
+            "sample_count": 301,
+            "prediction_ms": 10.051500001281966,
+            "mean_step_ms": 0.03350500000427322
+          },
+          {
+            "noise": "高噪声",
+            "seed": 0,
+            "start_time": 8.0,
+            "sample_count": 301,
+            "prediction_ms": 10.611599998810561,
+            "mean_step_ms": 0.03537199999603521
+          },
+          {
+            "noise": "高噪声",
+            "seed": 0,
+            "start_time": 8.1,
+            "sample_count": 301,
+            "prediction_ms": 8.908100000553532,
+            "mean_step_ms": 0.02969366666851177
+          },
+          {
+            "noise": "高噪声",
+            "seed": 0,
+            "start_time": 8.2,
+            "sample_count": 301,
+            "prediction_ms": 8.464200000162236,
+            "mean_step_ms": 0.02821400000054079
+          },
+          {
+            "noise": "高噪声",
+            "seed": 0,
+            "start_time": 8.3,
+            "sample_count": 301,
+            "prediction_ms": 8.525900000677211,
+            "mean_step_ms": 0.028419666668924037
+          },
+          {
+            "noise": "高噪声",
+            "seed": 0,
+            "start_time": 8.4,
+            "sample_count": 301,
+            "prediction_ms": 10.763999998744112,
+            "mean_step_ms": 0.035879999995813705
+          },
+          {
+            "noise": "高噪声",
+            "seed": 1,
+            "start_time": 7.5,
+            "sample_count": 301,
+            "prediction_ms": 10.403399999631802,
+            "mean_step_ms": 0.03467799999877267
+          },
+          {
+            "noise": "高噪声",
+            "seed": 1,
+            "start_time": 7.6,
+            "sample_count": 301,
+            "prediction_ms": 8.830299997498514,
+            "mean_step_ms": 0.029434333324995048
+          },
+          {
+            "noise": "高噪声",
+            "seed": 1,
+            "start_time": 7.7,
+            "sample_count": 301,
+            "prediction_ms": 10.851700000785058,
+            "mean_step_ms": 0.03617233333595019
+          },
+          {
+            "noise": "高噪声",
+            "seed": 1,
+            "start_time": 7.8,
+            "sample_count": 301,
+            "prediction_ms": 10.302700000465848,
+            "mean_step_ms": 0.034342333334886156
+          },
+          {
+            "noise": "高噪声",
+            "seed": 1,
+            "start_time": 7.9,
+            "sample_count": 301,
+            "prediction_ms": 12.970300002052682,
+            "mean_step_ms": 0.0432343333401756
+          },
+          {
+            "noise": "高噪声",
+            "seed": 1,
+            "start_time": 8.0,
+            "sample_count": 301,
+            "prediction_ms": 9.348600000521401,
+            "mean_step_ms": 0.031162000001738004
+          },
+          {
+            "noise": "高噪声",
+            "seed": 1,
+            "start_time": 8.1,
+            "sample_count": 301,
+            "prediction_ms": 8.69560000137426,
+            "mean_step_ms": 0.0289853333379142
+          },
+          {
+            "noise": "高噪声",
+            "seed": 1,
+            "start_time": 8.2,
+            "sample_count": 301,
+            "prediction_ms": 10.390699997515185,
+            "mean_step_ms": 0.03463566665838395
+          },
+          {
+            "noise": "高噪声",
+            "seed": 1,
+            "start_time": 8.3,
+            "sample_count": 301,
+            "prediction_ms": 9.990900001866976,
+            "mean_step_ms": 0.03330300000622325
+          },
+          {
+            "noise": "高噪声",
+            "seed": 1,
+            "start_time": 8.4,
+            "sample_count": 301,
+            "prediction_ms": 8.493500001350185,
+            "mean_step_ms": 0.028311666671167284
+          },
+          {
+            "noise": "高噪声",
+            "seed": 2,
+            "start_time": 7.5,
+            "sample_count": 301,
+            "prediction_ms": 10.821600000781473,
+            "mean_step_ms": 0.03607200000260491
+          },
+          {
+            "noise": "高噪声",
+            "seed": 2,
+            "start_time": 7.6,
+            "sample_count": 301,
+            "prediction_ms": 10.53690000117058,
+            "mean_step_ms": 0.03512300000390193
+          },
+          {
+            "noise": "高噪声",
+            "seed": 2,
+            "start_time": 7.7,
+            "sample_count": 301,
+            "prediction_ms": 10.719800000515534,
+            "mean_step_ms": 0.035732666668385114
+          },
+          {
+            "noise": "高噪声",
+            "seed": 2,
+            "start_time": 7.8,
+            "sample_count": 301,
+            "prediction_ms": 8.457699997961754,
+            "mean_step_ms": 0.02819233332653918
+          },
+          {
+            "noise": "高噪声",
+            "seed": 2,
+            "start_time": 7.9,
+            "sample_count": 301,
+            "prediction_ms": 10.349399999540765,
+            "mean_step_ms": 0.03449799999846922
+          },
+          {
+            "noise": "高噪声",
+            "seed": 2,
+            "start_time": 8.0,
+            "sample_count": 301,
+            "prediction_ms": 10.82210000095074,
+            "mean_step_ms": 0.0360736666698358
+          },
+          {
+            "noise": "高噪声",
+            "seed": 2,
+            "start_time": 8.1,
+            "sample_count": 301,
+            "prediction_ms": 10.72080000085407,
+            "mean_step_ms": 0.0357360000028469
+          },
+          {
+            "noise": "高噪声",
+            "seed": 2,
+            "start_time": 8.2,
+            "sample_count": 301,
+            "prediction_ms": 8.495300000504358,
+            "mean_step_ms": 0.028317666668347858
+          },
+          {
+            "noise": "高噪声",
+            "seed": 2,
+            "start_time": 8.3,
+            "sample_count": 301,
+            "prediction_ms": 11.683700002322439,
+            "mean_step_ms": 0.03894566667440813
+          },
+          {
+            "noise": "高噪声",
+            "seed": 2,
+            "start_time": 8.4,
+            "sample_count": 301,
+            "prediction_ms": 13.616199998068623,
+            "mean_step_ms": 0.04538733332689541
+          }
+        ],
+        "mean_three_second_prediction_ms": 9.967688889244325,
+        "p90_three_second_prediction_ms": 11.499559998264887,
+        "mean_step_ms": 0.033225629630814414,
+        "scope": "仅积分函数耗时，不含下载、读取、评估、绘图；不代表端到端实时性能"
+      },
+      "source": "https://huggingface.co/datasets/theairlabcmu/tartanair2",
+      "note": "实际SLAM初始化；官方仿真IMU；噪声档位为人工设置；失效后无真值纠偏；窗口可能重叠",
+      "versions": {
+        "numpy": "2.2.6",
+        "pandas": "3.1.1",
+        "matplotlib": "3.11.2"
+      },
+      "slam_metadata": {
+        "source": "orb_slam3",
+        "mode": "IMU_RGBD",
+        "environment": "ArchVizTinyHouseDay",
+        "difficulty": "easy",
+        "sequence": "P000",
+        "body_frame": "tartanair_imu",
+        "pose_convention": "body_to_world",
+        "quaternion_order": "xyzw",
+        "units": "SI",
+        "time_offset_to_dataset_s": 0,
+        "gravity_world": [
+          0,
+          0,
+          -9.81
+        ],
+        "imu_measurements": "官方原始无噪声IMU；初始状态由实际RGB-D惯性SLAM估计",
+        "baseline_start_time_s": 0.2,
+        "baseline_commit": "4861c07",
+        "runner_base_branch": "experiment/a-support-from-bc@132f83c",
+        "state_export": "D新增GetDImuState，读取Frame实际IMU位姿、速度和偏置"
+      },
+      "state_file_sha256": "25ae300c9c4c2990dfebae472fb6b8cd7ea4d95c1cae9eade9485d7484ffab96",
+      "initial_states": [
+        {
+          "timestamp": 7.5,
+          "px": 0.143607646,
+          "py": -1.898690343,
+          "pz": -0.111060083,
+          "qx": 0.699662328,
+          "qy": 0.666353464,
+          "qz": 0.155562744,
+          "qw": -0.205538049,
+          "vx": 0.076596044,
+          "vy": -0.431219786,
+          "vz": -0.04176084,
+          "bgx": 0.000142777,
+          "bgy": -0.000168492,
+          "bgz": -0.001461413,
+          "bax": -0.058363106,
+          "bay": -0.002912583,
+          "baz": -0.002579186,
+          "valid": 1.0,
+          "imu_initialized": 1.0,
+          "map_id": 5.0,
+          "frame_epoch": 6.0
+        },
+        {
+          "timestamp": 7.6,
+          "px": 0.158334777,
+          "py": -1.975120425,
+          "pz": -0.118414938,
+          "qx": 0.701711237,
+          "qy": 0.666805506,
+          "qz": 0.163347393,
+          "qw": -0.190497681,
+          "vx": 0.229910165,
+          "vy": -1.157795072,
+          "vz": -0.10395328,
+          "bgx": 0.000142818,
+          "bgy": -0.000168335,
+          "bgz": -0.001461456,
+          "bax": -0.058324561,
+          "bay": -0.002995441,
+          "baz": -0.002727748,
+          "valid": 1.0,
+          "imu_initialized": 1.0,
+          "map_id": 5.0,
+          "frame_epoch": 6.0
+        },
+        {
+          "timestamp": 7.7,
+          "px": 0.182596773,
+          "py": -2.107770443,
+          "pz": -0.134062529,
+          "qx": 0.70195663,
+          "qy": 0.668951809,
+          "qz": 0.167465329,
+          "qw": -0.178089157,
+          "vx": 0.198765114,
+          "vy": -1.318079233,
+          "vz": -0.150111377,
+          "bgx": 0.000139703,
+          "bgy": -0.000163527,
+          "bgz": -0.001461538,
+          "bax": -0.054732032,
+          "bay": -0.01205857,
+          "baz": -0.013541317,
+          "valid": 1.0,
+          "imu_initialized": 1.0,
+          "map_id": 5.0,
+          "frame_epoch": 6.0
+        },
+        {
+          "timestamp": 7.8,
+          "px": 0.191782758,
+          "py": -2.203747749,
+          "pz": -0.147619367,
+          "qx": 0.698191881,
+          "qy": 0.673891962,
+          "qz": 0.164315909,
+          "qw": -0.177194819,
+          "vx": 0.008686606,
+          "vy": -0.549594641,
+          "vz": -0.100819029,
+          "bgx": 0.000139713,
+          "bgy": -0.000163506,
+          "bgz": -0.001461504,
+          "bax": -0.054718025,
+          "bay": -0.012021933,
+          "baz": -0.013551889,
+          "valid": 1.0,
+          "imu_initialized": 1.0,
+          "map_id": 5.0,
+          "frame_epoch": 6.0
+        },
+        {
+          "timestamp": 7.9,
+          "px": 0.189008996,
+          "py": -2.232768059,
+          "pz": -0.156679034,
+          "qx": 0.689440191,
+          "qy": 0.681268156,
+          "qz": 0.153061628,
+          "qw": -0.192660466,
+          "vx": 0.024315353,
+          "vy": -0.075091302,
+          "vz": -0.001616473,
+          "bgx": 0.000142566,
+          "bgy": -0.000166472,
+          "bgz": -0.001456093,
+          "bax": -0.048497926,
+          "bay": -0.008027961,
+          "baz": -0.017177295,
+          "valid": 1.0,
+          "imu_initialized": 1.0,
+          "map_id": 5.0,
+          "frame_epoch": 6.0
+        },
+        {
+          "timestamp": 8.0,
+          "px": 0.186464667,
+          "py": -2.265412807,
+          "pz": -0.164575458,
+          "qx": 0.680268645,
+          "qy": 0.687282979,
+          "qz": 0.139002427,
+          "qw": -0.213436112,
+          "vx": -0.163368478,
+          "vy": -0.775312722,
+          "vz": -0.246493578,
+          "bgx": 0.000142568,
+          "bgy": -0.000166467,
+          "bgz": -0.001456106,
+          "bax": -0.04855226,
+          "bay": -0.008039224,
+          "baz": -0.017197566,
+          "valid": 1.0,
+          "imu_initialized": 1.0,
+          "map_id": 5.0,
+          "frame_epoch": 6.0
+        },
+        {
+          "timestamp": 8.1,
+          "px": 0.156294525,
+          "py": -2.363385677,
+          "pz": -0.201272845,
+          "qx": 0.677426815,
+          "qy": 0.688227057,
+          "qz": 0.129801795,
+          "qw": -0.224917695,
+          "vx": -0.34481889,
+          "vy": -0.805236459,
+          "vz": -0.360144377,
+          "bgx": 0.000142572,
+          "bgy": -0.000166518,
+          "bgz": -0.001456058,
+          "bax": -0.048740853,
+          "bay": -0.007954342,
+          "baz": -0.017213201,
+          "valid": 1.0,
+          "imu_initialized": 1.0,
+          "map_id": 5.0,
+          "frame_epoch": 6.0
+        },
+        {
+          "timestamp": 8.2,
+          "px": 0.131832808,
+          "py": -2.399788618,
+          "pz": -0.222943425,
+          "qx": 0.685604811,
+          "qy": 0.682342589,
+          "qz": 0.130818143,
+          "qw": -0.217350513,
+          "vx": -0.125960618,
+          "vy": -0.104829252,
+          "vz": -0.094658747,
+          "bgx": 0.000142477,
+          "bgy": -0.000166337,
+          "bgz": -0.001455845,
+          "bax": -0.049227785,
+          "bay": -0.007852496,
+          "baz": -0.017615879,
+          "valid": 1.0,
+          "imu_initialized": 1.0,
+          "map_id": 5.0,
+          "frame_epoch": 6.0
+        },
+        {
+          "timestamp": 8.3,
+          "px": 0.120880529,
+          "py": -2.404506922,
+          "pz": -0.228328705,
+          "qx": 0.698503673,
+          "qy": 0.673075914,
+          "qz": 0.138525933,
+          "qw": -0.199679911,
+          "vx": -0.186072454,
+          "vy": -0.223774329,
+          "vz": -0.156885788,
+          "bgx": 0.000137702,
+          "bgy": -0.00015956,
+          "bgz": -0.001454185,
+          "bax": -0.054975826,
+          "bay": -0.007732943,
+          "baz": -0.018969784,
+          "valid": 1.0,
+          "imu_initialized": 1.0,
+          "map_id": 5.0,
+          "frame_epoch": 6.0
+        },
+        {
+          "timestamp": 8.4,
+          "px": 0.100462288,
+          "py": -2.426361322,
+          "pz": -0.245064855,
+          "qx": 0.707414746,
+          "qy": 0.665715694,
+          "qz": 0.147697285,
+          "qw": -0.185936943,
+          "vx": -0.107499003,
+          "vy": -0.12172509,
+          "vz": -0.088788182,
+          "bgx": 0.000137701,
+          "bgy": -0.000159566,
+          "bgz": -0.001454185,
+          "bax": -0.055014886,
+          "bay": -0.007757626,
+          "baz": -0.018968336,
+          "valid": 1.0,
+          "imu_initialized": 1.0,
+          "map_id": 5.0,
+          "frame_epoch": 6.0
+        }
+      ],
+      "alignment": "仅失效前同地图、同坐标版本的可用历史做旋转和平移配准，不缩放",
+      "alignment_history": [
+        {
+          "start_time": 7.5,
+          "count": 2,
+          "first": 7.4,
+          "last": 7.5
+        },
+        {
+          "start_time": 7.6,
+          "count": 3,
+          "first": 7.4,
+          "last": 7.6
+        },
+        {
+          "start_time": 7.7,
+          "count": 4,
+          "first": 7.4,
+          "last": 7.7
+        },
+        {
+          "start_time": 7.8,
+          "count": 5,
+          "first": 7.4,
+          "last": 7.8
+        },
+        {
+          "start_time": 7.9,
+          "count": 6,
+          "first": 7.4,
+          "last": 7.9
+        },
+        {
+          "start_time": 8.0,
+          "count": 7,
+          "first": 7.4,
+          "last": 8.0
+        },
+        {
+          "start_time": 8.1,
+          "count": 8,
+          "first": 7.4,
+          "last": 8.1
+        },
+        {
+          "start_time": 8.2,
+          "count": 9,
+          "first": 7.4,
+          "last": 8.2
+        },
+        {
+          "start_time": 8.3,
+          "count": 10,
+          "first": 7.4,
+          "last": 8.3
+        },
+        {
+          "start_time": 8.4,
+          "count": 11,
+          "first": 7.4,
+          "last": 8.4
+        }
+      ],
+      "limitations": "当前实际SLAM仅easy/P000；10个起点集中在7.50至8.40秒且窗口重叠；不代表10条独立轨迹"
+    }
+  ],
+  "code_sha256": {
+    "download_data.ps1": "d1a06670230f4498e475f56bf17599257e42a1868a9f7c7ef51795688ad226c7",
+    "imu_dead_reckoning.py": "59e623a22447dea591b184f4aedb2de8a1c9b67dec47a869e692f8ac51ceb142",
+    "requirements.txt": "8a99089d6fc763c165b4ce19f51c1075c9d1be403e93273c3f18e0826d245a4f",
+    "run_experiment.py": "051b0e912e029ead83d3984ba92052f909a76144abb1b5666d4a9012327f6a68",
+    "integration/calib.yaml": "8806c005390904f8a46fc857c111bddfb41fd16089761057098bb1e1d3ae145b",
+    "integration/ORB_SLAM3_D.patch": "285021769edf331025476c168322e8d45ccf69539eae7c58691748cba1240514",
+    "integration/run_orbslam.cc": "3d1f2d119d67e277fc8997eeaaa4f64d370027942f7a87efdf9189ab6dcb531f",
+    "integration/slam_state.py": "cbe08db38b76c667127cbecfc4a98a3a3e28641c603729cbc376c213ee480f7e",
+    "tests/check_integrator.py": "0ff8dbf5be5ab28a9bffc215f9dd58ec8e9d2af40be28f7a7e47c6079e41e576",
+    "tests/check_slam_state.py": "76677bad884e22dfc928d78238829651a0f4d662cfc2f12f9254c2c7c43248ea"
+  },
+  "pending": []
+}

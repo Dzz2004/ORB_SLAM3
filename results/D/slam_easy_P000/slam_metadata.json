@@ -1,0 +1,18 @@
+{
+  "source": "orb_slam3",
+  "mode": "IMU_RGBD",
+  "environment": "ArchVizTinyHouseDay",
+  "difficulty": "easy",
+  "sequence": "P000",
+  "body_frame": "tartanair_imu",
+  "pose_convention": "body_to_world",
+  "quaternion_order": "xyzw",
+  "units": "SI",
+  "time_offset_to_dataset_s": 0,
+  "gravity_world": [0, 0, -9.81],
+  "imu_measurements": "官方原始无噪声IMU；初始状态由实际RGB-D惯性SLAM估计",
+  "baseline_start_time_s": 0.2,
+  "baseline_commit": "4861c07",
+  "runner_base_branch": "experiment/a-support-from-bc@132f83c",
+  "state_export": "D新增GetDImuState，读取Frame实际IMU位姿、速度和偏置"
+}

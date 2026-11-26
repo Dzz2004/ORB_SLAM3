@@ -1,0 +1,22 @@
+﻿D：IMU短时预测
+
+方法：从实际SLAM的位姿、速度和IMU偏置出发，用中点积分预测；中断后只使用IMU。
+配置：easy/P000实际初始化；easy/P000配对理想上界；hard/P000理想上界。
+每组3档噪声×10个运动起点×3个种子，评价0.5/1/2/3秒。
+
+2秒高噪声结果：
+difficulty   init_mode  position_median_m  position_p90_m  rotation_median_deg  rotation_p90_deg
+      easy    ideal_gt           0.168862        0.217845             0.429887          0.879640
+      hard    ideal_gt           0.156857        0.211078             0.411584          0.822219
+      easy actual_slam           0.162859        0.253881             0.421781          0.944387
+
+范围：实际起点7.5～8.4秒、窗口重叠；P90为经验分位数，不是置信区间。
+预测完成后仅用中断前历史做离线坐标配准；中断后无真值纠偏。
+
+关键文件：
+experiments/D_inertial_outage/README.md：代码用途和唯一运行命令。
+results/D/outage_error.csv：逐实验误差；summary.csv：中位数/P90/通过率。
+results/D/metrics.json：配置、随机种子、源码哈希和统计结果。
+results/D/slam_easy_P000/：真实初始状态、原始基线日志、预测轨迹和正式结果。
+本目录PPT：两页汇报，讲解放在幻灯片备注中。
+本目录两张PNG：误差曲线与预测漂移轨迹。

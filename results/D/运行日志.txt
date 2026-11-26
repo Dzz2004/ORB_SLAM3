@@ -1,0 +1,46 @@
+运行：C:\Users\27427\Desktop\虚拟现实技术\repo_review\.venv-d\Scripts\python.exe -B C:\Users\27427\Desktop\虚拟现实技术\repo_review\experiments\D_inertial_outage\tests\check_integrator.py
+test_constant_rotation (__main__.IntegratorChecks.test_constant_rotation)
+检查三：每秒绕Z轴旋转45度，两秒后应旋转90度。 ... ok
+test_constant_velocity (__main__.IntegratorChecks.test_constant_velocity)
+检查二：每秒前进一米，两秒后应前进两米。 ... ok
+test_reject_repeated_timestamp (__main__.IntegratorChecks.test_reject_repeated_timestamp)
+检查五：时间戳重复时应明确报错。 ... ok
+test_stationary (__main__.IntegratorChecks.test_stationary)
+检查一：设备静止时，预测位置应保持不变。 ... ok
+test_tilted_body_acceleration_and_bias (__main__.IntegratorChecks.test_tilted_body_acceleration_and_bias)
+检查四：设备倾斜且测量带偏置时，仍应算对已知加速度的运动。 ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.046s
+
+OK
+
+运行：C:\Users\27427\Desktop\虚拟现实技术\repo_review\.venv-d\Scripts\python.exe -B C:\Users\27427\Desktop\虚拟现实技术\repo_review\experiments\D_inertial_outage\tests\check_slam_state.py
+test_不读取中断后的状态 (__main__.StateChecks.test_不读取中断后的状态) ... ok
+test_不跨世界坐标版本取状态 (__main__.StateChecks.test_不跨世界坐标版本取状态) ... ok
+test_完整读取并保留偏置 (__main__.StateChecks.test_完整读取并保留偏置) ... ok
+test_拒绝旧地图状态 (__main__.StateChecks.test_拒绝旧地图状态) ... ok
+test_拒绝过期状态 (__main__.StateChecks.test_拒绝过期状态) ... ok
+test_缺少速度时不使用真值补齐 (__main__.StateChecks.test_缺少速度时不使用真值补齐) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.056s
+
+OK
+
+运行：C:\Users\27427\Desktop\虚拟现实技术\repo_review\.venv-d\Scripts\python.exe -B C:\Users\27427\Desktop\虚拟现实技术\repo_review\experiments\D_inertial_outage\run_experiment.py --single --slam-states C:\Users\27427\Desktop\虚拟现实技术\repo_review\results\D\slam_easy_P000\slam_states.csv --slam-metadata C:\Users\27427\Desktop\虚拟现实技术\repo_review\results\D\slam_easy_P000\slam_metadata.json --match-slam-starts --summary-only
+easy/P000：真值理想初始化上界，360条误差记录，已保存CSV/JSON。
+
+运行：C:\Users\27427\Desktop\虚拟现实技术\repo_review\.venv-d\Scripts\python.exe -B C:\Users\27427\Desktop\虚拟现实技术\repo_review\experiments\D_inertial_outage\run_experiment.py --single --difficulty hard --summary-only
+hard/P000：真值理想初始化上界，360条误差记录，已保存CSV/JSON。
+
+运行：C:\Users\27427\Desktop\虚拟现实技术\repo_review\.venv-d\Scripts\python.exe -B C:\Users\27427\Desktop\虚拟现实技术\repo_review\experiments\D_inertial_outage\run_experiment.py --single --slam-states C:\Users\27427\Desktop\虚拟现实技术\repo_review\results\D\slam_easy_P000\slam_states.csv --slam-metadata C:\Users\27427\Desktop\虚拟现实技术\repo_review\results\D\slam_easy_P000\slam_metadata.json
+数据读取及坐标验证通过：P000，1150条IMU，100赫兹
+已完成：3档噪声×10个起点×3个种子，在4个时长处评估，共360条误差记录
+2秒结果（实际SLAM初始化）：
+noise  duration_s  position_median_m  position_p90_m  rotation_median_deg  rotation_p90_deg  threshold_pass_fraction  continuous_pass_fraction  strict_continuous_pass_fraction
+无额外噪声         2.0           0.054113        0.077002             0.195203          0.200578                      1.0                       1.0                              1.0
+  低噪声         2.0           0.063239        0.092497             0.217470          0.269755                      1.0                       1.0                              1.0
+  高噪声         2.0           0.162859        0.253881             0.421781          0.944387                      1.0                       1.0                              1.0
+结果目录：C:\Users\27427\Desktop\虚拟现实技术\repo_review\results\D\slam_easy_P000
+

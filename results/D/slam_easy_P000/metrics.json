@@ -1,0 +1,1248 @@
+{
+  "dataset": "TartanAir V2",
+  "environment": "ArchVizTinyHouseDay",
+  "difficulty": "easy",
+  "sequence": "P000",
+  "init_mode": "actual_slam",
+  "seeds": [
+    0,
+    1,
+    2
+  ],
+  "start_count": 10,
+  "start_times": [
+    7.5,
+    7.6,
+    7.7,
+    7.8,
+    7.9,
+    8.0,
+    8.1,
+    8.2,
+    8.3,
+    8.4
+  ],
+  "imu_hz": 100.00000000000213,
+  "gravity": [
+    0.0,
+    0.0,
+    -9.81
+  ],
+  "orientation": "内禀XYZ欧拉角，弧度，机体到世界",
+  "noise_columns": [
+    "角速度逐点标准差rad/s",
+    "加速度逐点标准差m/s²",
+    "固定陀螺偏置标准差rad/s",
+    "固定加速度偏置标准差m/s²"
+  ],
+  "noise": {
+    "无额外噪声": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "低噪声": [
+      0.002,
+      0.02,
+      0.0005,
+      0.01
+    ],
+    "高噪声": [
+      0.01,
+      0.1,
+      0.003,
+      0.05
+    ]
+  },
+  "sha256": "cf34be5926c7fa24006322654586d925913682aac879783d789e270b4771058c",
+  "summary": [
+    {
+      "noise": "无额外噪声",
+      "duration_s": 0.5,
+      "position_median_m": 0.007680476859175677,
+      "position_p90_m": 0.01923680876509763,
+      "rotation_median_deg": 0.0693887946855558,
+      "rotation_p90_deg": 0.07713655938226484,
+      "threshold_pass_fraction": 1.0,
+      "continuous_pass_fraction": 1.0,
+      "strict_continuous_pass_fraction": 1.0
+    },
+    {
+      "noise": "无额外噪声",
+      "duration_s": 1.0,
+      "position_median_m": 0.01894969790157706,
+      "position_p90_m": 0.03371062645834289,
+      "rotation_median_deg": 0.1102076990304458,
+      "rotation_p90_deg": 0.1179070535701581,
+      "threshold_pass_fraction": 1.0,
+      "continuous_pass_fraction": 1.0,
+      "strict_continuous_pass_fraction": 1.0
+    },
+    {
+      "noise": "无额外噪声",
+      "duration_s": 2.0,
+      "position_median_m": 0.05411301060718349,
+      "position_p90_m": 0.07700190402584185,
+      "rotation_median_deg": 0.19520339968817357,
+      "rotation_p90_deg": 0.20057785525840224,
+      "threshold_pass_fraction": 1.0,
+      "continuous_pass_fraction": 1.0,
+      "strict_continuous_pass_fraction": 1.0
+    },
+    {
+      "noise": "无额外噪声",
+      "duration_s": 3.0,
+      "position_median_m": 0.11085233693093649,
+      "position_p90_m": 0.15160799759440668,
+      "rotation_median_deg": 0.27466557719604545,
+      "rotation_p90_deg": 0.27898433631380815,
+      "threshold_pass_fraction": 1.0,
+      "continuous_pass_fraction": 1.0,
+      "strict_continuous_pass_fraction": 1.0
+    },
+    {
+      "noise": "低噪声",
+      "duration_s": 0.5,
+      "position_median_m": 0.008443286153486506,
+      "position_p90_m": 0.019122085943812876,
+      "rotation_median_deg": 0.07165029612918736,
+      "rotation_p90_deg": 0.09170895624665588,
+      "threshold_pass_fraction": 1.0,
+      "continuous_pass_fraction": 1.0,
+      "strict_continuous_pass_fraction": 1.0
+    },
+    {
+      "noise": "低噪声",
+      "duration_s": 1.0,
+      "position_median_m": 0.021962621422426686,
+      "position_p90_m": 0.03493958081429036,
+      "rotation_median_deg": 0.12365630988560469,
+      "rotation_p90_deg": 0.15455964041568326,
+      "threshold_pass_fraction": 1.0,
+      "continuous_pass_fraction": 1.0,
+      "strict_continuous_pass_fraction": 1.0
+    },
+    {
+      "noise": "低噪声",
+      "duration_s": 2.0,
+      "position_median_m": 0.06323868656995157,
+      "position_p90_m": 0.09249742599877045,
+      "rotation_median_deg": 0.2174696644753148,
+      "rotation_p90_deg": 0.2697550959189785,
+      "threshold_pass_fraction": 1.0,
+      "continuous_pass_fraction": 1.0,
+      "strict_continuous_pass_fraction": 1.0
+    },
+    {
+      "noise": "低噪声",
+      "duration_s": 3.0,
+      "position_median_m": 0.12707396085318148,
+      "position_p90_m": 0.19058765844655634,
+      "rotation_median_deg": 0.29620897332140783,
+      "rotation_p90_deg": 0.39139081036516127,
+      "threshold_pass_fraction": 1.0,
+      "continuous_pass_fraction": 1.0,
+      "strict_continuous_pass_fraction": 1.0
+    },
+    {
+      "noise": "高噪声",
+      "duration_s": 0.5,
+      "position_median_m": 0.014371968363854466,
+      "position_p90_m": 0.021788162571801634,
+      "rotation_median_deg": 0.13487014509519915,
+      "rotation_p90_deg": 0.2770429066508754,
+      "threshold_pass_fraction": 1.0,
+      "continuous_pass_fraction": 1.0,
+      "strict_continuous_pass_fraction": 1.0
+    },
+    {
+      "noise": "高噪声",
+      "duration_s": 1.0,
+      "position_median_m": 0.04574568157026192,
+      "position_p90_m": 0.05793135679102538,
+      "rotation_median_deg": 0.22421073700699182,
+      "rotation_p90_deg": 0.501091937059344,
+      "threshold_pass_fraction": 1.0,
+      "continuous_pass_fraction": 1.0,
+      "strict_continuous_pass_fraction": 1.0
+    },
+    {
+      "noise": "高噪声",
+      "duration_s": 2.0,
+      "position_median_m": 0.16285896980082437,
+      "position_p90_m": 0.2538811483632327,
+      "rotation_median_deg": 0.42178098876712644,
+      "rotation_p90_deg": 0.9443872349871648,
+      "threshold_pass_fraction": 1.0,
+      "continuous_pass_fraction": 1.0,
+      "strict_continuous_pass_fraction": 1.0
+    },
+    {
+      "noise": "高噪声",
+      "duration_s": 3.0,
+      "position_median_m": 0.3791516279648274,
+      "position_p90_m": 0.5721437226379239,
+      "rotation_median_deg": 0.6089192359869522,
+      "rotation_p90_deg": 1.3788874861138478,
+      "threshold_pass_fraction": 1.0,
+      "continuous_pass_fraction": 1.0,
+      "strict_continuous_pass_fraction": 0.8333333333333334
+    }
+  ],
+  "runtime": {
+    "segment_count": 90,
+    "measurements": [
+      {
+        "noise": "无额外噪声",
+        "seed": 0,
+        "start_time": 7.5,
+        "sample_count": 301,
+        "prediction_ms": 8.065999998507323,
+        "mean_step_ms": 0.026886666661691077
+      },
+      {
+        "noise": "无额外噪声",
+        "seed": 0,
+        "start_time": 7.6,
+        "sample_count": 301,
+        "prediction_ms": 9.901500001433305,
+        "mean_step_ms": 0.033005000004777685
+      },
+      {
+        "noise": "无额外噪声",
+        "seed": 0,
+        "start_time": 7.7,
+        "sample_count": 301,
+        "prediction_ms": 9.606600000552135,
+        "mean_step_ms": 0.032022000001840446
+      },
+      {
+        "noise": "无额外噪声",
+        "seed": 0,
+        "start_time": 7.8,
+        "sample_count": 301,
+        "prediction_ms": 10.120900002220878,
+        "mean_step_ms": 0.03373633334073626
+      },
+      {
+        "noise": "无额外噪声",
+        "seed": 0,
+        "start_time": 7.9,
+        "sample_count": 301,
+        "prediction_ms": 8.012300000700634,
+        "mean_step_ms": 0.026707666669002112
+      },
+      {
+        "noise": "无额外噪声",
+        "seed": 0,
+        "start_time": 8.0,
+        "sample_count": 301,
+        "prediction_ms": 8.519800001522526,
+        "mean_step_ms": 0.02839933333840842
+      },
+      {
+        "noise": "无额外噪声",
+        "seed": 0,
+        "start_time": 8.1,
+        "sample_count": 301,
+        "prediction_ms": 9.062099998118356,
+        "mean_step_ms": 0.030206999993727852
+      },
+      {
+        "noise": "无额外噪声",
+        "seed": 0,
+        "start_time": 8.2,
+        "sample_count": 301,
+        "prediction_ms": 8.37130000218167,
+        "mean_step_ms": 0.027904333340605565
+      },
+      {
+        "noise": "无额外噪声",
+        "seed": 0,
+        "start_time": 8.3,
+        "sample_count": 301,
+        "prediction_ms": 9.132200000749435,
+        "mean_step_ms": 0.030440666669164784
+      },
+      {
+        "noise": "无额外噪声",
+        "seed": 0,
+        "start_time": 8.4,
+        "sample_count": 301,
+        "prediction_ms": 13.037099997745827,
+        "mean_step_ms": 0.04345699999248609
+      },
+      {
+        "noise": "无额外噪声",
+        "seed": 1,
+        "start_time": 7.5,
+        "sample_count": 301,
+        "prediction_ms": 8.293700000649551,
+        "mean_step_ms": 0.027645666668831836
+      },
+      {
+        "noise": "无额外噪声",
+        "seed": 1,
+        "start_time": 7.6,
+        "sample_count": 301,
+        "prediction_ms": 8.120300000882708,
+        "mean_step_ms": 0.027067666669609025
+      },
+      {
+        "noise": "无额外噪声",
+        "seed": 1,
+        "start_time": 7.7,
+        "sample_count": 301,
+        "prediction_ms": 12.395300000207499,
+        "mean_step_ms": 0.04131766666735833
+      },
+      {
+        "noise": "无额外噪声",
+        "seed": 1,
+        "start_time": 7.8,
+        "sample_count": 301,
+        "prediction_ms": 11.208100000658305,
+        "mean_step_ms": 0.037360333335527685
+      },
+      {
+        "noise": "无额外噪声",
+        "seed": 1,
+        "start_time": 7.9,
+        "sample_count": 301,
+        "prediction_ms": 9.355800000776071,
+        "mean_step_ms": 0.031186000002586905
+      },
+      {
+        "noise": "无额外噪声",
+        "seed": 1,
+        "start_time": 8.0,
+        "sample_count": 301,
+        "prediction_ms": 8.081700001639547,
+        "mean_step_ms": 0.026939000005465157
+      },
+      {
+        "noise": "无额外噪声",
+        "seed": 1,
+        "start_time": 8.1,
+        "sample_count": 301,
+        "prediction_ms": 10.933099998510443,
+        "mean_step_ms": 0.03644366666170148
+      },
+      {
+        "noise": "无额外噪声",
+        "seed": 1,
+        "start_time": 8.2,
+        "sample_count": 301,
+        "prediction_ms": 11.12239999929443,
+        "mean_step_ms": 0.03707466666431477
+      },
+      {
+        "noise": "无额外噪声",
+        "seed": 1,
+        "start_time": 8.3,
+        "sample_count": 301,
+        "prediction_ms": 8.345100002770778,
+        "mean_step_ms": 0.027817000009235926
+      },
+      {
+        "noise": "无额外噪声",
+        "seed": 1,
+        "start_time": 8.4,
+        "sample_count": 301,
+        "prediction_ms": 8.527999998477753,
+        "mean_step_ms": 0.02842666666159251
+      },
+      {
+        "noise": "无额外噪声",
+        "seed": 2,
+        "start_time": 7.5,
+        "sample_count": 301,
+        "prediction_ms": 10.731300000770716,
+        "mean_step_ms": 0.03577100000256905
+      },
+      {
+        "noise": "无额外噪声",
+        "seed": 2,
+        "start_time": 7.6,
+        "sample_count": 301,
+        "prediction_ms": 10.214199999609264,
+        "mean_step_ms": 0.03404733333203088
+      },
+      {
+        "noise": "无额外噪声",
+        "seed": 2,
+        "start_time": 7.7,
+        "sample_count": 301,
+        "prediction_ms": 9.00550000005751,
+        "mean_step_ms": 0.03001833333352503
+      },
+      {
+        "noise": "无额外噪声",
+        "seed": 2,
+        "start_time": 7.8,
+        "sample_count": 301,
+        "prediction_ms": 8.505199999490287,
+        "mean_step_ms": 0.028350666664967623
+      },
+      {
+        "noise": "无额外噪声",
+        "seed": 2,
+        "start_time": 7.9,
+        "sample_count": 301,
+        "prediction_ms": 9.102399999392219,
+        "mean_step_ms": 0.030341333331307396
+      },
+      {
+        "noise": "无额外噪声",
+        "seed": 2,
+        "start_time": 8.0,
+        "sample_count": 301,
+        "prediction_ms": 8.791900003416231,
+        "mean_step_ms": 0.02930633334472077
+      },
+      {
+        "noise": "无额外噪声",
+        "seed": 2,
+        "start_time": 8.1,
+        "sample_count": 301,
+        "prediction_ms": 8.476800001517404,
+        "mean_step_ms": 0.028256000005058013
+      },
+      {
+        "noise": "无额外噪声",
+        "seed": 2,
+        "start_time": 8.2,
+        "sample_count": 301,
+        "prediction_ms": 10.320699999283534,
+        "mean_step_ms": 0.03440233333094511
+      },
+      {
+        "noise": "无额外噪声",
+        "seed": 2,
+        "start_time": 8.3,
+        "sample_count": 301,
+        "prediction_ms": 10.201200002484256,
+        "mean_step_ms": 0.034004000008280855
+      },
+      {
+        "noise": "无额外噪声",
+        "seed": 2,
+        "start_time": 8.4,
+        "sample_count": 301,
+        "prediction_ms": 9.015300001919968,
+        "mean_step_ms": 0.030051000006399892
+      },
+      {
+        "noise": "低噪声",
+        "seed": 0,
+        "start_time": 7.5,
+        "sample_count": 301,
+        "prediction_ms": 9.11939999787137,
+        "mean_step_ms": 0.030397999992904563
+      },
+      {
+        "noise": "低噪声",
+        "seed": 0,
+        "start_time": 7.6,
+        "sample_count": 301,
+        "prediction_ms": 10.718800000176998,
+        "mean_step_ms": 0.03572933333392333
+      },
+      {
+        "noise": "低噪声",
+        "seed": 0,
+        "start_time": 7.7,
+        "sample_count": 301,
+        "prediction_ms": 9.228200000507059,
+        "mean_step_ms": 0.030760666668356862
+      },
+      {
+        "noise": "低噪声",
+        "seed": 0,
+        "start_time": 7.8,
+        "sample_count": 301,
+        "prediction_ms": 8.775900001637638,
+        "mean_step_ms": 0.02925300000545879
+      },
+      {
+        "noise": "低噪声",
+        "seed": 0,
+        "start_time": 7.9,
+        "sample_count": 301,
+        "prediction_ms": 9.244200002285652,
+        "mean_step_ms": 0.03081400000761884
+      },
+      {
+        "noise": "低噪声",
+        "seed": 0,
+        "start_time": 8.0,
+        "sample_count": 301,
+        "prediction_ms": 10.554700002103345,
+        "mean_step_ms": 0.035182333340344485
+      },
+      {
+        "noise": "低噪声",
+        "seed": 0,
+        "start_time": 8.1,
+        "sample_count": 301,
+        "prediction_ms": 8.526899997377768,
+        "mean_step_ms": 0.02842299999125923
+      },
+      {
+        "noise": "低噪声",
+        "seed": 0,
+        "start_time": 8.2,
+        "sample_count": 301,
+        "prediction_ms": 8.590299999923445,
+        "mean_step_ms": 0.02863433333307815
+      },
+      {
+        "noise": "低噪声",
+        "seed": 0,
+        "start_time": 8.3,
+        "sample_count": 301,
+        "prediction_ms": 15.100100001291139,
+        "mean_step_ms": 0.050333666670970466
+      },
+      {
+        "noise": "低噪声",
+        "seed": 0,
+        "start_time": 8.4,
+        "sample_count": 301,
+        "prediction_ms": 8.711300000868505,
+        "mean_step_ms": 0.029037666669561684
+      },
+      {
+        "noise": "低噪声",
+        "seed": 1,
+        "start_time": 7.5,
+        "sample_count": 301,
+        "prediction_ms": 11.001800001395168,
+        "mean_step_ms": 0.036672666671317224
+      },
+      {
+        "noise": "低噪声",
+        "seed": 1,
+        "start_time": 7.6,
+        "sample_count": 301,
+        "prediction_ms": 11.292399998637848,
+        "mean_step_ms": 0.037641333328792825
+      },
+      {
+        "noise": "低噪声",
+        "seed": 1,
+        "start_time": 7.7,
+        "sample_count": 301,
+        "prediction_ms": 8.813000000372995,
+        "mean_step_ms": 0.029376666667909983
+      },
+      {
+        "noise": "低噪声",
+        "seed": 1,
+        "start_time": 7.8,
+        "sample_count": 301,
+        "prediction_ms": 8.702600000106031,
+        "mean_step_ms": 0.029008666667020105
+      },
+      {
+        "noise": "低噪声",
+        "seed": 1,
+        "start_time": 7.9,
+        "sample_count": 301,
+        "prediction_ms": 10.7908000027237,
+        "mean_step_ms": 0.035969333342412334
+      },
+      {
+        "noise": "低噪声",
+        "seed": 1,
+        "start_time": 8.0,
+        "sample_count": 301,
+        "prediction_ms": 10.14740000027814,
+        "mean_step_ms": 0.033824666667593796
+      },
+      {
+        "noise": "低噪声",
+        "seed": 1,
+        "start_time": 8.1,
+        "sample_count": 301,
+        "prediction_ms": 8.697299999766983,
+        "mean_step_ms": 0.028990999999223277
+      },
+      {
+        "noise": "低噪声",
+        "seed": 1,
+        "start_time": 8.2,
+        "sample_count": 301,
+        "prediction_ms": 9.029700002429308,
+        "mean_step_ms": 0.030099000008097693
+      },
+      {
+        "noise": "低噪声",
+        "seed": 1,
+        "start_time": 8.3,
+        "sample_count": 301,
+        "prediction_ms": 10.264900000038324,
+        "mean_step_ms": 0.03421633333346108
+      },
+      {
+        "noise": "低噪声",
+        "seed": 1,
+        "start_time": 8.4,
+        "sample_count": 301,
+        "prediction_ms": 9.749500000907574,
+        "mean_step_ms": 0.03249833333635858
+      },
+      {
+        "noise": "低噪声",
+        "seed": 2,
+        "start_time": 7.5,
+        "sample_count": 301,
+        "prediction_ms": 8.514300003298558,
+        "mean_step_ms": 0.028381000010995194
+      },
+      {
+        "noise": "低噪声",
+        "seed": 2,
+        "start_time": 7.6,
+        "sample_count": 301,
+        "prediction_ms": 14.89690000016708,
+        "mean_step_ms": 0.04965633333389027
+      },
+      {
+        "noise": "低噪声",
+        "seed": 2,
+        "start_time": 7.7,
+        "sample_count": 301,
+        "prediction_ms": 8.637999999336898,
+        "mean_step_ms": 0.028793333331122994
+      },
+      {
+        "noise": "低噪声",
+        "seed": 2,
+        "start_time": 7.8,
+        "sample_count": 301,
+        "prediction_ms": 11.479099997814046,
+        "mean_step_ms": 0.038263666659380156
+      },
+      {
+        "noise": "低噪声",
+        "seed": 2,
+        "start_time": 7.9,
+        "sample_count": 301,
+        "prediction_ms": 9.937200000422308,
+        "mean_step_ms": 0.033124000001407694
+      },
+      {
+        "noise": "低噪声",
+        "seed": 2,
+        "start_time": 8.0,
+        "sample_count": 301,
+        "prediction_ms": 10.851999999431428,
+        "mean_step_ms": 0.036173333331438094
+      },
+      {
+        "noise": "低噪声",
+        "seed": 2,
+        "start_time": 8.1,
+        "sample_count": 301,
+        "prediction_ms": 8.55539999975008,
+        "mean_step_ms": 0.028517999999166932
+      },
+      {
+        "noise": "低噪声",
+        "seed": 2,
+        "start_time": 8.2,
+        "sample_count": 301,
+        "prediction_ms": 9.210599997459212,
+        "mean_step_ms": 0.03070199999153071
+      },
+      {
+        "noise": "低噪声",
+        "seed": 2,
+        "start_time": 8.3,
+        "sample_count": 301,
+        "prediction_ms": 15.241699999023695,
+        "mean_step_ms": 0.05080566666341232
+      },
+      {
+        "noise": "低噪声",
+        "seed": 2,
+        "start_time": 8.4,
+        "sample_count": 301,
+        "prediction_ms": 11.246400001255097,
+        "mean_step_ms": 0.037488000004183654
+      },
+      {
+        "noise": "高噪声",
+        "seed": 0,
+        "start_time": 7.5,
+        "sample_count": 301,
+        "prediction_ms": 12.84730000043055,
+        "mean_step_ms": 0.042824333334768504
+      },
+      {
+        "noise": "高噪声",
+        "seed": 0,
+        "start_time": 7.6,
+        "sample_count": 301,
+        "prediction_ms": 10.380100000475068,
+        "mean_step_ms": 0.03460033333491689
+      },
+      {
+        "noise": "高噪声",
+        "seed": 0,
+        "start_time": 7.7,
+        "sample_count": 301,
+        "prediction_ms": 11.381700001948047,
+        "mean_step_ms": 0.037939000006493494
+      },
+      {
+        "noise": "高噪声",
+        "seed": 0,
+        "start_time": 7.8,
+        "sample_count": 301,
+        "prediction_ms": 8.447799998975825,
+        "mean_step_ms": 0.028159333329919416
+      },
+      {
+        "noise": "高噪声",
+        "seed": 0,
+        "start_time": 7.9,
+        "sample_count": 301,
+        "prediction_ms": 10.051500001281966,
+        "mean_step_ms": 0.03350500000427322
+      },
+      {
+        "noise": "高噪声",
+        "seed": 0,
+        "start_time": 8.0,
+        "sample_count": 301,
+        "prediction_ms": 10.611599998810561,
+        "mean_step_ms": 0.03537199999603521
+      },
+      {
+        "noise": "高噪声",
+        "seed": 0,
+        "start_time": 8.1,
+        "sample_count": 301,
+        "prediction_ms": 8.908100000553532,
+        "mean_step_ms": 0.02969366666851177
+      },
+      {
+        "noise": "高噪声",
+        "seed": 0,
+        "start_time": 8.2,
+        "sample_count": 301,
+        "prediction_ms": 8.464200000162236,
+        "mean_step_ms": 0.02821400000054079
+      },
+      {
+        "noise": "高噪声",
+        "seed": 0,
+        "start_time": 8.3,
+        "sample_count": 301,
+        "prediction_ms": 8.525900000677211,
+        "mean_step_ms": 0.028419666668924037
+      },
+      {
+        "noise": "高噪声",
+        "seed": 0,
+        "start_time": 8.4,
+        "sample_count": 301,
+        "prediction_ms": 10.763999998744112,
+        "mean_step_ms": 0.035879999995813705
+      },
+      {
+        "noise": "高噪声",
+        "seed": 1,
+        "start_time": 7.5,
+        "sample_count": 301,
+        "prediction_ms": 10.403399999631802,
+        "mean_step_ms": 0.03467799999877267
+      },
+      {
+        "noise": "高噪声",
+        "seed": 1,
+        "start_time": 7.6,
+        "sample_count": 301,
+        "prediction_ms": 8.830299997498514,
+        "mean_step_ms": 0.029434333324995048
+      },
+      {
+        "noise": "高噪声",
+        "seed": 1,
+        "start_time": 7.7,
+        "sample_count": 301,
+        "prediction_ms": 10.851700000785058,
+        "mean_step_ms": 0.03617233333595019
+      },
+      {
+        "noise": "高噪声",
+        "seed": 1,
+        "start_time": 7.8,
+        "sample_count": 301,
+        "prediction_ms": 10.302700000465848,
+        "mean_step_ms": 0.034342333334886156
+      },
+      {
+        "noise": "高噪声",
+        "seed": 1,
+        "start_time": 7.9,
+        "sample_count": 301,
+        "prediction_ms": 12.970300002052682,
+        "mean_step_ms": 0.0432343333401756
+      },
+      {
+        "noise": "高噪声",
+        "seed": 1,
+        "start_time": 8.0,
+        "sample_count": 301,
+        "prediction_ms": 9.348600000521401,
+        "mean_step_ms": 0.031162000001738004
+      },
+      {
+        "noise": "高噪声",
+        "seed": 1,
+        "start_time": 8.1,
+        "sample_count": 301,
+        "prediction_ms": 8.69560000137426,
+        "mean_step_ms": 0.0289853333379142
+      },
+      {
+        "noise": "高噪声",
+        "seed": 1,
+        "start_time": 8.2,
+        "sample_count": 301,
+        "prediction_ms": 10.390699997515185,
+        "mean_step_ms": 0.03463566665838395
+      },
+      {
+        "noise": "高噪声",
+        "seed": 1,
+        "start_time": 8.3,
+        "sample_count": 301,
+        "prediction_ms": 9.990900001866976,
+        "mean_step_ms": 0.03330300000622325
+      },
+      {
+        "noise": "高噪声",
+        "seed": 1,
+        "start_time": 8.4,
+        "sample_count": 301,
+        "prediction_ms": 8.493500001350185,
+        "mean_step_ms": 0.028311666671167284
+      },
+      {
+        "noise": "高噪声",
+        "seed": 2,
+        "start_time": 7.5,
+        "sample_count": 301,
+        "prediction_ms": 10.821600000781473,
+        "mean_step_ms": 0.03607200000260491
+      },
+      {
+        "noise": "高噪声",
+        "seed": 2,
+        "start_time": 7.6,
+        "sample_count": 301,
+        "prediction_ms": 10.53690000117058,
+        "mean_step_ms": 0.03512300000390193
+      },
+      {
+        "noise": "高噪声",
+        "seed": 2,
+        "start_time": 7.7,
+        "sample_count": 301,
+        "prediction_ms": 10.719800000515534,
+        "mean_step_ms": 0.035732666668385114
+      },
+      {
+        "noise": "高噪声",
+        "seed": 2,
+        "start_time": 7.8,
+        "sample_count": 301,
+        "prediction_ms": 8.457699997961754,
+        "mean_step_ms": 0.02819233332653918
+      },
+      {
+        "noise": "高噪声",
+        "seed": 2,
+        "start_time": 7.9,
+        "sample_count": 301,
+        "prediction_ms": 10.349399999540765,
+        "mean_step_ms": 0.03449799999846922
+      },
+      {
+        "noise": "高噪声",
+        "seed": 2,
+        "start_time": 8.0,
+        "sample_count": 301,
+        "prediction_ms": 10.82210000095074,
+        "mean_step_ms": 0.0360736666698358
+      },
+      {
+        "noise": "高噪声",
+        "seed": 2,
+        "start_time": 8.1,
+        "sample_count": 301,
+        "prediction_ms": 10.72080000085407,
+        "mean_step_ms": 0.0357360000028469
+      },
+      {
+        "noise": "高噪声",
+        "seed": 2,
+        "start_time": 8.2,
+        "sample_count": 301,
+        "prediction_ms": 8.495300000504358,
+        "mean_step_ms": 0.028317666668347858
+      },
+      {
+        "noise": "高噪声",
+        "seed": 2,
+        "start_time": 8.3,
+        "sample_count": 301,
+        "prediction_ms": 11.683700002322439,
+        "mean_step_ms": 0.03894566667440813
+      },
+      {
+        "noise": "高噪声",
+        "seed": 2,
+        "start_time": 8.4,
+        "sample_count": 301,
+        "prediction_ms": 13.616199998068623,
+        "mean_step_ms": 0.04538733332689541
+      }
+    ],
+    "mean_three_second_prediction_ms": 9.967688889244325,
+    "p90_three_second_prediction_ms": 11.499559998264887,
+    "mean_step_ms": 0.033225629630814414,
+    "scope": "仅积分函数耗时，不含下载、读取、评估、绘图；不代表端到端实时性能"
+  },
+  "source": "https://huggingface.co/datasets/theairlabcmu/tartanair2",
+  "note": "实际SLAM初始化；官方仿真IMU；噪声档位为人工设置；失效后无真值纠偏；窗口可能重叠",
+  "versions": {
+    "numpy": "2.2.6",
+    "pandas": "3.1.1",
+    "matplotlib": "3.11.2"
+  },
+  "slam_metadata": {
+    "source": "orb_slam3",
+    "mode": "IMU_RGBD",
+    "environment": "ArchVizTinyHouseDay",
+    "difficulty": "easy",
+    "sequence": "P000",
+    "body_frame": "tartanair_imu",
+    "pose_convention": "body_to_world",
+    "quaternion_order": "xyzw",
+    "units": "SI",
+    "time_offset_to_dataset_s": 0,
+    "gravity_world": [
+      0,
+      0,
+      -9.81
+    ],
+    "imu_measurements": "官方原始无噪声IMU；初始状态由实际RGB-D惯性SLAM估计",
+    "baseline_start_time_s": 0.2,
+    "baseline_commit": "4861c07",
+    "runner_base_branch": "experiment/a-support-from-bc@132f83c",
+    "state_export": "D新增GetDImuState，读取Frame实际IMU位姿、速度和偏置"
+  },
+  "state_file_sha256": "25ae300c9c4c2990dfebae472fb6b8cd7ea4d95c1cae9eade9485d7484ffab96",
+  "initial_states": [
+    {
+      "timestamp": 7.5,
+      "px": 0.143607646,
+      "py": -1.898690343,
+      "pz": -0.111060083,
+      "qx": 0.699662328,
+      "qy": 0.666353464,
+      "qz": 0.155562744,
+      "qw": -0.205538049,
+      "vx": 0.076596044,
+      "vy": -0.431219786,
+      "vz": -0.04176084,
+      "bgx": 0.000142777,
+      "bgy": -0.000168492,
+      "bgz": -0.001461413,
+      "bax": -0.058363106,
+      "bay": -0.002912583,
+      "baz": -0.002579186,
+      "valid": 1.0,
+      "imu_initialized": 1.0,
+      "map_id": 5.0,
+      "frame_epoch": 6.0
+    },
+    {
+      "timestamp": 7.6,
+      "px": 0.158334777,
+      "py": -1.975120425,
+      "pz": -0.118414938,
+      "qx": 0.701711237,
+      "qy": 0.666805506,
+      "qz": 0.163347393,
+      "qw": -0.190497681,
+      "vx": 0.229910165,
+      "vy": -1.157795072,
+      "vz": -0.10395328,
+      "bgx": 0.000142818,
+      "bgy": -0.000168335,
+      "bgz": -0.001461456,
+      "bax": -0.058324561,
+      "bay": -0.002995441,
+      "baz": -0.002727748,
+      "valid": 1.0,
+      "imu_initialized": 1.0,
+      "map_id": 5.0,
+      "frame_epoch": 6.0
+    },
+    {
+      "timestamp": 7.7,
+      "px": 0.182596773,
+      "py": -2.107770443,
+      "pz": -0.134062529,
+      "qx": 0.70195663,
+      "qy": 0.668951809,
+      "qz": 0.167465329,
+      "qw": -0.178089157,
+      "vx": 0.198765114,
+      "vy": -1.318079233,
+      "vz": -0.150111377,
+      "bgx": 0.000139703,
+      "bgy": -0.000163527,
+      "bgz": -0.001461538,
+      "bax": -0.054732032,
+      "bay": -0.01205857,
+      "baz": -0.013541317,
+      "valid": 1.0,
+      "imu_initialized": 1.0,
+      "map_id": 5.0,
+      "frame_epoch": 6.0
+    },
+    {
+      "timestamp": 7.8,
+      "px": 0.191782758,
+      "py": -2.203747749,
+      "pz": -0.147619367,
+      "qx": 0.698191881,
+      "qy": 0.673891962,
+      "qz": 0.164315909,
+      "qw": -0.177194819,
+      "vx": 0.008686606,
+      "vy": -0.549594641,
+      "vz": -0.100819029,
+      "bgx": 0.000139713,
+      "bgy": -0.000163506,
+      "bgz": -0.001461504,
+      "bax": -0.054718025,
+      "bay": -0.012021933,
+      "baz": -0.013551889,
+      "valid": 1.0,
+      "imu_initialized": 1.0,
+      "map_id": 5.0,
+      "frame_epoch": 6.0
+    },
+    {
+      "timestamp": 7.9,
+      "px": 0.189008996,
+      "py": -2.232768059,
+      "pz": -0.156679034,
+      "qx": 0.689440191,
+      "qy": 0.681268156,
+      "qz": 0.153061628,
+      "qw": -0.192660466,
+      "vx": 0.024315353,
+      "vy": -0.075091302,
+      "vz": -0.001616473,
+      "bgx": 0.000142566,
+      "bgy": -0.000166472,
+      "bgz": -0.001456093,
+      "bax": -0.048497926,
+      "bay": -0.008027961,
+      "baz": -0.017177295,
+      "valid": 1.0,
+      "imu_initialized": 1.0,
+      "map_id": 5.0,
+      "frame_epoch": 6.0
+    },
+    {
+      "timestamp": 8.0,
+      "px": 0.186464667,
+      "py": -2.265412807,
+      "pz": -0.164575458,
+      "qx": 0.680268645,
+      "qy": 0.687282979,
+      "qz": 0.139002427,
+      "qw": -0.213436112,
+      "vx": -0.163368478,
+      "vy": -0.775312722,
+      "vz": -0.246493578,
+      "bgx": 0.000142568,
+      "bgy": -0.000166467,
+      "bgz": -0.001456106,
+      "bax": -0.04855226,
+      "bay": -0.008039224,
+      "baz": -0.017197566,
+      "valid": 1.0,
+      "imu_initialized": 1.0,
+      "map_id": 5.0,
+      "frame_epoch": 6.0
+    },
+    {
+      "timestamp": 8.1,
+      "px": 0.156294525,
+      "py": -2.363385677,
+      "pz": -0.201272845,
+      "qx": 0.677426815,
+      "qy": 0.688227057,
+      "qz": 0.129801795,
+      "qw": -0.224917695,
+      "vx": -0.34481889,
+      "vy": -0.805236459,
+      "vz": -0.360144377,
+      "bgx": 0.000142572,
+      "bgy": -0.000166518,
+      "bgz": -0.001456058,
+      "bax": -0.048740853,
+      "bay": -0.007954342,
+      "baz": -0.017213201,
+      "valid": 1.0,
+      "imu_initialized": 1.0,
+      "map_id": 5.0,
+      "frame_epoch": 6.0
+    },
+    {
+      "timestamp": 8.2,
+      "px": 0.131832808,
+      "py": -2.399788618,
+      "pz": -0.222943425,
+      "qx": 0.685604811,
+      "qy": 0.682342589,
+      "qz": 0.130818143,
+      "qw": -0.217350513,
+      "vx": -0.125960618,
+      "vy": -0.104829252,
+      "vz": -0.094658747,
+      "bgx": 0.000142477,
+      "bgy": -0.000166337,
+      "bgz": -0.001455845,
+      "bax": -0.049227785,
+      "bay": -0.007852496,
+      "baz": -0.017615879,
+      "valid": 1.0,
+      "imu_initialized": 1.0,
+      "map_id": 5.0,
+      "frame_epoch": 6.0
+    },
+    {
+      "timestamp": 8.3,
+      "px": 0.120880529,
+      "py": -2.404506922,
+      "pz": -0.228328705,
+      "qx": 0.698503673,
+      "qy": 0.673075914,
+      "qz": 0.138525933,
+      "qw": -0.199679911,
+      "vx": -0.186072454,
+      "vy": -0.223774329,
+      "vz": -0.156885788,
+      "bgx": 0.000137702,
+      "bgy": -0.00015956,
+      "bgz": -0.001454185,
+      "bax": -0.054975826,
+      "bay": -0.007732943,
+      "baz": -0.018969784,
+      "valid": 1.0,
+      "imu_initialized": 1.0,
+      "map_id": 5.0,
+      "frame_epoch": 6.0
+    },
+    {
+      "timestamp": 8.4,
+      "px": 0.100462288,
+      "py": -2.426361322,
+      "pz": -0.245064855,
+      "qx": 0.707414746,
+      "qy": 0.665715694,
+      "qz": 0.147697285,
+      "qw": -0.185936943,
+      "vx": -0.107499003,
+      "vy": -0.12172509,
+      "vz": -0.088788182,
+      "bgx": 0.000137701,
+      "bgy": -0.000159566,
+      "bgz": -0.001454185,
+      "bax": -0.055014886,
+      "bay": -0.007757626,
+      "baz": -0.018968336,
+      "valid": 1.0,
+      "imu_initialized": 1.0,
+      "map_id": 5.0,
+      "frame_epoch": 6.0
+    }
+  ],
+  "alignment": "仅失效前同地图、同坐标版本的可用历史做旋转和平移配准，不缩放",
+  "alignment_history": [
+    {
+      "start_time": 7.5,
+      "count": 2,
+      "first": 7.4,
+      "last": 7.5
+    },
+    {
+      "start_time": 7.6,
+      "count": 3,
+      "first": 7.4,
+      "last": 7.6
+    },
+    {
+      "start_time": 7.7,
+      "count": 4,
+      "first": 7.4,
+      "last": 7.7
+    },
+    {
+      "start_time": 7.8,
+      "count": 5,
+      "first": 7.4,
+      "last": 7.8
+    },
+    {
+      "start_time": 7.9,
+      "count": 6,
+      "first": 7.4,
+      "last": 7.9
+    },
+    {
+      "start_time": 8.0,
+      "count": 7,
+      "first": 7.4,
+      "last": 8.0
+    },
+    {
+      "start_time": 8.1,
+      "count": 8,
+      "first": 7.4,
+      "last": 8.1
+    },
+    {
+      "start_time": 8.2,
+      "count": 9,
+      "first": 7.4,
+      "last": 8.2
+    },
+    {
+      "start_time": 8.3,
+      "count": 10,
+      "first": 7.4,
+      "last": 8.3
+    },
+    {
+      "start_time": 8.4,
+      "count": 11,
+      "first": 7.4,
+      "last": 8.4
+    }
+  ],
+  "limitations": "当前实际SLAM仅easy/P000；10个起点集中在7.50至8.40秒且窗口重叠；不代表10条独立轨迹"
+}

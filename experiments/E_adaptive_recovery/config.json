@@ -1,0 +1,19 @@
+{
+  "rgb_min": 0.45,
+  "depth_min": 0.35,
+  "inlier_reference": 60,
+  "quality_alpha": 0.6,
+  "max_frame_gap_s": 0.25,
+  "min_state_hold_s": 0.2,
+  "recovery_frames": 3,
+  "recovery_position_gate_m": 0.75,
+  "recovery_rotation_gate_deg": 15,
+  "prediction_max_s": 2.0,
+  "max_imu_gap_s": 0.035,
+  "gravity_mps2": [0, 0, -9.81],
+  "gyro_bias_radps": [0, 0, 0],
+  "accel_bias_mps2": [0, 0, 0],
+  "evaluation_position_m": 0.5,
+  "evaluation_rotation_deg": 5,
+  "timestamp_tolerance_s": 0.015
+}

@@ -1,0 +1,76 @@
+# B 视觉退化：visual_corrupt.py 的故障与强度参数
+# 每个故障项：type = 实现名；levels = 4 档强度（L1 最轻，L4 最重）。
+# 可选 start_s / duration_s：只在 [t0+start_s, t0+start_s+duration_s) 内施加故障
+#   （t0 = 序列首帧时间戳；省略 = 整条序列）。
+# 随机量（遮挡位置、运动模糊方向、亮度抖动）只由 (seed, 故障名, 帧号/时段号) 决定，
+# 与强度档无关，所以同一种子下各档的遮挡位置相同，只是面积不同。
+version: B_visual_v1
+seeds: [0, 1, 2]
+png_compression: 3
+
+faults:
+  gaussian_blur:
+    type: gaussian_blur
+    levels:                       # sigma 单位：像素（640x640 图像）
+      L1: {sigma_px: 1.0}
+      L2: {sigma_px: 2.0}
+      L3: {sigma_px: 4.0}
+      L4: {sigma_px: 8.0}
+
+  motion_blur:
+    type: motion_blur
+    # angle_deg: null 表示按种子随机取一个方向（整条序列固定），再逐帧加 ±angle_jitter_deg 抖动
+    angle_deg: null
+    angle_jitter_deg: 10.0
+    levels:                       # 线状核长度（像素）
+      L1: {length_px: 5}
+      L2: {length_px: 11}
+      L3: {length_px: 21}
+      L4: {length_px: 41}
+
+  brightness_contrast:
+    type: brightness_contrast
+    # out = clip(((in/255)^gamma - 0.5) * contrast + 0.5 + (brightness + N(0, flicker_std)) / 255)
+    # flicker 每帧独立抽样，模拟曝光闪烁
+    levels:
+      L1: {contrast: 0.80, brightness: -20, gamma: 1.0, flicker_std: 3}
+      L2: {contrast: 0.60, brightness: -45, gamma: 1.2, flicker_std: 6}
+      L3: {contrast: 0.40, brightness: -70, gamma: 1.4, flicker_std: 10}
+      L4: {contrast: 0.25, brightness: -95, gamma: 1.6, flicker_std: 15}
+
+  # 过曝方向（需要时取消注释，会成为第 6 种故障）
+  # overexposure:
+  #   type: brightness_contrast
+  #   levels:
+  #     L1: {contrast: 0.85, brightness: 30, gamma: 0.9, flicker_std: 3}
+  #     L2: {contrast: 0.70, brightness: 60, gamma: 0.8, flicker_std: 6}
+  #     L3: {contrast: 0.55, brightness: 90, gamma: 0.7, flicker_std: 10}
+  #     L4: {contrast: 0.40, brightness: 120, gamma: 0.6, flicker_std: 15}
+
+  occlusion:
+    type: occlusion
+    # n_blobs 个随机矩形，总面积目标 = area_frac（重叠时实际覆盖会略小，逐帧表记录实际值）
+    # refresh_s: 每隔多少秒重新摆放；null = 整条序列固定（类似镜头污渍）
+    # fill: black | gray | noise
+    n_blobs: 3
+    refresh_s: 2.0
+    fill: black
+    levels:
+      L1: {area_frac: 0.10}
+      L2: {area_frac: 0.25}
+      L3: {area_frac: 0.40}
+      L4: {area_frac: 0.60}
+
+  texture_erase:
+    type: texture_erase
+    # 图像级近似：把随机区域替换为强模糊结果，并用羽化边缘过渡，避免产生新的人工角点。
+    # 这不等同于真实的白墙/无纹理几何，只是让该区域失去可提取的 ORB 特征。
+    n_regions: 2
+    refresh_s: 2.0
+    erase_sigma_px: 25.0
+    feather_px: 15.0
+    levels:
+      L1: {area_frac: 0.15}
+      L2: {area_frac: 0.30}
+      L3: {area_frac: 0.50}
+      L4: {area_frac: 0.75}

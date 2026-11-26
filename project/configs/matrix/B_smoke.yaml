@@ -1,0 +1,16 @@
+# B 干跑用小矩阵：easy × 2 故障 × (L0, L2, L4) × 种子 0 × 3 模式 = 15 次运行
+# 用于在正式开跑前确认 run_matrix → evaluate → plot_B.py 全链路
+name: B_smoke
+task: B
+fault_config: configs/B_visual.yaml
+out_dir: results/B/runs_smoke
+sequences: [office_easy_p004]
+seeds: [0]
+modes: [MONOCULAR, IMU_MONOCULAR, IMU_RGBD]
+include_clean: true
+faults:
+  gaussian_blur: [L2, L4]
+  occlusion: [L2, L4]
+run_timeout_s: 1800
+runner_args: ["--rate", "1"]
+evaluate_args: ["--recover-err", "0.5"]   # B/C 统一恢复判据（PROJECT_PLAN 3.2 第 5 条）

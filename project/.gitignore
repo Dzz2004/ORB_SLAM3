@@ -1,0 +1,15 @@
+# raw data, corrupted sequences, environments, build outputs and run caches are not versioned
+data/
+env/
+env_data/
+env_docs/
+src/
+bin/
+results/*/runs/
+results/*/runs_smoke/
+results/*/_matrix/
+*.partial/
+__pycache__/
+core*
+.scratch/
+.docs_scratch/

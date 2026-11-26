@@ -1,0 +1,22 @@
+# B 视觉退化 · 主矩阵（easy）
+# 规模：1 序列 × (5 故障 × L1–L4 + clean/L0) × 3 种子 × 3 模式 = 60 个扰动序列 + 1 个 clean 序列；(20 + 1) 档 × 3 种子 × 3 模式 = 189 次运行
+# L0 = include_clean：同种子、同 IMU 噪声（imu_noisy_s<seed>.csv）的无扰动基线。
+# 并发数（--workers）按 CPU 配额固定（实验时 B、C 合计不超过 4），命令行给出，不写在这里。
+# 运行：env_data/bin/python scripts/run_matrix.py configs/matrix/B_main.yaml --workers <份额> --cleanup
+name: B_main_easy
+task: B
+fault_config: configs/B_visual.yaml
+out_dir: results/B/runs
+sequences: [office_easy_p004]
+seeds: [0, 1, 2]
+modes: [MONOCULAR, IMU_MONOCULAR, IMU_RGBD]
+include_clean: true
+faults:
+  gaussian_blur: null          # null = B_visual.yaml 里的全部档位 L1–L4
+  motion_blur: null
+  brightness_contrast: null
+  occlusion: null
+  texture_erase: null
+run_timeout_s: 1800
+runner_args: ["--rate", "1"]
+evaluate_args: ["--recover-err", "0.5"]   # B/C 统一恢复判据（PROJECT_PLAN 3.2 第 5 条）

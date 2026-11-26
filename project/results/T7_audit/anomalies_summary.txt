@@ -1,0 +1,102 @@
+POPULATION (acceptance: B_main easy 189 + C easy/hard 162 = 362)
+status: {'ok': 342, 'init_failed': 18, 'run_failed': 2}
+B easy: {'ok': 183, 'init_failed': 6}
+C: {'ok': 148, 'init_failed': 12, 'run_failed': 2}
+
+CRASHES (run_failed, signal)
+  office_easy_p004__invalid_pixels_P20_s2__RGBD exit 134 crash_t 114.2 crashed True
+  office_easy_p004__invalid_pixels_P80_s2__RGBD exit 134 crash_t 111.7 crashed True
+
+INIT_FAILED (18 in acceptance)
+  office_easy_p004 gaussian_blur L4 s0 IMU_MONOCULAR exit 0
+  office_easy_p004 gaussian_blur L4 s1 IMU_MONOCULAR exit 0
+  office_easy_p004 gaussian_blur L4 s2 IMU_MONOCULAR exit 0
+  office_easy_p004 gaussian_blur L4 s0 MONOCULAR exit 0
+  office_easy_p004 gaussian_blur L4 s1 MONOCULAR exit 0
+  office_easy_p004 gaussian_blur L4 s2 MONOCULAR exit 0
+  office_easy_p004 depth_off ALL s0 IMU_RGBD exit 0
+  office_easy_p004 depth_off ALL s1 IMU_RGBD exit 0
+  office_easy_p004 depth_off ALL s2 IMU_RGBD exit 0
+  office_easy_p004 depth_off ALL s0 RGBD exit 0
+  office_easy_p004 depth_off ALL s1 RGBD exit 0
+  office_easy_p004 depth_off ALL s2 RGBD exit 0
+  office_hard_p004 depth_off ALL s0 IMU_RGBD exit 0
+  office_hard_p004 depth_off ALL s1 IMU_RGBD exit 0
+  office_hard_p004 depth_off ALL s2 IMU_RGBD exit 0
+  office_hard_p004 depth_off ALL s0 RGBD exit 0
+  office_hard_p004 depth_off ALL s1 RGBD exit 0
+  office_hard_p004 depth_off ALL s2 RGBD exit 0
+
+LOOP RUNS: n=44
+  loops 1 final 8.035686322029662 online 0.026417430887210033 office_easy_p004__outage_O05_s1__IMU_RGBD
+  loops 1 final 8.024532951541058 online 0.029717747231588036 office_easy_p004__depth_noise_N1_s2__IMU_RGBD
+  loops 1 final 7.960409934339814 online 0.04572980488248901 office_easy_p004__invalid_pixels_P00_s1__IMU_RGBD
+  loops 1 final 7.903533176586632 online 0.040568858866102495 office_easy_p004__invalid_pixels_P00_s2__IMU_RGBD
+  loops 1 final 7.891114284394961 online 0.03055809148800912 office_easy_p004__motion_blur_L1_s2__IMU_RGBD
+  loops 1 final 7.757249177033315 online 0.029605454524865 office_easy_p004__depth_noise_N1_s0__IMU_RGBD
+  loops 1 final 7.735278575238553 online 0.03127171415757623 office_easy_p004__depth_noise_N2_s0__IMU_RGBD
+  loops 1 final 7.674126368137641 online 0.060029369237525394 office_easy_p004__brightness_contrast_L1_s0__IMU_RGBD
+  loop final>1m: 15
+
+ONLINE ATE > 0.5 m
+  1.487 cov 0.337 segs 61 office_easy_p004__motion_blur_L4_s2__MONOCULAR
+  0.870 cov 0.251 segs 103 office_easy_p004__occlusion_L4_s1__MONOCULAR
+  0.845 cov 0.395 segs 69 office_easy_p004__motion_blur_L3_s1__MONOCULAR
+
+SEGMENT COUNT DISTRIBUTION (ok runs with n_segments)
+  B easy n=182 min=5 p50=47 p90=108 p99=233 max=268
+  C easy n=73 min=7 p50=16 p90=49 p99=121 max=121
+  C hard n=75 min=79 p50=145 p90=158 p99=188 max=188
+TOP segment counts
+   268 segs ate 0.09913901431766092 alo 0.3770491803278688 cov 0.828 office_easy_p004__texture_erase_L4_s2__IMU_RGBD
+   233 segs ate 0.0814576575240005 alo 0.5221311475409836 cov 0.868 office_easy_p004__occlusion_L4_s2__IMU_RGBD
+   218 segs ate 0.09076859707635336 alo 0.38524590163934425 cov 0.774 office_easy_p004__texture_erase_L4_s1__IMU_RGBD
+   188 segs ate 0.021953788092161853 alo 0.10893512851897184 cov 0.539 office_hard_p004__invalid_pixels_P80_s1__IMU_RGBD
+   187 segs ate 0.015399532364332903 alo 0.1346389228886169 cov 0.542 office_hard_p004__invalid_pixels_P80_s0__IMU_RGBD
+   185 segs ate 0.023415187101614762 alo 0.1419828641370869 cov 0.545 office_hard_p004__invalid_pixels_P80_s2__IMU_RGBD
+   162 segs ate 0.06462601641964606 alo 0.24112607099143207 cov 0.600 office_hard_p004__depth_noise_N4_s1__IMU_RGBD
+   160 segs ate 0.0892554638330966 alo 0.24112607099143207 cov 0.615 office_hard_p004__depth_noise_N4_s0__IMU_RGBD
+   160 segs ate 0.09144863588092098 alo 0.23623011015911874 cov 0.607 office_hard_p004__depth_noise_N4_s2__IMU_RGBD
+   159 segs ate 0.050938089217158325 alo 0.23745410036719705 cov 0.617 office_hard_p004__invalid_pixels_P50_s2__IMU_RGBD
+   158 segs ate 0.078850708232548 alo 0.26805385556915545 cov 0.620 office_hard_p004__depth_noise_N3_s2__IMU_RGBD
+   157 segs ate 0.0775450799099522 alo 0.26805385556915545 cov 0.629 office_hard_p004__depth_noise_N1_s0__IMU_RGBD
+
+ONLINE ATE < 0.03 m (ok)
+  0.0154 segs 187 alo 0.1346389228886169 cov 0.542 office_hard_p004__invalid_pixels_P80_s0__IMU_RGBD
+  0.0220 segs 188 alo 0.10893512851897184 cov 0.539 office_hard_p004__invalid_pixels_P80_s1__IMU_RGBD
+  0.0231 segs 105 alo 0.8803278688524591 cov 0.989 office_easy_p004__invalid_pixels_P80_s0__RGBD
+  0.0234 segs 185 alo 0.1419828641370869 cov 0.545 office_hard_p004__invalid_pixels_P80_s2__IMU_RGBD
+  0.0236 segs 13 alo 0.980327868852459 cov 0.998 office_easy_p004__outage_O05_s0__IMU_RGBD
+  0.0245 segs 16 alo 0.969672131147541 cov 0.995 office_easy_p004__texture_erase_L2_s0__IMU_RGBD
+  0.0247 segs 70 alo 0.8336065573770491 cov 0.996 office_easy_p004__invalid_pixels_P80_s2__RGBD
+  0.0249 segs 43 alo 0.9319672131147541 cov 0.998 office_easy_p004__occlusion_L3_s2__IMU_RGBD
+  0.0252 segs 30 alo 0.9008196721311476 cov 0.949 office_easy_p004__gaussian_blur_L1_s2__IMU_RGBD
+  0.0254 segs 13 alo 0.980327868852459 cov 0.998 office_easy_p004__occlusion_L1_s2__IMU_RGBD
+  0.0255 segs 21 alo 0.9098360655737705 cov 0.939 office_easy_p004__brightness_contrast_L2_s0__IMU_RGBD
+  0.0255 segs 28 alo 0.9475409836065574 cov 0.985 office_easy_p004__invalid_pixels_P80_s0__IMU_RGBD
+  0.0262 segs 18 alo 0.9721311475409836 cov 0.997 office_easy_p004__texture_erase_L1_s0__IMU_RGBD
+  0.0262 segs 43 alo 0.9073770491803279 cov 0.977 office_easy_p004__occlusion_L3_s0__IMU_RGBD
+  0.0264 segs 20 alo 0.969672131147541 cov 0.998 office_easy_p004__outage_O05_s1__IMU_RGBD
+  0.0267 segs 20 alo 0.9655737704918033 cov 0.998 office_easy_p004__invalid_pixels_P00_s0__IMU_RGBD
+  0.0273 segs 15 alo 0.9729508196721312 cov 0.998 office_easy_p004__depth_noise_N2_s1__IMU_RGBD
+  0.0274 segs 15 alo 0.9762295081967213 cov 0.998 office_easy_p004__brightness_contrast_L1_s2__IMU_RGBD
+  0.0279 segs 14 alo 0.9778688524590164 cov 0.998 office_easy_p004__clean_s1__IMU_RGBD
+  0.0281 segs 37 alo 0.8467213114754099 cov 0.897 office_easy_p004__occlusion_L2_s0__IMU_MONOCULAR
+  0.0282 segs 11 alo 0.9819672131147541 cov 0.998 office_easy_p004__texture_erase_L1_s2__IMU_RGBD
+  0.0283 segs 14 alo 0.9762295081967213 cov 0.998 office_easy_p004__texture_erase_L2_s1__IMU_RGBD
+  0.0286 segs 20 alo 0.9549180327868853 cov 0.987 office_easy_p004__invalid_pixels_P80_s2__IMU_RGBD
+  0.0286 segs 16 alo 0.9762295081967213 cov 0.998 office_easy_p004__invalid_pixels_P50_s2__IMU_RGBD
+  0.0289 segs 11 alo 0.9844262295081967 cov 0.998 office_easy_p004__invalid_pixels_P50_s0__IMU_RGBD
+  0.0295 segs 21 alo 0.8918032786885246 cov 0.920 office_easy_p004__brightness_contrast_L3_s1__IMU_RGBD
+  0.0296 segs 19 alo 0.9688524590163935 cov 0.998 office_easy_p004__depth_noise_N1_s0__IMU_RGBD
+  0.0297 segs 24 alo 0.9040983606557377 cov 0.940 office_easy_p004__motion_blur_L2_s0__IMU_RGBD
+  0.0297 segs 100 alo 0.25703794369645044 cov 0.437 office_hard_p004__outage_O20_s0__RGBD
+  0.0297 segs 25 alo 0.9590163934426229 cov 0.998 office_easy_p004__depth_noise_N1_s2__IMU_RGBD
+  0.0299 segs 15 alo 0.978688524590164 cov 0.998 office_easy_p004__invalid_pixels_P50_s1__IMU_RGBD
+
+UNRECOVERED EVENTS total=372, max=16
+   16 office_hard_p004__invalid_pixels_P80_s1__IMU_RGBD
+   9 office_hard_p004__clean_s2__IMU_MONOCULAR
+   8 office_easy_p004__texture_erase_L4_s2__IMU_MONOCULAR
+   8 office_hard_p004__clean_s0__IMU_MONOCULAR
+   7 office_hard_p004__clean_s1__IMU_MONOCULAR

@@ -15,6 +15,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 import scipy
 
+from degradation_policy import ImuPredictor
 from replay import VARIANTS, evaluate, read_case, replay, write_csv, write_tum
 from synthetic import CASES, SEEDS, make_case
 
@@ -85,14 +86,21 @@ def plot_ablation(path, summaries, metadata):
     plt.close(fig)
 
 
-def run(args):
+def run(args, *, matrix=None, predictor_factory=ImuPredictor, provenance=None):
     config = json.loads(args.config.read_text(encoding="utf-8-sig"))
     out = args.out
     figures = out / "figures"
     figures.mkdir(parents=True, exist_ok=True)
-    ref = f"{args.dataset} / {args.sequence}  •  seed {args.seed}" if args.case else "synthetic fixture"
-    inputs = ([(fault, seed, args.demo / fault / str(seed)) for fault in CASES for seed in SEEDS]
-              if args.demo else [(args.fault, args.seed, args.case)])
+    if matrix is not None:
+        inputs = matrix
+        ref = f"{args.sequence}  •  log-level masking"
+    elif args.demo:
+        inputs = [(fault, seed, args.demo / fault / str(seed)) for fault in CASES for seed in SEEDS]
+        ref = "synthetic fixture"
+    else:
+        inputs = [(args.fault, args.seed, args.case)]
+        ref = f"{args.dataset} / {args.sequence}  •  seed {args.seed}"
+    replicated = args.demo or matrix is not None
     ablation, all_events, recovery_rows, timelines, hashes = [], [], [], [], {}
     for fault, seed, folder in inputs:
         if args.demo:
@@ -108,7 +116,7 @@ def run(args):
                         if path.is_file()}
         for variant in VARIANTS:
             start = time.perf_counter()
-            decisions = replay(frames, samples, variant, config)
+            decisions = replay(frames, samples, variant, config, predictor_factory)
             elapsed = time.perf_counter() - start
             metrics, events, recovery = evaluate(frames, decisions, faults, config)
             recovery_times = [row["recovery_s"] for row in recovery if row["recovered"]]
@@ -121,7 +129,7 @@ def run(args):
             recovery_rows.extend(dict(case=fault, seed=seed, variant=variant, **row) for row in recovery)
             write_tum(run_folder / f"{variant}.tum",
                       ((frame.time, decision[0].pose) for frame, decision in zip(frames, decisions)))
-            if variant == "monitor_imu" and (not args.demo or seed == 0):
+            if variant == "monitor_imu" and (not replicated or seed == 0):
                 timelines.append((fault.replace("_", " "), events, faults))
     write_csv(out / "ablation.csv", ablation)
     write_csv(out / "policy_events.csv", all_events)
@@ -133,10 +141,12 @@ def run(args):
                                  scipy=scipy.__version__, matplotlib=matplotlib.__version__),
                    pose_frame="shared metric world frame; input poses already registered",
                    runs=ablation)
+    if provenance is not None:
+        payload["provenance"] = provenance
     (out / "metrics.json").write_text(json.dumps(payload, indent=2, ensure_ascii=False, allow_nan=False) + "\n",
                                       encoding="utf-8", newline="\n")
-    plot_timeline(figures / "state_timeline.png", timelines, f"{ref}  •  seed 0" if args.demo else ref)
-    plot_ablation(figures / "ablation.png", ablation, f"{ref}  •  seeds 0, 1, 2" if args.demo else ref)
+    plot_timeline(figures / "state_timeline.png", timelines, f"{ref}  •  seed 0" if replicated else ref)
+    plot_ablation(figures / "ablation.png", ablation, f"{ref}  •  seeds 0, 1, 2" if replicated else ref)
     print(f"{len(ablation)} replays, {len(all_events)} frame decisions in {out}")
 
 

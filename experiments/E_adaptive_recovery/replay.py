@@ -123,9 +123,9 @@ def read_case(folder, config):
     return frames, imu, faults
 
 
-def replay(frames, samples, variant, config):
+def replay(frames, samples, variant, config, predictor_factory=ImuPredictor):
     monitor = QualityMonitor(config)
-    policy = DegradationPolicy(config, ImuPredictor(config, samples) if variant == "monitor_imu" else None)
+    policy = DegradationPolicy(config, predictor_factory(config, samples) if variant == "monitor_imu" else None)
     decisions = []
     for frame in frames:
         rgb, depth = monitor.update(frame.time, frame.slam is not None, frame.rgb, frame.depth, frame.inliers)
